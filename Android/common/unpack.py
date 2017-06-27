@@ -6,8 +6,6 @@ import sys
 src=''
 dest='./'
 
-
-
 def main():
     parser = OptionParser()
     parser.add_option('-s' ,'--src' , dest="src" , help='apk file path')
@@ -25,7 +23,7 @@ def main():
         if not dest.endswith('/'):
             dest+='/'
 
-    os.system('unzip '+ src+' -d '+ dest+'out')
+    os.system('unzip -o '+ src+' -d '+ dest+'out')
     paths=os.listdir(dest+'out')
     for path in paths:
         if path.endswith('.dex'):
