@@ -1,5 +1,4 @@
 from optparse import OptionParser 
-import zipfile
 import os 
 import sys 
 
@@ -31,7 +30,7 @@ def main():
             if not os.path.exists(dexdir):
                 os.mkdir(dest+path)
             os.system('cp '+dest+'out/'+path+" "+dexdir )
-            os.system('java -jar common/ShakaApktool.jar bs '+dest+path+'/'+path+" -o "+dexdir+"/out")
+            os.system('java -jar common/ShakaApktool.jar bs '+dexdir+'/'+path+" -o "+dexdir+"/out")
 
 
 if __name__ == '__main__':
