@@ -1,0 +1,3 @@
+[submodule "Android/VMProtect"]
+	path = Android/VMProtect
+	url = https://github.com/TinyNiko/VMProtect.git

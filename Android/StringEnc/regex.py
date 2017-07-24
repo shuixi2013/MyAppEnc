@@ -15,8 +15,6 @@ dirfilters=['android']
 filefilters=['BuildConfig.smali','R$anim.smali','R$attr.smali','R$bool.smali','R.smali','R$styleable.smali',
 'R$style.smali' ,'R$string.smali' ,'R$mipmap','R$layout.smali','R$integer.smali',]
 fixpackage=[]
-USENOLEAK = False
-
 #########################################################
 ####
 #### COMMON
@@ -67,9 +65,7 @@ def encString(data):
 def nativeEnc2(string):
     return decodestring.nativenoleak(string)
 
-def dealwithnativeString(string):
-    if USENOLEAK :
-        return "{"+ nativeEnc2(string) + "}"  
+def dealwithnativeString(string): 
     value = random.randint(0,10)
     if value > 5:
         encString = dealBase642(string)
@@ -79,6 +75,9 @@ def dealwithnativeString(string):
         return  "decHex(\"" + encstr + "\", " + value +")"
 
 def nativematchstring(match):
+    if match.group(1) == "DECRYPTM":
+        encstr = "{"+ nativeEnc2(match.group(2)) + "}"   
+        return encstr 
     encstr = dealwithnativeString(match.group(2))
     if match.group(1) == 'DECRYPTL':
         return "\"%s\" ,"+encstr 
@@ -86,7 +85,7 @@ def nativematchstring(match):
 
 def nativedealwithline(path):
     newdata=''
-    pattern=r'(DECRYPT[L]?).*\("(.*)\"\)'
+    pattern=r'(DECRYPT[L|M]?).*\("(.*)\"\)'
     prog = re.compile(pattern)
     f=open(path,'r',encoding='utf-8')
     for i in f.readlines():
@@ -116,18 +115,6 @@ def srcdealwithstring(match):
     encstr=encString(match.group(1))
     return encstr
 
-# no use
-def srcdealwithfile(path):
-    f=open(path,'r',encoding='utf-8')
-    data=f.read() 
-    f.close()
-    pattern=r'\"([^"]+)?\"'
-    prog = re.compile(pattern)
-    data = prog.sub(srcdealwithstring , data)
-    #print(data)
-    f =open(path , 'w',encoding='utf-8')
-    f.write(data)
-    f.close()
 
 def srcdealline(path):
         newdata=''
@@ -203,11 +190,8 @@ def main():
 
     parser.add_option("-t", "--type",  dest="exetype", help="native src nosrc all") 
     parser.add_option("-s", "--src",  dest="dirpath", help="dir path") 
-    parser.add_option("-l" , "--leak" , dest="memleak" , default="F", help='T/F , T for  no leak ')
     (options, args) = parser.parse_args()
     path = os.path.realpath(options.dirpath)
-    if options.memleak == "T":
-        USENOLEAK = True 
     if options.exetype == "native":
         travelnative(path)
     elif options.exetype == "src":
