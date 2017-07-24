@@ -8,7 +8,7 @@
 
 int main(int argc, char **argv)
 {
-    printf("2333\n");
+    
     return 0 ; 
 }
 

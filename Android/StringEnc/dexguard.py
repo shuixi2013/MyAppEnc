@@ -3,35 +3,33 @@ import sys
 from optparse import OptionParser 
 import decodestring
 
-def dealwithstring(match):
-    print(match.groups())
-    if match.group(0) == None :
-        return "\"\"" 
-    encdata =encString(match.group(0))
-    return encdata
 
-
-def dealwithfile(path):
-    print(path)
-    f=open(path,'r')
-    data=f.read() 
-    f.close()
-    pattern=r'const-string.*\".*\"'
-    prog = re.compile(pattern)
-    data = prog.sub(dealwithstring , data)
-    #print(data)
+# len , pos ,current 
+def encStrings(strings):
+    encdata= [] 
+    info_encode=[]
+    for string in strings : 
+        string = string.encode().decode('unicode-escape')
+        strlen = len(string)-1
+        data0 = ord(string[0])
+        data0 =  data0 if data0 < 127 else ord(string[0])-256 
+        for xchar in string[1:]:
+            tmp = ord(xchar) 
+            if tmp > 127: 
+                tmp -= 256 
+            encdata.append(tmp)
+        current = len(encdata)-strlen 
+        data=(strlen , data0 ,current)
+        info_encode.append(data)
+    print(info_encode)
+    print(encdata)
 
 
 
 def travel2(path):
     for dirpath,dirs,files in os.walk(path):
-        if "android\support" in dirpath :
-            continue
-        for x in fixpackage:
-            if x in dirpath : 
-                for smalifile in files:
-                    if smalifile == "MainActivity.smali":
-                        dealwithfile(dirpath+os.sep+smalifile)
+        pass
+    pass
 
 def main():
     parser = OptionParser()  
@@ -40,7 +38,10 @@ def main():
     parser.add_option("-s", "--src",  dest="dirpath", help="dir path") 
     (options, args) = parser.parse_args()
     path = os.path.realpath(options.dirpath)
-    travel2(path)
+    #travel2(path)
+    
 
 if __name__ == '__main__':
-    main()
+    #main()
+    strings = ['123456789','\u4e2d\u56fd','asdwqnidoenwioger']
+    encStrings(strings)
