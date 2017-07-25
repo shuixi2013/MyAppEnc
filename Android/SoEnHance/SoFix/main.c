@@ -1,30 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "elf.h"
+#include "../include/elf.h"
+#include "../include/utils.h"
+#include "../include/elf32.h"
+#include "../include/elf64.h"
 #include <unistd.h>
 #include <string.h>
-
-
-
-long get_file_len(FILE *p); 
-
+#include <errno.h>
 
 int main(int argc, char **argv)
 {
     FILE* fr = NULL;
     long flen = 0;
-    FILE* fw = NULL;
     int ph_len = 0;
     char* buffer = NULL;
     char* sh_buffer = NULL;
-    Elf32_Ehdr *pehdr = NULL;
-    Elf32_Phdr* pphdr = NULL;   
+    bool isDealOk = false ; 
     char arr[2048] = {0} ; 
 
     if( argc <2 )
     {
         puts("arg error");
-        return  0; 
+        return 0 ; 
     }
     
     fr = fopen(argv[1] , "rb") ; 
@@ -35,34 +32,43 @@ int main(int argc, char **argv)
     }
 
     flen = get_file_len(fr) ; 
-    printf("file len is %ld" , flen) ; 
-    buffer = (char *)malloc(flen) ;
+    printf("file len is %ld \n" , flen) ; 
+    buffer = (char *)malloc(flen+1) ;
     if( buffer == NULL)
     {
         puts("malloc error") ; 
         goto error ; 
     }
 
-    size_t result = fread(buffer,1 , flen , fr) ; 
+    size_t result = fread(buffer,1, flen , fr) ; 
     if(result != flen)
     {
-        puts("read error") ; 
-        goto error ; 
+        puts("error"); 
+        goto error ;    
     }
 
-    fw =fopen("fix.so" ,"wb"); 
-    if(fw == NULL)
+    if(buffer[4] == 0x01)
     {
-        puts("open fix.so error") ; 
+        puts("32");
+        isDealOk = dealelf32(buffer, flen,Fix) ; 
+    }else if (buffer[4] == 0x01)
+    {
+        puts("64");
+       // isDealOk = dealelf64(buffer); 
+    }else
+    {
+        puts(" this is error"); 
         goto error ; 
+    }
+    if(isDealOk)
+    {
+        puts("deal with it") ; 
+    }else
+    {
+        puts("gg ,not deal with it");
     }
     
-
-
-
 error:
-    if(fw != NULL)
-        fclose(fw) ; 
     if(fr != NULL) 
         fclose(fr) ; 
     if(buffer != NULL)
@@ -71,10 +77,12 @@ error:
 }
 
 
-long get_file_len(FILE *f)
-{
-    fseek(f , 0 , SEEK_END) ; 
-    return ftell(f) ; 
-}
+
+
+
+
+
+
+
 
 

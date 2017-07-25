@@ -1,11 +1,16 @@
 CC=clang
+INCLUDE=../include
+COMMON=../common
 
+NEdit: main.o utils.o elf32.o
+	$(CC) -o NEdit  main.o utils.o elf32.o
 
-edit: main.o
-	$(CC) -o edit  main.o 
-main.o: main.c elf.h 
-	$(CC)  -c  main.c 
-
+main.o: 
+	$(CC)  -c  main.c  
+utils.o:
+	$(CC) -c ${COMMON}/utils.c
+elf32.o:
+	$(CC) -c ${COMMON}/elf32.c 
 clean:
 	rm *.o 
 
