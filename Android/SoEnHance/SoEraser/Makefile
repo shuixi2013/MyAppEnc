@@ -6,11 +6,11 @@ NEdit: main.o utils.o elf32.o
 	$(CC) -o NEdit  main.o utils.o elf32.o
 
 main.o: 
-	$(CC)  -c  main.c  
+	$(CC) $(DEBUG) -c  main.c  
 utils.o:
-	$(CC) -c ${COMMON}/utils.c
+	$(CC) $(DEBUG)  -c ${COMMON}/utils.c
 elf32.o:
-	$(CC) -c ${COMMON}/elf32.c 
+	$(CC) $(DEBUG)  -c ${COMMON}/elf32.c 
 clean:
 	rm *.o 
 

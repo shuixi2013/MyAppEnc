@@ -7,4 +7,7 @@
 #define FIX  1
 #define ERASE 0 
 
+#define BAD32  0xdeadbeef
+#define BAD16  0xbeef
+
 long get_file_len(FILE *p); 

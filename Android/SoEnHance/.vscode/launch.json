@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "SoErase",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "/Users/n/code/jiagu/Android/SoEnHance/SoEraser/NEdit",
+        "args": ["~/Desktop/libnative-lib.so"],
+        "stopAtEntry": true,
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "externalConsole": true,
+        "MIMode": "lldb"
+    }]
+}
