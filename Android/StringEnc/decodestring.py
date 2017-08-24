@@ -138,6 +138,7 @@ def nativenoleak(string):
     data='' 
     for i in string.encode('utf-8') :
         data+=str(i)+','
+    data+="\'\\0\'"
     return data
 def hahah():
     a ="cG5jYUdSPCRjVlZQPCkzRg=="
@@ -147,14 +148,126 @@ def hahah():
         c.append(chr(ord('NPC233'[i%6]) ^ ord(Char) ))
 
     print(''.join(c))
+
 #####################################
 ##
 ##  dexguard
 ## 
 ########################################
-class DexGuard():
-    pass
 
+def encMultiStr(strings):
+    print(strings)
+    encdata= [] 
+    info_encode=[]
+    for string in strings : 
+        string = string.encode().decode("unicode-escape")
+        string = string.encode() # get bytes of string 
+        strlen = len(string)-1
+        data0 = string[0]#ord(string[0])
+        data0 =  data0 if data0 < 127 else string[0]-256
+        last = data0  
+        for xchar in string[1:]:
+            tmp = xchar #ord(xchar)
+            src = xchar 
+            tmp = src + 10 - last
+            last = src
+            tmp = tmp if tmp < 127 else tmp -256
+            assert(tmp <127)
+            encdata.append(tmp)
+        current = len(encdata)-strlen 
+        data=(strlen + 1 -119 , 378-data0 ,current+110)
+        info_encode.append(data)
+
+    return (info_encode,encdata)
+
+#### random it 
+def encMultiStr2(strings):
+
+    randlen = random.randint(100,200)
+    randfirst = random.randint(260,400)
+    randpos = random.randint(100,200)
+    randdec = random.randint(1,12)
+
+    randdata=(randlen,randfirst,randpos,randdec)
+    encdata= [] 
+    info_encode=[]
+    for string in strings : 
+        string = string.encode().decode("unicode-escape")
+        string = string.encode()
+        strlen = len(string)-1
+        data0 = string[0]
+        data0 =  data0 if data0 < 127 else string[0]-256
+        last = data0  
+        for xchar in string[1:]:
+            tmp = xchar 
+            src = xchar 
+            tmp = src + randdec - last
+            last = src
+            tmp = tmp if tmp < 127 else tmp -256
+            assert(tmp <127)
+            encdata.append(tmp)
+        current = len(encdata)-strlen 
+        data=(strlen + 1 -randlen , randfirst-data0 ,current+randpos)
+        info_encode.append(data)
+
+    return (randdata , info_encode,str(encdata).replace('[','{').replace(']','}'))
+
+###################################################
+##################################################
+
+################################
+## key1 xor key 
+## key2 is used to generate second key  
+## key3 .....
+###############################
+
+def generatorRandomKey():
+    key1 = random.randint(0,127)
+    key2 = random.randint(0,127)
+    key3 = random.randint(0,127)
+    return (key1,key2,key3)
+
+
+############################
+## string->byte  
+## byte xor random key
+## random key1,key2,key3 
+###########################
+def encjavamode2(string,key1,key2,key3):
+        #print(string)
+        string=repairestring(string)
+        #print(string)
+        stringx = string.encode().decode("utf-8")
+        stringx = stringx.encode()
+        keyxor = key1 ^ key2
+        result =''
+        data1 = stringx[0] 
+        for index,bb in enumerate(stringx):
+            #print(bb)
+            if index == 0 : 
+                data0 = stringx[0] ^ key3 
+                #data0 = data0 if data0 < 127 else data0-256
+                result+="%0.2x"%(data0)
+            else:
+                data1 = keyxor ^ data1 ^ bb
+                #data1 = data1 if data1 < 127 else data1-256            
+                result+="%0.2x"%(data1)
+        #print(result)
+        return result
+
+    
+#b'\xc3\xa4\xc2\xb8\xc2\xad\xc3\xa5\xc2\x9b\xc2\xbd\xc3\xa8\xc2\xbf\xc2\x87'
+
+
+###########################################################
+##########################################################
+def repairestring(string):
+    if "\\\\" in  string :
+        return string.replace("\\\\","\\")
+    elif "\\n" in string :
+        return string.replace("\\n","\n")
+    else:
+        return string
 
 def is_chinese(data):
     for uchar in data:         
@@ -167,9 +280,10 @@ def getrandomstring(num):
     return ''.join(random.choice(allstring) for x in range(num))
 
 def main():
-    test1="233333"  
-    test2="中国"
-    print(nativenoleak(test1)) 
+    test2="中国过"
+    test1="asdafdsfsd"
+    print(encjavamode2(test2)) 
+    print(encjavamode2(test1))
     #print(nativenoleak(test2.encode('utf-8')))
     #print(base64encode(test4))
     #print(base64encode(test3))

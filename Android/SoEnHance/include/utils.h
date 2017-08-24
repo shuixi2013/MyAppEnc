@@ -9,5 +9,6 @@
 
 #define BAD32  0xdeadbeef
 #define BAD16  0xbeef
+#define BAD64  0xdeadbeefdeadbeef
 
 long get_file_len(FILE *p); 

@@ -17,7 +17,13 @@ public class ProxyApplication extends Application {
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
+
     }
+
+
+    public native void decode() ;
+
+    public native void decode2() ;
 }
 
 

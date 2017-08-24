@@ -18,7 +18,7 @@ int main(int argc, char **argv)
     bool isDealOk = false ; 
     char arr[2048] = {0} ; 
 
-    if( argc <2 )
+    if( argc < 3 )
     {
         puts("arg error");
         return 0 ; 
@@ -50,11 +50,11 @@ int main(int argc, char **argv)
     if(buffer[4] == 0x01)
     {
         puts("32");
-        isDealOk = dealelf32(buffer, flen,ERASE) ; 
+        isDealOk = dealelf32(buffer, flen,ERASE,argv[2]) ; 
     }else if (buffer[4] == 0x01)
     {
         puts("64");
-       // isDealOk = dealelf64(buffer); 
+        isDealOk = dealelf64(buffer,flen,ERASE,argv[2]) ;; 
     }else
     {
         puts(" this is error"); 

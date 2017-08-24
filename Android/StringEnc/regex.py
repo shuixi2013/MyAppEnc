@@ -165,7 +165,7 @@ def dealwithfile(path):
     f=open(path,'r')
     data=f.read() 
     f.close()
-    pattern=r'const-string.*\".*\"'
+    pattern=r'const-string ([vp]\\d{1,2}), \"(.*)\"'
     prog = re.compile(pattern)
     data = prog.sub(dealwithstring , data)
     #print(data)
