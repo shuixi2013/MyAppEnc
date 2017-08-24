@@ -8,13 +8,13 @@ void get_elf64_header(char *buffer, Elf64_Ehdr **pehdr)
     memcpy((void *)*pehdr, (void *)buffer , header_len);
 } 
 
-void get_program64_table(Elf64_Ehdr ehdr , char *buffer ,Elf64_Phdr **pphdr)
+void get_program64_table(Elf64_Ehdr ehdr , char *buffer ,Elf64_Phdr **pphdr,int len)
 {
     memset(*pphdr ,0 ,len) ;
-    memcpy(*pphdr , buffer+ehar.e_phoff ,len) ; 
+    memcpy(*pphdr , buffer+ehdr.e_phoff ,len) ; 
 }
 
-void get_section_table(Elf64_Ehdr *ehdr , char *section , int s_len ,char *buffer)
+void get_section64_table(Elf64_Ehdr *ehdr , char *section , int s_len ,char *buffer)
 {
     long flen = ehdr->e_shoff  ; 
     int sectionNum = ehdr->e_shnum ; 
@@ -33,20 +33,23 @@ bool dealelf64(char *buffer ,long flen, int fix,char *outname)
     get_elf64_header(buffer , &ehdr) ; 
 
     int ph_len = ehdr->e_phentsize * ehdr->e_phnum ; 
-    phdr = (Elf32_Phdr *)malloc(ph_len);
+    phdr = (Elf64_Phdr *)malloc(ph_len);
     get_program64_table(*ehdr , buffer , &phdr,ph_len);
 
     int sh_len = ehdr->e_shentsize * ehdr->e_shnum ; 
     sh_buffer =(char *)malloc(sh_len);
-    get_section_table(ehdr , sh_buffer , sh_len ,buffer);
+    get_section64_table(ehdr , sh_buffer , sh_len ,buffer);
+
+    puts("[+] start encrypt so");
+    startencrypt64();
 
     if(fix == ERASE)
     {
-        Eraser(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer);
+        Eraser64(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer);
     }
     else if(fix == FIX)
     {
-        Fix(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer) ;
+        Fix64(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer) ;
     }
     
     fw = fopen(outname,"wb") ; 
@@ -74,33 +77,105 @@ badend:
 *buffer 文件内容
 */
 
-void Eraser(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr , 
+void Eraser64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr , 
             int p_len , char *section ,int s_len,char *buffer)
 {
+
     long flen = ehdr->e_shoff  ; 
     int sectionNum = ehdr->e_shnum ; 
     int sectionsize = ehdr->e_shentsize ;
-
+    printf("[+]remove section info\n");
     for(int i = 0 ; i < sectionNum ; i++)
     {
-        Elf32_Shdr *shdr = (Elf64_Shdr *)(section + i * sectionsize) ;
-        shdr->sh_addr   =  0x0 ;
-        shdr->sh_offset =  0x0 ;
+        Elf64_Shdr *shdr = (Elf64_Shdr *)(section + i * sectionsize) ;
+        deal64_section(shdr);
     } 
 
-    ehdr->e_shoff = BAD32 ;
-    ehdr->e_shstrndx = 0 ; 
-    ehdr->e_shnum =0 ;
-    ehdr->e_shentsize = BAD16 ; 
+    printf("[+]remove elf header\n");
+    // FOR 7.0 
+    ehdr->e_flags = BAD32 ;
+    ehdr->e_entry |= 0xFF000000 ;
+    //ehdr->e_shoff = BAD32 ;
+    ehdr->e_shstrndx = BAD16; 
+    //ehdr->e_shnum = 60 ;
+    // ehdr->e_shentsize = 30 ; 
     memcpy(buffer, ehdr , sizeof(Elf64_Ehdr)) ; 
     memcpy(buffer+flen , section, s_len) ; 
     
 }
 
 
+void deal64_section(Elf64_Shdr *shdr)
+{
+    // linke will check 
+    // strtab
+    // dynamic
+
+    Elf64_Word  mtype = shdr->sh_type ; 
+    if(mtype == SHT_NULL)
+    {
+        printf("find SHT_NULL\n") ; 
+    }else if (mtype == SHT_SYMTAB)
+    {
+        puts("[+]find SHT_SYMTAB") ; 
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if (mtype == SHT_STRTAB)
+    {
+        puts("[-]find SHT_STRTAB") ; 
+    }else if(mtype == SHT_RELA) 
+    {
+        puts("[+]find SHT_RELA") ;
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ;  
+    }else if (mtype == SHT_HASH)
+    {
+        puts("[+]find SHT_HASH"); 
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if(mtype == SHT_DYNAMIC)
+    {
+        puts("[-]find DYNAMIC"); 
+    }else if(mtype == SHT_PROGBITS)
+    {
+        puts("[+]find SHT_PROGBITS") ;
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if(mtype == SHT_REL)
+    {
+        puts("find SHT_REL");
+       // NEED TO TEST
+       // shdr->sh_addr   =  0x0 ;
+       // shdr->sh_offset =  0x0 ;
+       // shdr->sh_size   =  0x0 ; 
+    
+    }else if(mtype == SHT_GNU_LIBLIST)
+    {
+        puts("[+]find SHT_GNU_LIBLIST") ;
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if(mtype == SHT_NOTE)
+    {
+        puts("[+]find SHT_NOTE"); 
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }
+    
+}
 
 
-void Fix(Elf32_Ehdr *ehdr , Elf32_Phdr *phdr , 
+void startencrypt64()
+{
+
+}
+
+void Fix64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr , 
             int p_len , char *section ,int s_len,char *buffer)
 {
     

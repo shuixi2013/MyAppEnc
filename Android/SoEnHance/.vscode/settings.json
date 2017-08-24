@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "elf.h": "c",
-        "utils.h": "c"
+        "utils.h": "c",
+        "elf64.c": "cpp"
     }
 }

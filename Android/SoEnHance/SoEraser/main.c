@@ -51,10 +51,10 @@ int main(int argc, char **argv)
     {
         puts("32");
         isDealOk = dealelf32(buffer, flen,ERASE,argv[2]) ; 
-    }else if (buffer[4] == 0x01)
+    }else if (buffer[4] == 0x02)
     {
         puts("64");
-        isDealOk = dealelf64(buffer,flen,ERASE,argv[2]) ;; 
+        isDealOk = dealelf64(buffer,flen,ERASE,argv[2]) ;
     }else
     {
         puts(" this is error"); 

@@ -12,3 +12,4 @@
 #define BAD64  0xdeadbeefdeadbeef
 
 long get_file_len(FILE *p); 
+void encode(char *buffer , int len);

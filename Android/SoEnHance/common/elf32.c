@@ -40,7 +40,10 @@ bool dealelf32(char *buffer ,long flen, int fix,char *outname)
     int sh_len = ehdr->e_shentsize * ehdr->e_shnum ; 
     sh_buffer =(char *)malloc(sh_len);
     get_section_table(ehdr , sh_buffer , sh_len ,buffer);
-
+    
+    puts("start encrypt so");
+    startencrypt();
+    
     if(fix == ERASE)
     {
         Eraser(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer);
@@ -82,22 +85,93 @@ void Eraser(Elf32_Ehdr *ehdr , Elf32_Phdr *phdr ,
     int sectionNum = ehdr->e_shnum ; 
     int sectionsize = ehdr->e_shentsize ;
 
+
     for(int i = 0 ; i < sectionNum ; i++)
     {
         Elf32_Shdr *shdr = (Elf32_Shdr *)(section + i * sectionsize) ;
-        shdr->sh_addr   =  0x0 ;
-        shdr->sh_offset =  0x0 ;
+        deal_section(shdr);
     } 
-
-    ehdr->e_shoff = BAD32 ;
-    ehdr->e_shstrndx = 0 ; 
-    ehdr->e_shnum =0 ;
-    ehdr->e_shentsize = BAD16 ; 
+    
+    // FOR 7.0 
+    ehdr->e_flags = BAD32 ;
+    ehdr->e_entry |= 0xFF000000 ;
+    //ehdr->e_shoff = BAD32 ;
+    ehdr->e_shstrndx = BAD16; 
+    //ehdr->e_shnum = 60 ;
+    // ehdr->e_shentsize = 30 ; 
     memcpy(buffer, ehdr , sizeof(Elf32_Ehdr)) ; 
     memcpy(buffer+flen , section, s_len) ; 
     
 }
 
+void deal_section(Elf32_Shdr *shdr)
+{
+    // linke will check 
+    // strtab
+    // dynamic
+
+    Elf64_Word  mtype = shdr->sh_type ; 
+    if(mtype == SHT_NULL)
+    {
+        printf("find SHT_NULL\n") ; 
+    }else if (mtype == SHT_SYMTAB)
+    {
+        puts("[+]find SHT_SYMTAB") ; 
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if (mtype == SHT_STRTAB)
+    {
+        puts("[-]find SHT_STRTAB") ; 
+    }else if(mtype == SHT_RELA) 
+    {
+        puts("[+]find SHT_RELA") ;
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ;  
+    }else if (mtype == SHT_HASH)
+    {
+        puts("[+]find SHT_HASH"); 
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if(mtype == SHT_DYNAMIC)
+    {
+        puts("[-]find DYNAMIC"); 
+    }else if(mtype == SHT_PROGBITS)
+    {
+        puts("[+]find SHT_PROGBITS") ;
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if(mtype == SHT_REL)
+    {
+        puts("find SHT_REL");
+       // NEED TO TEST
+       // shdr->sh_addr   =  0x0 ;
+       // shdr->sh_offset =  0x0 ;
+       // shdr->sh_size   =  0x0 ; 
+    
+    }else if(mtype == SHT_GNU_LIBLIST)
+    {
+        puts("[+]find SHT_GNU_LIBLIST") ;
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }else if(mtype == SHT_NOTE)
+    {
+        puts("[+]find SHT_NOTE"); 
+        shdr->sh_addr   =  0x0 ;
+        shdr->sh_offset =  0x0 ;
+        shdr->sh_size   =  0x0 ; 
+    }
+    
+}
+
+void startencrypt()
+{
+
+}
 
 void Fix(Elf32_Ehdr *ehdr , Elf32_Phdr *phdr , 
             int p_len , char *section ,int s_len,char *buffer)
