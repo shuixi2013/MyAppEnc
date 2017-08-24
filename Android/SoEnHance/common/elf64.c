@@ -28,16 +28,19 @@ bool dealelf64(char *buffer ,long flen, int fix,char *outname)
     FILE *fw = NULL ; 
     long ret = 0 ; 
     Elf64_Ehdr *ehdr = (Elf64_Ehdr *)malloc(sizeof(Elf64_Ehdr)) ; 
+    if(ehdr == NULL) goto badend ; 
     Elf64_Phdr *phdr = NULL ;  
     char *sh_buffer = NULL ; 
     get_elf64_header(buffer , &ehdr) ; 
 
     int ph_len = ehdr->e_phentsize * ehdr->e_phnum ; 
     phdr = (Elf64_Phdr *)malloc(ph_len);
+    if(phdr == NULL) goto badend ;
     get_program64_table(*ehdr , buffer , &phdr,ph_len);
 
     int sh_len = ehdr->e_shentsize * ehdr->e_shnum ; 
     sh_buffer =(char *)malloc(sh_len);
+    if(sh_buffer == NULL) goto badend; 
     get_section64_table(ehdr , sh_buffer , sh_len ,buffer);
 
     puts("[+] start encrypt so");
@@ -61,6 +64,9 @@ bool dealelf64(char *buffer ,long flen, int fix,char *outname)
 
     ret = fwrite(buffer, sizeof(char) * flen , 1 , fw) ;
     fclose(fw);
+    free(ehdr); 
+    free(phdr);
+    free(sh_buffer);
     return true ;
 
 badend:
@@ -88,6 +94,15 @@ void Eraser64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr ,
     for(int i = 0 ; i < sectionNum ; i++)
     {
         Elf64_Shdr *shdr = (Elf64_Shdr *)(section + i * sectionsize) ;
+        if (shdr->sh_type == SHT_STRTAB)
+        {
+            if(shdr->sh_addr == 0x0 && shdr->sh_offset != 0x0)
+            {
+                puts("[+]find shstrtable ,start modify"); 
+                modifystrtable64(shdr->sh_offset , shdr->sh_size,buffer);
+            }
+            continue;
+        }
         deal64_section(shdr);
     } 
 
@@ -96,12 +111,32 @@ void Eraser64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr ,
     ehdr->e_flags = BAD32 ;
     ehdr->e_entry |= 0xFF000000 ;
     //ehdr->e_shoff = BAD32 ;
-    ehdr->e_shstrndx = BAD16; 
+    //ehdr->e_shstrndx = BAD16; 
     //ehdr->e_shnum = 60 ;
     // ehdr->e_shentsize = 30 ; 
     memcpy(buffer, ehdr , sizeof(Elf64_Ehdr)) ; 
     memcpy(buffer+flen , section, s_len) ; 
     
+}
+
+void modifystrtable64(uint64_t off,uint64_t size , char *buffer)
+{
+    char *strstart = buffer+off  ; 
+    char *data = (char *)malloc(size) ; 
+    if(data == NULL)
+        data = (char *)malloc(size) ;  
+    FILE *fp ; 
+    fp =fopen("/dev/urandom","r"); 
+    if(NULL == fp)
+    {
+        puts("[-]error open /dev/urandom");
+        return ;
+    }
+    fread(data , size , 1 , fp) ;
+    data[size-1]='\0' ; 
+    fclose(fp);
+    memcpy(strstart , data ,size);
+
 }
 
 
@@ -121,9 +156,6 @@ void deal64_section(Elf64_Shdr *shdr)
         shdr->sh_addr   =  0x0 ;
         shdr->sh_offset =  0x0 ;
         shdr->sh_size   =  0x0 ; 
-    }else if (mtype == SHT_STRTAB)
-    {
-        puts("[-]find SHT_STRTAB") ; 
     }else if(mtype == SHT_RELA) 
     {
         puts("[+]find SHT_RELA") ;

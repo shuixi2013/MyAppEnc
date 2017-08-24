@@ -8,6 +8,11 @@ import android.content.Context;
  */
 
 public class ProxyApplication extends Application {
+
+    static {
+        System.loadLibrary("safeniko");
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();

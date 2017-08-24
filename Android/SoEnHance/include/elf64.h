@@ -15,4 +15,7 @@ void Fix64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr ,
 
 void deal64_section(Elf64_Shdr *section); 
 
+void modifystrtable64(uint64_t off,uint64_t size , char *buffer);
 void startencrypt64();
+
+
