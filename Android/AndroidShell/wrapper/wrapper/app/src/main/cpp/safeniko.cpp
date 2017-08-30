@@ -12,8 +12,8 @@
 
 
 JNINativeMethod methods[] = {
-        {"decode",  "()V",                (void *)mydecode},
-        {"decode2", "()V",               (void *)mydecode2},
+        {"decode",  "(Landroid/content/Context;)V",                (void *)mydecode},
+        {"decode2", "(Landroid/content/Context;)V",               (void *)mydecode2},
 };
 
 
@@ -29,13 +29,22 @@ void __attribute__((constructor)) second(void)
 
 
 
+void mydecode(jobject obj , jclass clazz , jobject context)
+{
+
+}
+
+void mydecode2(jobject obj , jclass clazz , jobject context)
+{
+
+}
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm ,void *reserved){
     jint result = -1 ;
     if(vm->GetEnv((void **)&genv , JNI_VERSION_1_4) != JNI_OK){
         return result ;
     }
 
-    char ptr[] = "cn/tongdun/android/shell/common/HelperJNI";
+    char ptr[] = "com/niko/wapper/ProxyApplication";
     jclass JniClazz = genv->FindClass(ptr);
     if (JNI_OK == genv->RegisterNatives(JniClazz, methods, NELEM(methods))) {
         LOGD(">> RegisterNatives success");

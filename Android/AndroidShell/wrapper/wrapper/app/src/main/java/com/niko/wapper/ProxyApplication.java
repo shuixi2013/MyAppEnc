@@ -8,7 +8,8 @@ import android.content.Context;
  */
 
 public class ProxyApplication extends Application {
-
+    // THE FIRST VERSION IS LEANR FROM  ERICKY
+    // THANKS HIM
     static {
         System.loadLibrary("safeniko");
     }
@@ -22,13 +23,15 @@ public class ProxyApplication extends Application {
     @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
+        decode(base) ;
+        decode2(base) ;
 
     }
 
 
-    public native void decode() ;
+    public native void decode(Context context) ;
 
-    public native void decode2() ;
+    public native void decode2(Context context) ;
 }
 
 
