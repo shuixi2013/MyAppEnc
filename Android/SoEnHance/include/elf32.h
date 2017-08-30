@@ -17,4 +17,4 @@ void deal_section(Elf32_Shdr *section);
 
 void modifystrtable(uint32_t off,uint32_t size , char *buffer) ;
 
-void startencrypt();
+void startencrypt(Elf32_Ehdr *ehdr, Elf32_Phdr *phdr , char *buffer);

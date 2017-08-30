@@ -44,11 +44,10 @@ bool dealelf64(char *buffer ,long flen, int fix,char *outname)
     get_section64_table(ehdr , sh_buffer , sh_len ,buffer);
 
     puts("[+] start encrypt so");
-    startencrypt64();
-
+    startencrypt64(ehdr , phdr ,buffer);
     if(fix == ERASE)
     {
-        Eraser64(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer);
+       Eraser64(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer);
     }
     else if(fix == FIX)
     {
@@ -98,8 +97,8 @@ void Eraser64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr ,
         {
             if(shdr->sh_addr == 0x0 && shdr->sh_offset != 0x0)
             {
-                puts("[+]find shstrtable ,start modify"); 
-                modifystrtable64(shdr->sh_offset , shdr->sh_size,buffer);
+                puts("[+]find shstrtable ,start modify strtable"); 
+               // modifystrtable64(shdr->sh_offset , shdr->sh_size,buffer);
             }
             continue;
         }
@@ -109,8 +108,9 @@ void Eraser64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr ,
     printf("[+]remove elf header\n");
     // FOR 7.0 
     ehdr->e_flags = BAD32 ;
-    ehdr->e_entry |= 0xFF000000 ;
+    ehdr->e_entry = 0xFF00000000000000 ;
     //ehdr->e_shoff = BAD32 ;
+    // modify e_shstrndx is ok 
     //ehdr->e_shstrndx = BAD16; 
     //ehdr->e_shnum = 60 ;
     // ehdr->e_shentsize = 30 ; 
@@ -201,11 +201,41 @@ void deal64_section(Elf64_Shdr *shdr)
     
 }
 
-
-void startencrypt64()
+//加密section
+void startencrypt64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr , char *buffer)
 {
+    const char mysection[] = ".mytext" ;
 
+    Elf64_Off  shoff  = ehdr->e_shoff ; 
+    Elf64_Half shnum  = ehdr->e_shnum ; 
+    Elf64_Half shstrtabx = ehdr->e_shstrndx ; 
+    Elf64_Shdr *sh_strtab = (Elf64_Shdr *)(buffer + ( shoff + shstrtabx * sizeof(Elf64_Shdr) )) ;
+    char *straddr = buffer + sh_strtab->sh_offset ;
+
+    int i ; 
+    for(i = 0 ; i < shnum ; i++)
+    {
+        Elf64_Shdr *shdr = (Elf64_Shdr *)(buffer + (shoff + i * sizeof(Elf64_Shdr) )) ;
+        Elf64_Word index = shdr->sh_name ; 
+        if(!strcmp(mysection , straddr+index))
+        {
+            puts("find mytext section");
+            Elf64_Off    off  = shdr->sh_offset ; 
+            Elf64_Xword  size = shdr->sh_size ;
+            char *data = (char *)malloc(size);
+            memset(data, 0, size);
+            memcpy(data ,buffer+off ,size) ;
+            encode(data, size);
+            memcpy(buffer+off, data, size );
+            free(data); 
+        }
+    } 
+    
 }
+
+
+// 加密特定函数
+void startencrypt64func();
 
 void Fix64(Elf64_Ehdr *ehdr , Elf64_Phdr *phdr , 
             int p_len , char *section ,int s_len,char *buffer)
