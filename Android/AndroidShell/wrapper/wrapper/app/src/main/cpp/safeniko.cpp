@@ -29,15 +29,17 @@ void __attribute__((constructor)) second(void)
 
 
 
-void mydecode(jobject obj , jclass clazz , jobject context)
+void mydecode(JNIEnv *env , jobject obj , jclass clazz , jobject context)
 {
 
 }
 
-void mydecode2(jobject obj , jclass clazz , jobject context)
+void mydecode2(JNIEnv *env, jobject obj , jclass clazz , jobject context)
 {
-
+    jclass native_class = env->GetObjectClass(context) ;
 }
+
+
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm ,void *reserved){
     jint result = -1 ;
     if(vm->GetEnv((void **)&genv , JNI_VERSION_1_4) != JNI_OK){

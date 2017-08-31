@@ -9,8 +9,8 @@ void __attribute__((constructor)) first(void);
 void __attribute__((constructor)) second(void);
 
 
-void mydecode(jobject obj , jclass clazz , jobject context);
-void mydecode2(jobject obj , jclass clazz , jobject context);
+void mydecode(JNIEnv *env , jobject obj , jclass clazz , jobject context);
+void mydecode2(JNIEnv *env ,jobject obj , jclass clazz , jobject context);
 
 
 JNIEnv *genv ;

@@ -5,22 +5,25 @@
 #ifndef WRAPPER_SAFEUTILS_H
 #define WRAPPER_SAFEUTILS_H
 #include <jni.h>
+#include <string.h>
+#include <android/log.h>
 
 # define NELEM(x) ((int) (sizeof(x) / sizeof((x)[0])))
 
+#define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG ,"safeniko", __VA_ARGS__)
 
 jstring charToJstring(JNIEnv *env , char *str);
-jobject invokeStaticMethod(JNIEnv *env , jstring class_name ,
-                           jstring method,jobjectArray type , jobjectArray param);
+jobject invokeStaticMethod(JNIEnv *env , char *class_name ,
+                           char *method,jobjectArray type , jobjectArray param);
 
-jobject getField(JNIEnv *env , jstring class_name ,jobject obj ,jstring fieldname );
-jobject getStaticField(JNIEnv *env , jstring class_name  ,jstring fieldname);
+jobject getField(JNIEnv *env , char * class_name ,jobject obj ,char *fieldname ,char *type);
+jobject getStaticField(JNIEnv *env , char * class_name  ,char * fieldname, char * type);
 
-void    setFild(JNIEnv *env , jstring class_name ,jstring filedname ,jobject obj) ;
-void    setStaticFiled(JNIEnv *env , jstring class_name , jstring fieldname);
+void    setFiled(JNIEnv *env , char * class_name ,char * filedname ,jobject obj) ;
+void    setStaticField(JNIEnv *env , char * class_name , char * fieldname);
 
 
-jobject newObject(JNIEnv *env , jstring class_name);
+jobject newObject(JNIEnv *env , char * class_name);
 
 
 
