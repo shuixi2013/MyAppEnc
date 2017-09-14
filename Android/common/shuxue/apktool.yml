@@ -1,0 +1,30 @@
+!!b.a.b.a
+apkFileName: shuxue.apk
+compressionType: false
+decodeFileMaps: null
+dexMaps: null
+doNotCompress:
+- resources.arsc
+- assets/.appkey
+- assets/libjiagu_ls.so
+- lib/armeabi/libjiagu_art.so
+- lib/x86/libjiagu_art.so
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '22'
+shakaVer: 3.0.0-master-f1e0a9f-20160905
+sharedLibrary: false
+unknownFiles:
+  META-INF/MANIFEST.MF: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.2-SNAPSHOT-master-64644a1
+versionInfo:
+  versionCode: '36'
+  versionName: '36.1'

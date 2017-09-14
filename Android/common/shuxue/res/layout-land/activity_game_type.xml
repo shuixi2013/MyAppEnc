@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayoutAlertDialogGame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+            <TextView android:id="@id/tv_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/activity_game_tv_level" style="?theme_activity_game_tv_level" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="55.0" style="?theme_activity_game_ll_expression">
+            <ImageButton android:id="@id/ibUp" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="center" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_b_arrow_up" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <EditText android:textSize="@dimen/theme_activity_tricks_tv_trick" android:gravity="center" android:id="@id/etNumber" android:layout_width="134.0dip" android:layout_height="wrap_content" android:text="0" android:ems="10" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:inputType="number" style="?theme_et" />
+                <ImageButton android:id="@id/ib_lb_max_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/etNumber" android:layout_centerVertical="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" android:layout_toEndOf="@id/etNumber" style="?theme_activity_main_b_leaderboard" />
+            </RelativeLayout>
+            <ImageButton android:id="@id/ibDown" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="center" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_b_arrow_down" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="45.0">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/button_alert_dialog_game_single" android:layout_width="@dimen/alert_dialog_theme_b_width" android:layout_height="wrap_content" android:text="@string/alert_dialog_game_b_single" style="?theme_b_to_the_bitter_end" />
+                <ImageButton android:id="@id/ibGraphSingle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/buttonTeamwise" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_graph" />
+                <ImageButton android:id="@id/ad_game_ib_lb_single" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_main_b_leaderboard" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/button_alert_dialog_game_minute" android:layout_width="@dimen/alert_dialog_theme_b_width" android:layout_height="wrap_content" android:text="@string/alert_dialog_game_b_minute" style="?theme_b_minute_challenge" />
+                <ImageButton android:id="@id/ibGraphMinute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/buttonTeamwise" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_graph" />
+                <ImageButton android:id="@id/ad_game_ib_lb_minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_main_b_leaderboard" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/button_alert_dialog_game_time" android:layout_width="@dimen/alert_dialog_theme_b_width" android:layout_height="wrap_content" android:text="@string/alert_dialog_game_b_time" style="?theme_b_speed_challenge" />
+                <ImageButton android:id="@id/ibGraphTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/buttonTeamwise" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_graph" />
+                <ImageButton android:id="@id/ad_game_ib_lb_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_main_b_leaderboard" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/button_alert_dialog_game_not_time" android:layout_width="@dimen/alert_dialog_theme_b_width" android:layout_height="wrap_content" android:text="@string/alert_dialog_game_b_not_time" style="?theme_b_non_time" />
+                <ImageButton android:id="@id/ibGraphNotTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/buttonTeamwise" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_graph" />
+                <ImageButton android:id="@id/ad_game_ib_lb_no_time_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_main_b_leaderboard" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_game_type" />
+</LinearLayout>

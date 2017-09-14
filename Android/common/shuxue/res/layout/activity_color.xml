@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llColorPicker" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="10.0">
+                <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/option_theme" style="?theme_activity_game_tv_level" />
+            </LinearLayout>
+            <TextView android:gravity="center|right" android:id="@id/tv_color_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="---" android:layout_weight="15.0" style="?theme_activity_game_tv_trick_name" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/ib_theme_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/theme_light_image" style="?theme_ib_arrow_back_activity" />
+                    <CheckBox android:id="@id/cb_theme_light" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_activity_tricks_cb" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/ib_theme_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/theme_dark_image" style="?theme_ib_arrow_back_activity" />
+                    <CheckBox android:id="@id/cb_theme_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_activity_tricks_cb" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression">
+                <ImageButton android:id="@id/ib_head_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_head_01" style="?theme_ib_arrow_back_activity" />
+                <CheckBox android:id="@id/cb_head_color" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_activity_tricks_cb" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_red_1" android:tag="a30303" android:background="#ffa30303" style="@style/b_color" />
+                        <Button android:id="@id/b_red_2" android:tag="B71C1C" android:background="#ffb71c1c" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_pink_1" android:tag="880E4F" android:background="#ff880e4f" style="@style/b_color" />
+                        <Button android:id="@id/b_pink_2" android:tag="AD1457" android:background="#ffad1457" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_orange_1" android:tag="BF360C" android:background="#ffbf360c" style="@style/b_color" />
+                        <Button android:id="@id/b_orange_2" android:tag="ba6700" android:background="#ffba6700" style="@style/b_color" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_purple_1" android:tag="4A148C" android:background="#ff4a148c" style="@style/b_color" />
+                        <Button android:id="@id/b_purple_2" android:tag="6A1B9A" android:background="#ff6a1b9a" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_deep_purple_1" android:tag="311B92" android:background="#ff311b92" style="@style/b_color" />
+                        <Button android:id="@id/b_deep_purple_2" android:tag="4527A0" android:background="#ff4527a0" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_indigo_1" android:tag="283593" android:background="#ff283593" style="@style/b_color" />
+                        <Button android:id="@id/b_indigo_2" android:tag="3F51B5" android:background="#ff3f51b5" style="@style/b_color" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_blue_1" android:tag="0D47A1" android:background="#ff0d47a1" style="@style/b_color" />
+                        <Button android:id="@id/b_blue_2" android:tag="1565C0" android:background="#ff1565c0" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_light_blue_1" android:tag="01579B" android:background="#ff01579b" style="@style/b_color" />
+                        <Button android:id="@id/b_light_blue_2" android:tag="0277BD" android:background="#ff0277bd" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_cyan_1" android:tag="006064" android:background="#ff006064" style="@style/b_color" />
+                        <Button android:id="@id/b_cyan_2" android:tag="00838F" android:background="#ff00838f" style="@style/b_color" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_teal_1" android:tag="004D40" android:background="#ff004d40" style="@style/b_color" />
+                        <Button android:id="@id/b_teal_2" android:tag="00695C" android:background="#ff00695c" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_green_1" android:tag="1B5E20" android:background="#ff1b5e20" style="@style/b_color" />
+                        <Button android:id="@id/b_green_2" android:tag="2E7D32" android:background="#ff2e7d32" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_light_green_1" android:tag="33691E" android:background="#ff33691e" style="@style/b_color" />
+                        <Button android:id="@id/b_light_green_2" android:tag="558B2F" android:background="#ff558b2f" style="@style/b_color" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_brown_1" android:tag="4E342E" android:background="#ff4e342e" style="@style/b_color" />
+                        <Button android:id="@id/b_brown_2" android:tag="773500" android:background="#ff773500" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_grey_1" android:tag="212121" android:background="#ff212121" style="@style/b_color" />
+                        <Button android:id="@id/b_grey_2" android:tag="424242" android:background="#ff424242" style="@style/b_color" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                        <Button android:id="@id/b_blue_grey_1" android:tag="787878" android:background="#ff787878" style="@style/b_color" />
+                        <Button android:id="@id/b_blue_grey_2" android:tag="bdbdbd" android:background="#ffbdbdbd" style="@style/b_color" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/ib_select" style="?theme_ib_arrow_next" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_color_picker" />
+</LinearLayout>

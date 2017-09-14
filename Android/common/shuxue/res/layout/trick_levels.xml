@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout1" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@id/tv_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_b_one" style="?theme_activity_tricks_tv_trick" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_score" style="@style/theme_light_bg_level">
+                    <TextView android:gravity="center" android:id="@id/tv_score" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="999" style="?theme_activity_tricks_tv_trick" />
+                </LinearLayout>
+                <ImageView android:id="@id/iv_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_light_b_star_0" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

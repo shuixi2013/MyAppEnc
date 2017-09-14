@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/LinearLayout1" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_light_b_settings_sound" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textStyle="normal" android:id="@id/tv_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_b_one" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?theme_activity_tricks_tv_trick" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textStyle="normal" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_b_one" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?theme_activity_tricks_tv_trick" />
+            </LinearLayout>
+            <CheckBox android:id="@id/cbNotification" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?theme_activity_tricks_cb" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="theme_dark" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@color/cl_th_dark_ll_head_bar</item>
+        <item name="android:colorPrimaryDark">@color/cl_th_dark_ll_head_bar</item>
+        <item name="android:colorAccent">@color/cl_th_dark_ll_head_bar</item>
+        <item name="th_ib_graph_head">@style/th_dark_ib_graph_head</item>
+        <item name="th_ib_leaderboard_head">@style/th_dark_ib_leaderboard_head</item>
+        <item name="th_ib_shop">@style/th_dark_ib_shop</item>
+        <item name="theme_activity_background">@android:color/transparent</item>
+        <item name="theme_activity_game_b_backspace">@style/theme_dark_activity_game_b_backspace</item>
+        <item name="theme_activity_game_b_hint">@style/theme_dark_activity_game_b_hint</item>
+        <item name="theme_activity_game_b_hint_solution">@style/theme_dark_activity_game_b_hint_solution</item>
+        <item name="theme_activity_game_b_numbers">@style/theme_dark_activity_game_b_numbers</item>
+        <item name="theme_activity_game_ll_expression">@style/theme_dark_activity_game_ll_expression</item>
+        <item name="theme_activity_game_ll_expression_elv_group">@style/theme_dark_activity_game_ll_expression_elv_group</item>
+        <item name="theme_activity_game_ll_expression_lvl">@style/theme_dark_activity_game_ll_expression_lvl</item>
+        <item name="theme_activity_game_ll_expression_tv">@style/theme_dark_activity_game_ll_expression_tv</item>
+        <item name="theme_activity_game_ll_head">@style/theme_dark_activity_game_ll_head</item>
+        <item name="theme_activity_game_ll_head_shadow">@style/theme_dark_activity_game_ll_head_shadow</item>
+        <item name="theme_activity_game_pb_time">@style/theme_dark_activity_game_pb_time</item>
+        <item name="theme_activity_game_tv_expression">@style/theme_dark_activity_game_tv_expression</item>
+        <item name="theme_activity_game_tv_expressions_count">@style/theme_dark_activity_game_tv_expressions_count</item>
+        <item name="theme_activity_game_tv_level">@style/theme_dark_activity_game_tv_level</item>
+        <item name="theme_activity_game_tv_score">@style/theme_dark_activity_game_tv_score</item>
+        <item name="theme_activity_game_tv_trick_name">@style/theme_dark_activity_game_tv_trick_name</item>
+        <item name="theme_activity_levels_b_levels">@style/theme_dark_activity_levels_b_levels</item>
+        <item name="theme_activity_main_b_leaderboard">@style/theme_dark_activity_main_b_leaderboard</item>
+        <item name="theme_activity_main_b_rate">@style/theme_dark_activity_main_b_rate</item>
+        <item name="theme_activity_main_b_support">@style/theme_dark_activity_main_b_support</item>
+        <item name="theme_activity_music_b_add">@style/theme_dark_activity_music_b_add</item>
+        <item name="theme_activity_music_b_delete">@style/theme_dark_activity_music_b_delete</item>
+        <item name="theme_activity_music_b_volume_down_fast">@style/theme_dark_activity_music_b_volume_down_fast</item>
+        <item name="theme_activity_music_b_volume_down_slow">@style/theme_dark_activity_music_b_volume_down_slow</item>
+        <item name="theme_activity_music_b_volume_normal">@style/theme_dark_activity_music_b_volume_normal</item>
+        <item name="theme_activity_music_b_volume_off">@style/theme_dark_activity_music_b_volume_off</item>
+        <item name="theme_activity_tricks_cb">@style/theme_dark_cb</item>
+        <item name="theme_activity_tricks_cb_all">@style/theme_dark_cb_all</item>
+        <item name="theme_activity_tricks_elv_tricks">@style/theme_dark_activity_tricks_elv_tricks</item>
+        <item name="theme_activity_tricks_lv_tricks">@style/theme_dark_activity_tricks_lv_tricks</item>
+        <item name="theme_activity_tricks_tv_trick">@style/theme_dark_activity_tricks_tv_trick</item>
+        <item name="theme_alert_dialog_b">@style/theme_dark_alert_dialog_b</item>
+        <item name="theme_alert_dialog_l">@style/theme_dark_alert_dialog_l</item>
+        <item name="theme_alert_dialog_level_complete_tv_score">@style/theme_dark_alert_dialog_level_complete_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score">@style/theme_dark_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score_max">@style/theme_dark_alert_dialog_timer_end_tv_score_max</item>
+        <item name="theme_alert_dialog_timer_end_tv_solution">@style/theme_dark_alert_dialog_timer_end_tv_solution</item>
+        <item name="theme_b_arrow_down">@style/theme_dark_b_arrow_down</item>
+        <item name="theme_b_arrow_down_head">@style/theme_dark_b_arrow_down_head</item>
+        <item name="theme_b_arrow_up">@style/theme_dark_b_arrow_up</item>
+        <item name="theme_b_arrow_up_head">@style/theme_dark_b_arrow_up_head</item>
+        <item name="theme_b_back">@style/theme_dark_b_back</item>
+        <item name="theme_b_bg_numpad">@style/theme_dark_b_bg_numpad</item>
+        <item name="theme_b_by_heart">@style/theme_dark_b_by_heart</item>
+        <item name="theme_b_get_invitation">@style/theme_dark_b_get_invitation</item>
+        <item name="theme_b_graph">@style/theme_dark_b_graph</item>
+        <item name="theme_b_minute_challenge">@style/theme_dark_b_minute_challenge</item>
+        <item name="theme_b_money_buy">@style/theme_dark_b_money_buy</item>
+        <item name="theme_b_money_total">@style/theme_dark_b_money_total</item>
+        <item name="theme_b_multiplayer">@style/theme_dark_b_multiplayer</item>
+        <item name="theme_b_non_time">@style/theme_dark_b_non_time</item>
+        <item name="theme_b_rtm_defeat">@style/theme_dark_b_rtm_defeat</item>
+        <item name="theme_b_rtm_victory">@style/theme_dark_b_rtm_victory</item>
+        <item name="theme_b_set_invitation">@style/theme_dark_b_set_invitation</item>
+        <item name="theme_b_settings">@style/theme_dark_b_settings</item>
+        <item name="theme_b_single_player">@style/theme_dark_b_single_player</item>
+        <item name="theme_b_speed_challenge">@style/theme_dark_b_speed_challenge</item>
+        <item name="theme_b_to_the_bitter_end">@style/theme_dark_b_to_the_bitter_end</item>
+        <item name="theme_b_training">@style/theme_dark_b_training</item>
+        <item name="theme_b_training_one_player">@style/theme_dark_b_training_one_player</item>
+        <item name="theme_b_training_two_players">@style/theme_dark_b_training_two_players</item>
+        <item name="theme_b_two_players">@style/theme_dark_b_two_players</item>
+        <item name="theme_et">@style/theme_dark_et</item>
+        <item name="theme_ib_arrow_back">@style/theme_dark_ib_arrow_back</item>
+        <item name="theme_ib_arrow_back_activity">@style/theme_dark_ib_arrow_back_activity</item>
+        <item name="theme_ib_arrow_next">@style/theme_dark_ib_arrow_next</item>
+        <item name="theme_ib_arrow_retry">@style/theme_dark_ib_arrow_retry</item>
+        <item name="theme_ib_numpad_change_block">@style/theme_dark_ib_numpad_change_block</item>
+        <item name="theme_ib_numpad_change_bool">@style/theme_dark_ib_numpad_change_bool</item>
+        <item name="theme_ib_numpad_change_numpad">@style/theme_dark_ib_numpad_change_numpad</item>
+        <item name="theme_ib_point">@style/theme_dark_ib_point</item>
+        <item name="theme_ib_today_reload">@style/theme_dark_ib_today_reload</item>
+        <item name="theme_ib_youtube_head">@style/theme_dark_ib_youtube_head</item>
+        <item name="theme_iv_rate_star">@style/theme_dark_iv_rate_star</item>
+        <item name="theme_ll_solution">@style/theme_dark_ll_solution</item>
+    </style>
+    <style name="theme_dark_ad" parent="@style/theme_light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="theme_dark_ad_fullscreen" parent="@style/theme_light_ad">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="theme_dark_b" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_dark_b_text</item>
+        <item name="android:background">@drawable/dr_th_dark_b_background</item>
+        <item name="android:stateListAnimator">@anim/anim_ib_elevation</item>
+    </style>
+    <style name="theme_dark_b_head" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_dark_head_b_text</item>
+        <item name="android:background">@drawable/dr_th_dark_b_background</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="theme_dark_elv" parent="@android:style/Widget.Material.ExpandableListView">
+        <item name="android:listSelector">@drawable/dr_th_dark_lv_selector</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:groupIndicator">@drawable/theme_dark_elv_group_indicator</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">2.0dip</item>
+    </style>
+    <style name="theme_dark_ib" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+        <item name="android:stateListAnimator">@anim/anim_ib_elevation</item>
+    </style>
+    <style name="theme_dark_lv" parent="@android:style/Widget.Material.ListView">
+        <item name="android:listSelector">@drawable/dr_th_dark_lv_selector</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="theme_light" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorPrimary">@color/cl_th_light_ll_head_bar</item>
+        <item name="android:colorPrimaryDark">@color/cl_th_light_ll_head_bar</item>
+        <item name="android:colorAccent">@color/cl_th_light_ll_head_bar</item>
+        <item name="th_ib_graph_head">@style/th_light_ib_graph_head</item>
+        <item name="th_ib_leaderboard_head">@style/th_light_ib_leaderboard_head</item>
+        <item name="th_ib_shop">@style/th_light_ib_shop</item>
+        <item name="theme_activity_background">@android:color/transparent</item>
+        <item name="theme_activity_game_b_backspace">@style/theme_light_activity_game_b_backspace</item>
+        <item name="theme_activity_game_b_hint">@style/theme_light_activity_game_b_hint</item>
+        <item name="theme_activity_game_b_hint_solution">@style/theme_light_activity_game_b_hint_solution</item>
+        <item name="theme_activity_game_b_numbers">@style/theme_light_activity_game_b_numbers</item>
+        <item name="theme_activity_game_ll_expression">@style/theme_light_activity_game_ll_expression</item>
+        <item name="theme_activity_game_ll_expression_elv_group">@style/theme_light_activity_game_ll_expression_elv_group</item>
+        <item name="theme_activity_game_ll_expression_lvl">@style/theme_light_activity_game_ll_expression_lvl</item>
+        <item name="theme_activity_game_ll_expression_tv">@style/theme_light_activity_game_ll_expression_tv</item>
+        <item name="theme_activity_game_ll_head">@style/theme_light_activity_game_ll_head</item>
+        <item name="theme_activity_game_ll_head_shadow">@style/theme_light_activity_game_ll_head_shadow</item>
+        <item name="theme_activity_game_pb_time">@style/theme_light_activity_game_pb_time</item>
+        <item name="theme_activity_game_tv_expression">@style/theme_light_activity_game_tv_expression</item>
+        <item name="theme_activity_game_tv_expressions_count">@style/theme_light_activity_game_tv_expressions_count</item>
+        <item name="theme_activity_game_tv_level">@style/theme_light_activity_game_tv_level</item>
+        <item name="theme_activity_game_tv_score">@style/theme_light_activity_game_tv_score</item>
+        <item name="theme_activity_game_tv_trick_name">@style/theme_light_activity_game_tv_trick_name</item>
+        <item name="theme_activity_levels_b_levels">@style/theme_light_activity_levels_b_levels</item>
+        <item name="theme_activity_main_b_leaderboard">@style/theme_light_activity_main_b_leaderboard</item>
+        <item name="theme_activity_main_b_rate">@style/theme_light_activity_main_b_rate</item>
+        <item name="theme_activity_main_b_support">@style/theme_light_activity_main_b_support</item>
+        <item name="theme_activity_music_b_add">@style/theme_light_activity_music_b_add</item>
+        <item name="theme_activity_music_b_delete">@style/theme_light_activity_music_b_delete</item>
+        <item name="theme_activity_music_b_volume_down_fast">@style/theme_light_activity_music_b_volume_down_fast</item>
+        <item name="theme_activity_music_b_volume_down_slow">@style/theme_light_activity_music_b_volume_down_slow</item>
+        <item name="theme_activity_music_b_volume_normal">@style/theme_light_activity_music_b_volume_normal</item>
+        <item name="theme_activity_music_b_volume_off">@style/theme_light_activity_music_b_volume_off</item>
+        <item name="theme_activity_tricks_cb">@style/theme_light_cb</item>
+        <item name="theme_activity_tricks_cb_all">@style/theme_light_cb_all</item>
+        <item name="theme_activity_tricks_elv_tricks">@style/theme_light_activity_tricks_elv_tricks</item>
+        <item name="theme_activity_tricks_lv_tricks">@style/theme_light_activity_tricks_lv_tricks</item>
+        <item name="theme_activity_tricks_tv_trick">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_alert_dialog_b">@style/theme_light_alert_dialog_b</item>
+        <item name="theme_alert_dialog_l">@style/theme_light_alert_dialog_l</item>
+        <item name="theme_alert_dialog_level_complete_tv_score">@style/theme_light_alert_dialog_level_complete_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score">@style/theme_light_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score_max">@style/theme_light_alert_dialog_timer_end_tv_score_max</item>
+        <item name="theme_alert_dialog_timer_end_tv_solution">@style/theme_light_alert_dialog_timer_end_tv_solution</item>
+        <item name="theme_b_arrow_down">@style/theme_light_b_arrow_down</item>
+        <item name="theme_b_arrow_down_head">@style/theme_light_b_arrow_down_head</item>
+        <item name="theme_b_arrow_up">@style/theme_light_b_arrow_up</item>
+        <item name="theme_b_arrow_up_head">@style/theme_light_b_arrow_up_head</item>
+        <item name="theme_b_back">@style/theme_light_b_back</item>
+        <item name="theme_b_bg_numpad">@style/theme_light_b_bg_numpad</item>
+        <item name="theme_b_by_heart">@style/theme_light_b_by_heart</item>
+        <item name="theme_b_get_invitation">@style/theme_light_b_get_invitation</item>
+        <item name="theme_b_graph">@style/theme_light_b_graph</item>
+        <item name="theme_b_minute_challenge">@style/theme_light_b_minute_challenge</item>
+        <item name="theme_b_money_buy">@style/theme_light_b_money_buy</item>
+        <item name="theme_b_money_total">@style/theme_light_b_money_total</item>
+        <item name="theme_b_multiplayer">@style/theme_light_b_multiplayer</item>
+        <item name="theme_b_non_time">@style/theme_light_b_non_time</item>
+        <item name="theme_b_rtm_defeat">@style/theme_light_b_rtm_defeat</item>
+        <item name="theme_b_rtm_victory">@style/theme_light_b_rtm_victory</item>
+        <item name="theme_b_set_invitation">@style/theme_light_b_set_invitation</item>
+        <item name="theme_b_settings">@style/theme_light_b_settings</item>
+        <item name="theme_b_single_player">@style/theme_light_b_single_player</item>
+        <item name="theme_b_speed_challenge">@style/theme_light_b_speed_challenge</item>
+        <item name="theme_b_to_the_bitter_end">@style/theme_light_b_to_the_bitter_end</item>
+        <item name="theme_b_training">@style/theme_light_b_training</item>
+        <item name="theme_b_training_one_player">@style/theme_light_b_training_one_player</item>
+        <item name="theme_b_training_two_players">@style/theme_light_b_training_two_players</item>
+        <item name="theme_b_two_players">@style/theme_light_b_two_players</item>
+        <item name="theme_et">@style/theme_light_et</item>
+        <item name="theme_ib_arrow_back">@style/theme_light_ib_arrow_back</item>
+        <item name="theme_ib_arrow_back_activity">@style/theme_light_ib_arrow_back_activity</item>
+        <item name="theme_ib_arrow_next">@style/theme_light_ib_arrow_next</item>
+        <item name="theme_ib_arrow_retry">@style/theme_light_ib_arrow_retry</item>
+        <item name="theme_ib_numpad_change_block">@style/theme_light_ib_numpad_change_block</item>
+        <item name="theme_ib_numpad_change_bool">@style/theme_light_ib_numpad_change_bool</item>
+        <item name="theme_ib_numpad_change_numpad">@style/theme_light_ib_numpad_change_numpad</item>
+        <item name="theme_ib_point">@style/theme_light_ib_point</item>
+        <item name="theme_ib_today_reload">@style/theme_light_ib_today_reload</item>
+        <item name="theme_ib_youtube_head">@style/theme_light_ib_youtube_head</item>
+        <item name="theme_iv_rate_star">@style/theme_light_iv_rate_star</item>
+        <item name="theme_ll_solution">@style/theme_light_ll_solution</item>
+    </style>
+    <style name="theme_light_ad" parent="@style/theme_light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="theme_light_ad_fullscreen" parent="@style/theme_light_ad">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="theme_light_b" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_light_b_text</item>
+        <item name="android:background">@drawable/dr_th_light_b_background</item>
+        <item name="android:stateListAnimator">@anim/anim_ib_elevation</item>
+    </style>
+    <style name="theme_light_b_head" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_light_head_b_text</item>
+        <item name="android:background">@drawable/dr_th_light_b_background</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="theme_light_elv" parent="@android:style/Widget.Material.ExpandableListView">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:groupIndicator">@drawable/theme_light_elv_group_indicator</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">2.0dip</item>
+    </style>
+    <style name="theme_light_ib" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/dr_th_light_b_bg_numpad</item>
+        <item name="android:stateListAnimator">@anim/anim_ib_elevation</item>
+    </style>
+    <style name="theme_light_lv" parent="@android:style/Widget.Material.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="theme_player_light_light" parent="@android:style/Theme.Material.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorPrimary">@color/cl_th_light_ll_head_bar</item>
+        <item name="android:colorPrimaryDark">@color/cl_th_light_ll_head_bar</item>
+        <item name="android:colorAccent">@color/cl_th_light_ll_head_bar</item>
+        <item name="theme_activity_game_ll_head">@style/theme_light_activity_game_ll_head</item>
+        <item name="theme_activity_game_ll_head_shadow">@style/theme_light_activity_game_ll_head_shadow</item>
+        <item name="theme_player_1_ad_win_b">@style/theme_light_alert_dialog_b</item>
+        <item name="theme_player_1_ad_win_tv_win">@style/theme_light_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_player_1_b_backspace">@style/theme_light_activity_game_b_backspace</item>
+        <item name="theme_player_1_b_numbers">@style/theme_light_b_bg_numpad</item>
+        <item name="theme_player_1_ll_expression">@style/theme_light_activity_game_ll_expression</item>
+        <item name="theme_player_1_tv_expression">@style/theme_light_activity_game_tv_level</item>
+        <item name="theme_player_1_tv_expressions_count">@style/theme_light_activity_game_tv_expressions_count</item>
+        <item name="theme_player_1_tv_level">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_1_tv_trick_name">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_2_ad_win_b">@style/theme_light_alert_dialog_b</item>
+        <item name="theme_player_2_ad_win_tv_win">@style/theme_light_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_player_2_b_backspace">@style/theme_light_activity_game_b_backspace</item>
+        <item name="theme_player_2_b_numbers">@style/theme_light_b_bg_numpad</item>
+        <item name="theme_player_2_ll_expression">@style/theme_light_activity_game_ll_expression</item>
+        <item name="theme_player_2_tv_expression">@style/theme_light_activity_game_tv_level</item>
+        <item name="theme_player_2_tv_expressions_count">@style/theme_light_activity_game_tv_expressions_count</item>
+        <item name="theme_player_2_tv_level">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_2_tv_trick_name">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_pb_time">@style/theme_light_pb_multiplayer</item>
+    </style>
+</resources>

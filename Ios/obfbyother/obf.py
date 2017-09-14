@@ -9,38 +9,42 @@ def mRandNum(min ,max):
 
 # return a char 
 def mRandC():
-    return random.choice(string.ascii_letters) 
+    return random.choice(string.ascii_letters+"_") 
 
 #generate random function name 
 def generateFuncName():
     name=''
-    for i in range(8 , mRandNum(16,32)):
+    for i in range(0 , mRandNum(32,64)):
         name += mRandC()
     return name 
 
 def dealwithstring(match):
+    print(match.groups())
     name = generateFuncName()
     outfd.write(match.group(1)+" => " +name +"\n")
     return "RE(\""+name+"\")"
 
+
+
 def dealwithline(path):
-        newdata=''
-        pattern=r'RE\((_.*)\)'
-        prog = re.compile(pattern)
-        f=open(path,'r',encoding='utf-8')
-        for i in f.readlines():
-            data = prog.sub(dealwithstring , i)
-            newdata+=data
-        f.close()
-        print(newdata)
-        f = open(path , 'w',encoding='utf-8')
-        f.write(newdata)
-        f.close()
+    newdata=''
+    pattern=r'FIXNAME\((.*)\)'
+    prog = re.compile(pattern)
+    f=open(path,'r',encoding='utf-8')
+    for i in f.readlines():
+        data = prog.sub(dealwithstring , i)
+        newdata+=data
+    f.close()
+    print(newdata)
+    #f = open(path , 'w',encoding='utf-8')
+    #f.write(newdata)
+    #f.close()
 
 def travel(path):
     for dirpath,dirs,files in os.walk(path):
         for filex in files :
-            if filex.endswith(".c") or filex.endswith(".cpp") or filex.endswith(".m"):
+            if filex.endswith(".h") :
+                print(filex)
                 dealwithline(dirpath+os.sep+filex)  
 
 

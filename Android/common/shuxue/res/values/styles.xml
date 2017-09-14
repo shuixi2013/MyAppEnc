@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="theme_dark" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="th_ib_graph_head">@style/th_dark_ib_graph_head</item>
+        <item name="th_ib_leaderboard_head">@style/th_dark_ib_leaderboard_head</item>
+        <item name="th_ib_shop">@style/th_dark_ib_shop</item>
+        <item name="theme_activity_background">@android:color/transparent</item>
+        <item name="theme_activity_game_b_backspace">@style/theme_dark_activity_game_b_backspace</item>
+        <item name="theme_activity_game_b_hint">@style/theme_dark_activity_game_b_hint</item>
+        <item name="theme_activity_game_b_hint_solution">@style/theme_dark_activity_game_b_hint_solution</item>
+        <item name="theme_activity_game_b_numbers">@style/theme_dark_activity_game_b_numbers</item>
+        <item name="theme_activity_game_ll_expression">@style/theme_dark_activity_game_ll_expression</item>
+        <item name="theme_activity_game_ll_expression_elv_group">@style/theme_dark_activity_game_ll_expression_elv_group</item>
+        <item name="theme_activity_game_ll_expression_lvl">@style/theme_dark_activity_game_ll_expression_lvl</item>
+        <item name="theme_activity_game_ll_expression_tv">@style/theme_dark_activity_game_ll_expression_tv</item>
+        <item name="theme_activity_game_ll_head">@style/theme_dark_activity_game_ll_head</item>
+        <item name="theme_activity_game_ll_head_shadow">@style/theme_dark_activity_game_ll_head_shadow</item>
+        <item name="theme_activity_game_pb_time">@style/theme_dark_activity_game_pb_time</item>
+        <item name="theme_activity_game_tv_expression">@style/theme_dark_activity_game_tv_expression</item>
+        <item name="theme_activity_game_tv_expressions_count">@style/theme_dark_activity_game_tv_expressions_count</item>
+        <item name="theme_activity_game_tv_level">@style/theme_dark_activity_game_tv_level</item>
+        <item name="theme_activity_game_tv_score">@style/theme_dark_activity_game_tv_score</item>
+        <item name="theme_activity_game_tv_trick_name">@style/theme_dark_activity_game_tv_trick_name</item>
+        <item name="theme_activity_levels_b_levels">@style/theme_dark_activity_levels_b_levels</item>
+        <item name="theme_activity_main_b_leaderboard">@style/theme_dark_activity_main_b_leaderboard</item>
+        <item name="theme_activity_main_b_rate">@style/theme_dark_activity_main_b_rate</item>
+        <item name="theme_activity_main_b_support">@style/theme_dark_activity_main_b_support</item>
+        <item name="theme_activity_music_b_add">@style/theme_dark_activity_music_b_add</item>
+        <item name="theme_activity_music_b_delete">@style/theme_dark_activity_music_b_delete</item>
+        <item name="theme_activity_music_b_volume_down_fast">@style/theme_dark_activity_music_b_volume_down_fast</item>
+        <item name="theme_activity_music_b_volume_down_slow">@style/theme_dark_activity_music_b_volume_down_slow</item>
+        <item name="theme_activity_music_b_volume_normal">@style/theme_dark_activity_music_b_volume_normal</item>
+        <item name="theme_activity_music_b_volume_off">@style/theme_dark_activity_music_b_volume_off</item>
+        <item name="theme_activity_tricks_cb">@style/theme_dark_cb</item>
+        <item name="theme_activity_tricks_cb_all">@style/theme_dark_cb_all</item>
+        <item name="theme_activity_tricks_elv_tricks">@style/theme_dark_activity_tricks_elv_tricks</item>
+        <item name="theme_activity_tricks_lv_tricks">@style/theme_dark_activity_tricks_lv_tricks</item>
+        <item name="theme_activity_tricks_tv_trick">@style/theme_dark_activity_tricks_tv_trick</item>
+        <item name="theme_alert_dialog_b">@style/theme_dark_alert_dialog_b</item>
+        <item name="theme_alert_dialog_l">@style/theme_dark_alert_dialog_l</item>
+        <item name="theme_alert_dialog_level_complete_tv_score">@style/theme_dark_alert_dialog_level_complete_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score">@style/theme_dark_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score_max">@style/theme_dark_alert_dialog_timer_end_tv_score_max</item>
+        <item name="theme_alert_dialog_timer_end_tv_solution">@style/theme_dark_alert_dialog_timer_end_tv_solution</item>
+        <item name="theme_b_arrow_down">@style/theme_dark_b_arrow_down</item>
+        <item name="theme_b_arrow_down_head">@style/theme_dark_b_arrow_down_head</item>
+        <item name="theme_b_arrow_up">@style/theme_dark_b_arrow_up</item>
+        <item name="theme_b_arrow_up_head">@style/theme_dark_b_arrow_up_head</item>
+        <item name="theme_b_back">@style/theme_dark_b_back</item>
+        <item name="theme_b_bg_numpad">@style/theme_dark_b_bg_numpad</item>
+        <item name="theme_b_by_heart">@style/theme_dark_b_by_heart</item>
+        <item name="theme_b_get_invitation">@style/theme_dark_b_get_invitation</item>
+        <item name="theme_b_graph">@style/theme_dark_b_graph</item>
+        <item name="theme_b_minute_challenge">@style/theme_dark_b_minute_challenge</item>
+        <item name="theme_b_money_buy">@style/theme_dark_b_money_buy</item>
+        <item name="theme_b_money_total">@style/theme_dark_b_money_total</item>
+        <item name="theme_b_multiplayer">@style/theme_dark_b_multiplayer</item>
+        <item name="theme_b_non_time">@style/theme_dark_b_non_time</item>
+        <item name="theme_b_rtm_defeat">@style/theme_dark_b_rtm_defeat</item>
+        <item name="theme_b_rtm_victory">@style/theme_dark_b_rtm_victory</item>
+        <item name="theme_b_set_invitation">@style/theme_dark_b_set_invitation</item>
+        <item name="theme_b_settings">@style/theme_dark_b_settings</item>
+        <item name="theme_b_single_player">@style/theme_dark_b_single_player</item>
+        <item name="theme_b_speed_challenge">@style/theme_dark_b_speed_challenge</item>
+        <item name="theme_b_to_the_bitter_end">@style/theme_dark_b_to_the_bitter_end</item>
+        <item name="theme_b_training">@style/theme_dark_b_training</item>
+        <item name="theme_b_training_one_player">@style/theme_dark_b_training_one_player</item>
+        <item name="theme_b_training_two_players">@style/theme_dark_b_training_two_players</item>
+        <item name="theme_b_two_players">@style/theme_dark_b_two_players</item>
+        <item name="theme_et">@style/theme_dark_et</item>
+        <item name="theme_ib_arrow_back">@style/theme_dark_ib_arrow_back</item>
+        <item name="theme_ib_arrow_back_activity">@style/theme_dark_ib_arrow_back_activity</item>
+        <item name="theme_ib_arrow_next">@style/theme_dark_ib_arrow_next</item>
+        <item name="theme_ib_arrow_retry">@style/theme_dark_ib_arrow_retry</item>
+        <item name="theme_ib_numpad_change_block">@style/theme_dark_ib_numpad_change_block</item>
+        <item name="theme_ib_numpad_change_bool">@style/theme_dark_ib_numpad_change_bool</item>
+        <item name="theme_ib_numpad_change_numpad">@style/theme_dark_ib_numpad_change_numpad</item>
+        <item name="theme_ib_point">@style/theme_dark_ib_point</item>
+        <item name="theme_ib_today_reload">@style/theme_dark_ib_today_reload</item>
+        <item name="theme_ib_youtube_head">@style/theme_dark_ib_youtube_head</item>
+        <item name="theme_iv_rate_star">@style/theme_dark_iv_rate_star</item>
+        <item name="theme_ll_solution">@style/theme_dark_ll_solution</item>
+    </style>
+    <style name="theme_dark_ad" parent="@style/theme_dark">
+        <item name="android:windowBackground">@drawable/theme_ad_bg_gradient</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="theme_dark_ad_fullscreen" parent="@style/theme_dark_ad" />
+    <style name="theme_dark_b" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_dark_b_text</item>
+        <item name="android:background">@drawable/dr_th_dark_b_background</item>
+    </style>
+    <style name="theme_dark_b_head" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_dark_head_b_text</item>
+        <item name="android:background">@drawable/dr_th_dark_b_background</item>
+    </style>
+    <style name="theme_dark_elv" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:listSelector">@drawable/dr_th_dark_lv_selector</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:groupIndicator">@drawable/theme_dark_elv_group_indicator</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">2.0dip</item>
+    </style>
+    <style name="theme_dark_ib" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+    </style>
+    <style name="theme_dark_lv" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/dr_th_dark_lv_selector</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="theme_light" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="th_ib_graph_head">@style/th_light_ib_graph_head</item>
+        <item name="th_ib_leaderboard_head">@style/th_light_ib_leaderboard_head</item>
+        <item name="th_ib_shop">@style/th_light_ib_shop</item>
+        <item name="theme_activity_background">@android:color/transparent</item>
+        <item name="theme_activity_game_b_backspace">@style/theme_light_activity_game_b_backspace</item>
+        <item name="theme_activity_game_b_hint">@style/theme_light_activity_game_b_hint</item>
+        <item name="theme_activity_game_b_hint_solution">@style/theme_light_activity_game_b_hint_solution</item>
+        <item name="theme_activity_game_b_numbers">@style/theme_light_activity_game_b_numbers</item>
+        <item name="theme_activity_game_ll_expression">@style/theme_light_activity_game_ll_expression</item>
+        <item name="theme_activity_game_ll_expression_elv_group">@style/theme_light_activity_game_ll_expression_elv_group</item>
+        <item name="theme_activity_game_ll_expression_lvl">@style/theme_light_activity_game_ll_expression_lvl</item>
+        <item name="theme_activity_game_ll_expression_tv">@style/theme_light_activity_game_ll_expression_tv</item>
+        <item name="theme_activity_game_ll_head">@style/theme_light_activity_game_ll_head</item>
+        <item name="theme_activity_game_ll_head_shadow">@style/theme_light_activity_game_ll_head_shadow</item>
+        <item name="theme_activity_game_pb_time">@style/theme_light_activity_game_pb_time</item>
+        <item name="theme_activity_game_tv_expression">@style/theme_light_activity_game_tv_expression</item>
+        <item name="theme_activity_game_tv_expressions_count">@style/theme_light_activity_game_tv_expressions_count</item>
+        <item name="theme_activity_game_tv_level">@style/theme_light_activity_game_tv_level</item>
+        <item name="theme_activity_game_tv_score">@style/theme_light_activity_game_tv_score</item>
+        <item name="theme_activity_game_tv_trick_name">@style/theme_light_activity_game_tv_trick_name</item>
+        <item name="theme_activity_levels_b_levels">@style/theme_light_activity_levels_b_levels</item>
+        <item name="theme_activity_main_b_leaderboard">@style/theme_light_activity_main_b_leaderboard</item>
+        <item name="theme_activity_main_b_rate">@style/theme_light_activity_main_b_rate</item>
+        <item name="theme_activity_main_b_support">@style/theme_light_activity_main_b_support</item>
+        <item name="theme_activity_music_b_add">@style/theme_light_activity_music_b_add</item>
+        <item name="theme_activity_music_b_delete">@style/theme_light_activity_music_b_delete</item>
+        <item name="theme_activity_music_b_volume_down_fast">@style/theme_light_activity_music_b_volume_down_fast</item>
+        <item name="theme_activity_music_b_volume_down_slow">@style/theme_light_activity_music_b_volume_down_slow</item>
+        <item name="theme_activity_music_b_volume_normal">@style/theme_light_activity_music_b_volume_normal</item>
+        <item name="theme_activity_music_b_volume_off">@style/theme_light_activity_music_b_volume_off</item>
+        <item name="theme_activity_tricks_cb">@style/theme_light_cb</item>
+        <item name="theme_activity_tricks_cb_all">@style/theme_light_cb_all</item>
+        <item name="theme_activity_tricks_elv_tricks">@style/theme_light_activity_tricks_elv_tricks</item>
+        <item name="theme_activity_tricks_lv_tricks">@style/theme_light_activity_tricks_lv_tricks</item>
+        <item name="theme_activity_tricks_tv_trick">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_alert_dialog_b">@style/theme_light_alert_dialog_b</item>
+        <item name="theme_alert_dialog_l">@style/theme_light_alert_dialog_l</item>
+        <item name="theme_alert_dialog_level_complete_tv_score">@style/theme_light_alert_dialog_level_complete_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score">@style/theme_light_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_alert_dialog_timer_end_tv_score_max">@style/theme_light_alert_dialog_timer_end_tv_score_max</item>
+        <item name="theme_alert_dialog_timer_end_tv_solution">@style/theme_light_alert_dialog_timer_end_tv_solution</item>
+        <item name="theme_b_arrow_down">@style/theme_light_b_arrow_down</item>
+        <item name="theme_b_arrow_down_head">@style/theme_light_b_arrow_down_head</item>
+        <item name="theme_b_arrow_up">@style/theme_light_b_arrow_up</item>
+        <item name="theme_b_arrow_up_head">@style/theme_light_b_arrow_up_head</item>
+        <item name="theme_b_back">@style/theme_light_b_back</item>
+        <item name="theme_b_bg_numpad">@style/theme_light_b_bg_numpad</item>
+        <item name="theme_b_by_heart">@style/theme_light_b_by_heart</item>
+        <item name="theme_b_get_invitation">@style/theme_light_b_get_invitation</item>
+        <item name="theme_b_graph">@style/theme_light_b_graph</item>
+        <item name="theme_b_minute_challenge">@style/theme_light_b_minute_challenge</item>
+        <item name="theme_b_money_buy">@style/theme_light_b_money_buy</item>
+        <item name="theme_b_money_total">@style/theme_light_b_money_total</item>
+        <item name="theme_b_multiplayer">@style/theme_light_b_multiplayer</item>
+        <item name="theme_b_non_time">@style/theme_light_b_non_time</item>
+        <item name="theme_b_rtm_defeat">@style/theme_light_b_rtm_defeat</item>
+        <item name="theme_b_rtm_victory">@style/theme_light_b_rtm_victory</item>
+        <item name="theme_b_set_invitation">@style/theme_light_b_set_invitation</item>
+        <item name="theme_b_settings">@style/theme_light_b_settings</item>
+        <item name="theme_b_single_player">@style/theme_light_b_single_player</item>
+        <item name="theme_b_speed_challenge">@style/theme_light_b_speed_challenge</item>
+        <item name="theme_b_to_the_bitter_end">@style/theme_light_b_to_the_bitter_end</item>
+        <item name="theme_b_training">@style/theme_light_b_training</item>
+        <item name="theme_b_training_one_player">@style/theme_light_b_training_one_player</item>
+        <item name="theme_b_training_two_players">@style/theme_light_b_training_two_players</item>
+        <item name="theme_b_two_players">@style/theme_light_b_two_players</item>
+        <item name="theme_et">@style/theme_light_et</item>
+        <item name="theme_ib_arrow_back">@style/theme_light_ib_arrow_back</item>
+        <item name="theme_ib_arrow_back_activity">@style/theme_light_ib_arrow_back_activity</item>
+        <item name="theme_ib_arrow_next">@style/theme_light_ib_arrow_next</item>
+        <item name="theme_ib_arrow_retry">@style/theme_light_ib_arrow_retry</item>
+        <item name="theme_ib_numpad_change_block">@style/theme_light_ib_numpad_change_block</item>
+        <item name="theme_ib_numpad_change_bool">@style/theme_light_ib_numpad_change_bool</item>
+        <item name="theme_ib_numpad_change_numpad">@style/theme_light_ib_numpad_change_numpad</item>
+        <item name="theme_ib_point">@style/theme_light_ib_point</item>
+        <item name="theme_ib_today_reload">@style/theme_light_ib_today_reload</item>
+        <item name="theme_ib_youtube_head">@style/theme_light_ib_youtube_head</item>
+        <item name="theme_iv_rate_star">@style/theme_light_iv_rate_star</item>
+        <item name="theme_ll_solution">@style/theme_light_ll_solution</item>
+    </style>
+    <style name="theme_light_ad" parent="@style/theme_light">
+        <item name="android:windowBackground">@drawable/theme_ad_bg_gradient</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="theme_light_ad_fullscreen" parent="@style/theme_light_ad" />
+    <style name="theme_light_b" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_light_b_text</item>
+        <item name="android:background">@drawable/dr_th_light_b_background</item>
+    </style>
+    <style name="theme_light_b_head" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/theme_light_head_b_text</item>
+        <item name="android:background">@drawable/dr_th_light_b_background</item>
+    </style>
+    <style name="theme_light_elv" parent="@android:style/Widget.ExpandableListView">
+        <item name="android:listSelector">@drawable/dr_th_light_lv_selector</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:groupIndicator">@drawable/theme_light_elv_group_indicator</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">2.0dip</item>
+    </style>
+    <style name="theme_light_ib" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/dr_th_light_b_bg_numpad</item>
+    </style>
+    <style name="theme_light_lv" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/dr_th_light_lv_selector</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="theme_player_light_light" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="theme_activity_game_ll_head">@style/theme_light_activity_game_ll_head</item>
+        <item name="theme_activity_game_ll_head_shadow">@style/theme_light_activity_game_ll_head_shadow</item>
+        <item name="theme_player_1_ad_win_b">@style/theme_light_alert_dialog_b</item>
+        <item name="theme_player_1_ad_win_tv_win">@style/theme_light_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_player_1_b_backspace">@style/theme_light_activity_game_b_backspace</item>
+        <item name="theme_player_1_b_numbers">@style/theme_light_b_bg_numpad</item>
+        <item name="theme_player_1_ll_expression">@style/theme_light_activity_game_ll_expression</item>
+        <item name="theme_player_1_tv_expression">@style/theme_light_activity_game_tv_level</item>
+        <item name="theme_player_1_tv_expressions_count">@style/theme_light_activity_game_tv_expressions_count</item>
+        <item name="theme_player_1_tv_level">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_1_tv_trick_name">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_2_ad_win_b">@style/theme_light_alert_dialog_b</item>
+        <item name="theme_player_2_ad_win_tv_win">@style/theme_light_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_player_2_b_backspace">@style/theme_light_activity_game_b_backspace</item>
+        <item name="theme_player_2_b_numbers">@style/theme_light_b_bg_numpad</item>
+        <item name="theme_player_2_ll_expression">@style/theme_light_activity_game_ll_expression</item>
+        <item name="theme_player_2_tv_expression">@style/theme_light_activity_game_tv_level</item>
+        <item name="theme_player_2_tv_expressions_count">@style/theme_light_activity_game_tv_expressions_count</item>
+        <item name="theme_player_2_tv_level">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_2_tv_trick_name">@style/theme_light_activity_tricks_tv_trick</item>
+        <item name="theme_player_pb_time">@style/theme_light_pb_multiplayer</item>
+    </style>
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+    <style name="Blurb">
+        <item name="android:textColor">@color/BlurbColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonsBox">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">20.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20.0dip</item>
+    </style>
+    <style name="FigureLabel">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FigureView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">150.0dip</item>
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="GameBlurb" parent="@style/Blurb">
+        <item name="android:layout_marginBottom">40.0dip</item>
+        <item name="android:text">@string/game_blurb</item>
+    </style>
+    <style name="GameButton">
+        <item name="android:textColor">@color/ButtonTextColor</item>
+        <item name="android:background">@color/AccentColor</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GameScreen">
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="GameTitle">
+        <item name="android:textSize">@dimen/TitleSize</item>
+        <item name="android:textColor">@color/AccentColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">40.0dip</item>
+        <item name="android:text">@string/game_title</item>
+    </style>
+    <style name="GameplayScreen" parent="@style/LLScreen">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Instructions" parent="@style/Blurb">
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="InvPopup" parent="@style/LLScreen">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center|right|top</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/PopupColor</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="InvPopupButton" parent="@style/GameButton">
+        <item name="android:textColor">@color/AccentColor</item>
+        <item name="android:background">@color/ButtonTextColor</item>
+    </style>
+    <style name="InvPopupText">
+        <item name="android:textColor">@color/PopupTextColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:text">@string/inv_popup_text</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="LLScreen" parent="@style/GameScreen">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">30.0dip</item>
+    </style>
+    <style name="MainScreenButton" parent="@style/GameButton">
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="MainScreenButtonBlurb" parent="@style/GameBlurb">
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="PlacementDisplay">
+        <item name="android:textColor">@color/BlurbColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ScoreDisplay">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/AccentColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="ScoreLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ScoreText">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="ScoreToast">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="ScoresBox">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">#fff0f0f0</item>
+        <item name="android:padding">20.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30.0dip</item>
+    </style>
+    <style name="SectionLabel">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/AccentColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">20.0dip</item>
+    </style>
+    <style name="SignInButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40.0dip</item>
+    </style>
+    <style name="SignOutButton" parent="@style/GameButton">
+        <item name="android:textColor">@color/SignOutButtonTextColor</item>
+        <item name="android:background">@color/SignOutButtonBackground</item>
+    </style>
+    <style name="Theme.IAPTheme" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="@style/WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+    </style>
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48.0dip</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+    <style name="b_color" parent="@style/theme_light_b">
+        <item name="android:textColor">@color/theme_light_head_tv_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">@dimen/b_color_size</item>
+        <item name="android:layout_height">@dimen/b_color_size</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:text">@string/sign_check</item>
+        <item name="android:onClick">buttonClick</item>
+    </style>
+    <style name="nill" />
+    <style name="th_dark_ib_graph_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/ic_th_light_b_graph</item>
+    </style>
+    <style name="th_dark_ib_head" parent="@style/theme_dark_ib">
+        <item name="android:background">@drawable/dr_th_light_b_back</item>
+        <item name="android:padding">@dimen/ib_head_padding</item>
+    </style>
+    <style name="th_dark_ib_leaderboard_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/ic_th_light_b_leaderboard</item>
+    </style>
+    <style name="th_dark_ib_shop" parent="@style/theme_dark_b_arrow">
+        <item name="android:src">@drawable/ic_th_dark_b_shop</item>
+    </style>
+    <style name="th_light_ib_graph_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/ic_th_light_b_graph</item>
+    </style>
+    <style name="th_light_ib_head" parent="@style/theme_light_ib">
+        <item name="android:background">@drawable/dr_th_light_b_back</item>
+        <item name="android:padding">@dimen/ib_head_padding</item>
+    </style>
+    <style name="th_light_ib_leaderboard_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/ic_th_light_b_leaderboard</item>
+    </style>
+    <style name="th_light_ib_shop" parent="@style/theme_light_b_arrow">
+        <item name="android:src">@drawable/ic_th_light_b_shop</item>
+    </style>
+    <style name="theme_dark_activity_game_b_backspace" parent="@style/theme_dark_ib">
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+        <item name="android:src">@drawable/ic_th_dark_b_delete</item>
+    </style>
+    <style name="theme_dark_activity_game_b_hint" parent="@style/theme_dark_b">
+        <item name="android:textSize">@dimen/theme_activity_main_b_rate</item>
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/money_paddingRight</item>
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_hint</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="theme_dark_activity_game_b_hint_solution" parent="@style/theme_dark_ib">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:src">@drawable/ic_th_light_b_hint</item>
+    </style>
+    <style name="theme_dark_activity_game_b_numbers" parent="@style/theme_dark_b">
+        <item name="android:textSize">@dimen/theme_activity_game_b_text</item>
+    </style>
+    <style name="theme_dark_activity_game_ll_expression">
+        <item name="android:background">@drawable/bg_th_dark_b_main_off</item>
+        <item name="android:layout_margin">@dimen/ll_expression_margin</item>
+    </style>
+    <style name="theme_dark_activity_game_ll_expression_elv_group">
+        <item name="android:background">@drawable/bg_th_dark_elv_item_off</item>
+    </style>
+    <style name="theme_dark_activity_game_ll_expression_lvl">
+        <item name="android:background">@drawable/theme_dark_border_expression_level</item>
+    </style>
+    <style name="theme_dark_activity_game_ll_expression_tv">
+        <item name="android:background">@drawable/theme_dark_border_expression_dark_tv</item>
+    </style>
+    <style name="theme_dark_activity_game_ll_head">
+        <item name="android:gravity">center|left</item>
+        <item name="android:id">@id/ll_head</item>
+        <item name="android:background">@color/cl_th_light_ll_head</item>
+    </style>
+    <style name="theme_dark_activity_game_ll_head_shadow">
+        <item name="android:background">@drawable/bg_th_light_ll_head_shadow</item>
+        <item name="android:layout_height">@dimen/ll_head</item>
+    </style>
+    <style name="theme_dark_activity_game_pb_time" parent="@style/theme_dark_pb" />
+    <style name="theme_dark_activity_game_tv_expression" parent="@style/theme_dark_tv">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_expression</item>
+    </style>
+    <style name="theme_dark_activity_game_tv_expressions_count" parent="@style/theme_dark_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_expressions_count</item>
+    </style>
+    <style name="theme_dark_activity_game_tv_level" parent="@style/theme_dark_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_level</item>
+    </style>
+    <style name="theme_dark_activity_game_tv_score" parent="@style/theme_dark_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_score</item>
+    </style>
+    <style name="theme_dark_activity_game_tv_trick_name" parent="@style/theme_dark_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+    </style>
+    <style name="theme_dark_activity_levels_b_levels" parent="@style/theme_dark_b">
+        <item name="android:textSize">@dimen/theme_activity_levels_b_levels_text</item>
+    </style>
+    <style name="theme_dark_activity_main_b_leaderboard" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/ic_th_dark_b_leaderboard</item>
+    </style>
+    <style name="theme_dark_activity_main_b_rate" parent="@style/theme_dark_alert_dialog_b">
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+        <item name="android:drawableRight">@drawable/ic_th_light_b_star</item>
+    </style>
+    <style name="theme_dark_activity_main_b_support" parent="@style/theme_dark_alert_dialog_b">
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+        <item name="android:drawableRight">@drawable/ic_th_light_b_support</item>
+    </style>
+    <style name="theme_dark_activity_music_b_add" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_dark_b_add_off</item>
+    </style>
+    <style name="theme_dark_activity_music_b_delete" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_dark_b_delete_off</item>
+    </style>
+    <style name="theme_dark_activity_music_b_volume_down_fast" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_down_fast_off</item>
+    </style>
+    <style name="theme_dark_activity_music_b_volume_down_slow" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_down_slow_off</item>
+    </style>
+    <style name="theme_dark_activity_music_b_volume_normal" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_normal_off</item>
+    </style>
+    <style name="theme_dark_activity_music_b_volume_off" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_off</item>
+    </style>
+    <style name="theme_dark_activity_tricks_elv_tricks" parent="@style/theme_dark_elv" />
+    <style name="theme_dark_activity_tricks_lv_tricks" parent="@style/theme_dark_lv" />
+    <style name="theme_dark_activity_tricks_tv_trick" parent="@style/theme_dark_tv">
+        <item name="android:textSize">@dimen/theme_activity_tricks_tv_trick</item>
+    </style>
+    <style name="theme_dark_alert_dialog_b" parent="@style/theme_dark_b">
+        <item name="android:textSize">@dimen/theme_alert_dialog_b_text</item>
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+        <item name="android:layout_width">@dimen/theme_alert_dialog_b_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="theme_dark_alert_dialog_l">
+        <item name="android:background">@drawable/theme_dark_border_expression_dark</item>
+        <item name="android:padding">@dimen/theme_alert_dialog_l_padding</item>
+    </style>
+    <style name="theme_dark_alert_dialog_level_complete_tv_score" parent="@style/theme_dark_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_level_complete_tv_score</item>
+    </style>
+    <style name="theme_dark_alert_dialog_timer_end_tv_score" parent="@style/theme_dark_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_timer_end_tv_score</item>
+    </style>
+    <style name="theme_dark_alert_dialog_timer_end_tv_score_max" parent="@style/theme_dark_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_timer_end_tv_score_max</item>
+    </style>
+    <style name="theme_dark_alert_dialog_timer_end_tv_solution" parent="@style/theme_dark_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_timer_end_tv_solution</item>
+    </style>
+    <style name="theme_dark_b_arrow" parent="@style/theme_dark_ib">
+        <item name="android:padding">@dimen/ib_arrow_padding</item>
+        <item name="android:layout_width">@dimen/theme_alert_dialog_b_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="theme_dark_b_arrow_down" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_light_b_arrow_down_off</item>
+    </style>
+    <style name="theme_dark_b_arrow_down_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/theme_dark_b_arrow_down_off</item>
+    </style>
+    <style name="theme_dark_b_arrow_up" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_dark_b_arrow_up_off</item>
+    </style>
+    <style name="theme_dark_b_arrow_up_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/theme_dark_b_arrow_up_off</item>
+    </style>
+    <style name="theme_dark_b_back" parent="@style/theme_dark_b">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+        <item name="android:text">@string/sign_arrow_back</item>
+    </style>
+    <style name="theme_dark_b_bg_numpad" parent="@style/theme_dark_activity_game_b_numbers">
+        <item name="android:background">@drawable/dr_th_dark_b_bg_numpad</item>
+    </style>
+    <style name="theme_dark_b_by_heart" parent="@style/theme_dark_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_by_heart</item>
+    </style>
+    <style name="theme_dark_b_color" parent="@style/theme_dark_b">
+        <item name="android:textColor">@color/theme_dark_head_tv_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">@dimen/b_color_size</item>
+        <item name="android:layout_height">@dimen/b_color_size</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:text">@string/sign_check</item>
+        <item name="android:onClick">buttonClick</item>
+    </style>
+    <style name="theme_dark_b_drawable" parent="@style/theme_dark_activity_game_b_numbers">
+        <item name="android:gravity">center</item>
+        <item name="android:drawableRight">@drawable/theme_drawable_b_transparent</item>
+    </style>
+    <style name="theme_dark_b_drawable_ad" parent="@style/theme_dark_alert_dialog_b">
+        <item name="android:drawableRight">@drawable/theme_drawable_b_transparent</item>
+    </style>
+    <style name="theme_dark_b_get_invitation" parent="@style/theme_dark_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/theme_light_b_get_invitation</item>
+    </style>
+    <style name="theme_dark_b_graph" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/ic_th_dark_b_graph</item>
+    </style>
+    <style name="theme_dark_b_minute_challenge" parent="@style/theme_dark_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_minute</item>
+    </style>
+    <style name="theme_dark_b_money_buy" parent="@style/theme_dark_b">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+        <item name="android:clickable">false</item>
+        <item name="android:text">@string/trick_money</item>
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_money_buy</item>
+        <item name="android:drawableRight">@drawable/ic_th_light_b_lock</item>
+        <item name="android:drawablePadding">@dimen/money_drawablePadding</item>
+    </style>
+    <style name="theme_dark_b_money_total" parent="@style/theme_dark_b">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">@dimen/money_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/money_paddingRight</item>
+        <item name="android:text">1000</item>
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_money_total</item>
+        <item name="android:drawablePadding">@dimen/money_drawablePadding</item>
+    </style>
+    <style name="theme_dark_b_multiplayer" parent="@style/theme_dark_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_multiplayer</item>
+    </style>
+    <style name="theme_dark_b_non_time" parent="@style/theme_dark_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_non_time</item>
+    </style>
+    <style name="theme_dark_b_rtm_defeat" parent="@style/theme_dark_b_head">
+        <item name="android:textSize">@dimen/b_count_victory</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/b_victory_size</item>
+        <item name="android:drawableRight">@drawable/theme_dark_b_rtm_defeat</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="theme_dark_b_rtm_victory" parent="@style/theme_dark_b_head">
+        <item name="android:textSize">@dimen/b_count_victory</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/b_victory_size</item>
+        <item name="android:drawableRight">@drawable/theme_dark_b_rtm_victory</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="theme_dark_b_set_invitation" parent="@style/theme_dark_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/theme_light_b_set_invitation</item>
+    </style>
+    <style name="theme_dark_b_settings" parent="@style/theme_dark_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_settings</item>
+    </style>
+    <style name="theme_dark_b_single_player" parent="@style/theme_dark_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_single_player</item>
+    </style>
+    <style name="theme_dark_b_speed_challenge" parent="@style/theme_dark_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_time</item>
+    </style>
+    <style name="theme_dark_b_to_the_bitter_end" parent="@style/theme_dark_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_single</item>
+    </style>
+    <style name="theme_dark_b_training" parent="@style/theme_dark_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_training</item>
+    </style>
+    <style name="theme_dark_b_training_one_player" parent="@style/theme_dark_alert_dialog_b">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_single_player</item>
+    </style>
+    <style name="theme_dark_b_training_two_players" parent="@style/theme_dark_alert_dialog_b">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_two_players</item>
+    </style>
+    <style name="theme_dark_b_two_players" parent="@style/theme_dark_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_two_players</item>
+    </style>
+    <style name="theme_dark_bg_level">
+        <item name="android:background">@drawable/bg_th_light_b_level</item>
+        <item name="android:layout_width">@dimen/ll_bg_level_size</item>
+        <item name="android:layout_height">@dimen/ll_bg_level_size</item>
+    </style>
+    <style name="theme_dark_cb" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/theme_light_cb_button</item>
+    </style>
+    <style name="theme_dark_cb_all" parent="@style/theme_dark_cb">
+        <item name="android:button">@drawable/theme_light_cb_button_all</item>
+    </style>
+    <style name="theme_dark_et" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/theme_dark_b_text</item>
+        <item name="android:background">@drawable/dr_th_dark_et</item>
+    </style>
+    <style name="theme_dark_ib_arrow_back" parent="@style/theme_dark_b_arrow">
+        <item name="android:src">@drawable/ic_th_dark_b_back</item>
+    </style>
+    <style name="theme_dark_ib_arrow_back_activity" parent="@style/theme_dark_ib">
+        <item name="android:background">@drawable/dr_th_light_b_back</item>
+        <item name="android:padding">@dimen/ib_arrow_back_padding</item>
+        <item name="android:src">@drawable/ic_th_dark_b_back</item>
+    </style>
+    <style name="theme_dark_ib_arrow_next" parent="@style/theme_dark_b_arrow">
+        <item name="android:src">@drawable/ic_th_dark_b_next</item>
+    </style>
+    <style name="theme_dark_ib_arrow_retry" parent="@style/theme_dark_b_arrow">
+        <item name="android:src">@drawable/ic_th_dark_b_retry</item>
+    </style>
+    <style name="theme_dark_ib_numpad_change" parent="@style/theme_dark_ib">
+        <item name="android:background">@drawable/dr_th_light_b_back</item>
+        <item name="android:padding">15.0dip</item>
+    </style>
+    <style name="theme_dark_ib_numpad_change_block" parent="@style/theme_dark_ib_numpad_change">
+        <item name="android:src">@drawable/ic_th_dark_iw_numpad_change_block</item>
+    </style>
+    <style name="theme_dark_ib_numpad_change_bool" parent="@style/theme_dark_ib_numpad_change">
+        <item name="android:src">@drawable/ic_th_dark_iw_numpad_change_bool</item>
+    </style>
+    <style name="theme_dark_ib_numpad_change_numpad" parent="@style/theme_dark_ib_numpad_change">
+        <item name="android:src">@drawable/ic_th_dark_iw_numpad_change_numpad</item>
+    </style>
+    <style name="theme_dark_ib_point">
+        <item name="android:src">@drawable/theme_dark_point</item>
+    </style>
+    <style name="theme_dark_ib_today_reload" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/ic_th_dark_b_retry</item>
+    </style>
+    <style name="theme_dark_ib_youtube" parent="@style/theme_dark_ib">
+        <item name="android:src">@drawable/theme_light_ib_youtube</item>
+    </style>
+    <style name="theme_dark_ib_youtube_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/theme_dark_ib_youtube</item>
+    </style>
+    <style name="theme_dark_iv_rate_star">
+        <item name="android:src">@drawable/ic_th_dark_b_star_3</item>
+    </style>
+    <style name="theme_dark_ll_solution">
+        <item name="android:background">@drawable/theme_light_b_rate_on</item>
+    </style>
+    <style name="theme_dark_pb" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/theme_dark_pb_time</item>
+    </style>
+    <style name="theme_dark_pb_multiplayer" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/theme_light_pb_time_multiplayer</item>
+    </style>
+    <style name="theme_dark_tv" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/theme_dark_b_text</item>
+    </style>
+    <style name="theme_dark_tv_head" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/theme_dark_head_tv_text</item>
+    </style>
+    <style name="theme_light_activity_game_b_backspace" parent="@style/theme_light_ib">
+        <item name="android:background">@drawable/dr_th_light_b_bg_numpad</item>
+        <item name="android:src">@drawable/ic_th_light_b_delete</item>
+    </style>
+    <style name="theme_light_activity_game_b_hint" parent="@style/theme_light_b">
+        <item name="android:textSize">@dimen/theme_activity_main_b_rate</item>
+        <item name="android:background">@drawable/dr_th_light_b_bg_numpad</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:layout_marginLeft">@dimen/money_paddingRight</item>
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_hint</item>
+        <item name="android:drawablePadding">10.0dip</item>
+    </style>
+    <style name="theme_light_activity_game_b_hint_solution" parent="@style/theme_light_ib">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:src">@drawable/ic_th_light_b_hint</item>
+    </style>
+    <style name="theme_light_activity_game_b_numbers" parent="@style/theme_light_b">
+        <item name="android:textSize">@dimen/theme_activity_game_b_text</item>
+    </style>
+    <style name="theme_light_activity_game_ll_expression">
+        <item name="android:background">@drawable/bg_th_light_b_main_off</item>
+        <item name="android:layout_margin">@dimen/ll_expression_margin</item>
+    </style>
+    <style name="theme_light_activity_game_ll_expression_elv_group">
+        <item name="android:background">@drawable/bg_th_light_elv_item_off</item>
+    </style>
+    <style name="theme_light_activity_game_ll_expression_lvl">
+        <item name="android:background">@drawable/theme_dark_border_expression_level</item>
+    </style>
+    <style name="theme_light_activity_game_ll_expression_tv">
+        <item name="android:background">@drawable/theme_dark_border_expression_dark_tv</item>
+    </style>
+    <style name="theme_light_activity_game_ll_head">
+        <item name="android:gravity">center|left</item>
+        <item name="android:id">@id/ll_head</item>
+        <item name="android:background">@color/cl_th_light_ll_head</item>
+    </style>
+    <style name="theme_light_activity_game_ll_head_shadow">
+        <item name="android:background">@drawable/bg_th_light_ll_head_shadow</item>
+        <item name="android:layout_height">@dimen/ll_head</item>
+    </style>
+    <style name="theme_light_activity_game_pb_time" parent="@style/theme_light_pb" />
+    <style name="theme_light_activity_game_tv_expression" parent="@style/theme_light_tv">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_expression</item>
+    </style>
+    <style name="theme_light_activity_game_tv_expressions_count" parent="@style/theme_light_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_expressions_count</item>
+    </style>
+    <style name="theme_light_activity_game_tv_level" parent="@style/theme_light_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_level</item>
+    </style>
+    <style name="theme_light_activity_game_tv_score" parent="@style/theme_light_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_score</item>
+    </style>
+    <style name="theme_light_activity_game_tv_trick_name" parent="@style/theme_light_tv_head">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+    </style>
+    <style name="theme_light_activity_levels_b_levels" parent="@style/theme_light_b">
+        <item name="android:textSize">@dimen/theme_activity_levels_b_levels_text</item>
+    </style>
+    <style name="theme_light_activity_main_b_leaderboard" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/ic_th_dark_b_leaderboard</item>
+    </style>
+    <style name="theme_light_activity_main_b_rate" parent="@style/theme_light_alert_dialog_b">
+        <item name="android:background">@drawable/dr_th_light_b_rate_bg</item>
+        <item name="android:drawableRight">@drawable/ic_th_light_b_star</item>
+    </style>
+    <style name="theme_light_activity_main_b_support" parent="@style/theme_light_alert_dialog_b">
+        <item name="android:background">@drawable/dr_th_light_b_rate_bg</item>
+        <item name="android:drawableRight">@drawable/ic_th_light_b_support</item>
+    </style>
+    <style name="theme_light_activity_music_b_add" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_dark_b_add_off</item>
+    </style>
+    <style name="theme_light_activity_music_b_delete" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_dark_b_delete_off</item>
+    </style>
+    <style name="theme_light_activity_music_b_volume_down_fast" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_down_fast_off</item>
+    </style>
+    <style name="theme_light_activity_music_b_volume_down_slow" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_down_slow_off</item>
+    </style>
+    <style name="theme_light_activity_music_b_volume_normal" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_normal_off</item>
+    </style>
+    <style name="theme_light_activity_music_b_volume_off" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_light_b_volume_off</item>
+    </style>
+    <style name="theme_light_activity_tricks_elv_tricks" parent="@style/theme_light_elv" />
+    <style name="theme_light_activity_tricks_lv_tricks" parent="@style/theme_light_lv" />
+    <style name="theme_light_activity_tricks_tv_trick" parent="@style/theme_light_tv">
+        <item name="android:textSize">@dimen/theme_activity_tricks_tv_trick</item>
+    </style>
+    <style name="theme_light_alert_dialog_b" parent="@style/theme_light_b">
+        <item name="android:textSize">@dimen/theme_alert_dialog_b_text</item>
+        <item name="android:background">@drawable/dr_th_light_b_bg_ad</item>
+        <item name="android:layout_width">@dimen/theme_alert_dialog_b_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="theme_light_alert_dialog_l">
+        <item name="android:background">@drawable/theme_dark_border_expression_dark</item>
+        <item name="android:padding">@dimen/theme_alert_dialog_l_padding</item>
+    </style>
+    <style name="theme_light_alert_dialog_level_complete_tv_score" parent="@style/theme_light_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_level_complete_tv_score</item>
+    </style>
+    <style name="theme_light_alert_dialog_timer_end_tv_score" parent="@style/theme_light_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_timer_end_tv_score</item>
+    </style>
+    <style name="theme_light_alert_dialog_timer_end_tv_score_max" parent="@style/theme_light_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_timer_end_tv_score_max</item>
+    </style>
+    <style name="theme_light_alert_dialog_timer_end_tv_solution" parent="@style/theme_light_tv">
+        <item name="android:textSize">@dimen/theme_alert_dialog_timer_end_tv_solution</item>
+    </style>
+    <style name="theme_light_b_arrow" parent="@style/theme_light_ib">
+        <item name="android:padding">@dimen/ib_arrow_padding</item>
+        <item name="android:layout_width">@dimen/theme_alert_dialog_b_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="theme_light_b_arrow_down" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_light_b_arrow_down_off</item>
+    </style>
+    <style name="theme_light_b_arrow_down_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/theme_dark_b_arrow_down_off</item>
+    </style>
+    <style name="theme_light_b_arrow_up" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_light_b_arrow_up_off</item>
+    </style>
+    <style name="theme_light_b_arrow_up_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/theme_dark_b_arrow_up_off</item>
+    </style>
+    <style name="theme_light_b_back" parent="@style/theme_light_b">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+        <item name="android:text">@string/sign_arrow_back</item>
+    </style>
+    <style name="theme_light_b_bg_numpad" parent="@style/theme_light_activity_game_b_numbers">
+        <item name="android:background">@drawable/dr_th_light_b_bg_numpad</item>
+    </style>
+    <style name="theme_light_b_by_heart" parent="@style/theme_light_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_by_heart</item>
+    </style>
+    <style name="theme_light_b_drawable" parent="@style/theme_light_activity_game_b_numbers">
+        <item name="android:gravity">center</item>
+        <item name="android:drawableRight">@drawable/theme_drawable_b_transparent</item>
+    </style>
+    <style name="theme_light_b_drawable_ad" parent="@style/theme_light_alert_dialog_b">
+        <item name="android:drawableRight">@drawable/theme_drawable_b_transparent</item>
+    </style>
+    <style name="theme_light_b_get_invitation" parent="@style/theme_light_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/theme_light_b_get_invitation</item>
+    </style>
+    <style name="theme_light_b_graph" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/ic_th_dark_b_graph</item>
+    </style>
+    <style name="theme_light_b_minute_challenge" parent="@style/theme_light_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_minute</item>
+    </style>
+    <style name="theme_light_b_money_buy" parent="@style/theme_light_b">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+        <item name="android:clickable">false</item>
+        <item name="android:text">@string/trick_money</item>
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_money_buy</item>
+        <item name="android:drawableRight">@drawable/ic_th_light_b_lock</item>
+        <item name="android:drawablePadding">@dimen/money_drawablePadding</item>
+    </style>
+    <style name="theme_light_b_money_total" parent="@style/theme_light_b">
+        <item name="android:textSize">@dimen/theme_activity_game_tv_trick_name</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">@dimen/money_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/money_paddingRight</item>
+        <item name="android:text">1000</item>
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_money_total</item>
+        <item name="android:drawablePadding">@dimen/money_drawablePadding</item>
+    </style>
+    <style name="theme_light_b_multiplayer" parent="@style/theme_light_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_multiplayer</item>
+    </style>
+    <style name="theme_light_b_non_time" parent="@style/theme_light_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_non_time</item>
+    </style>
+    <style name="theme_light_b_rtm_defeat" parent="@style/theme_light_b_head">
+        <item name="android:textSize">@dimen/b_count_victory</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/b_victory_size</item>
+        <item name="android:drawableRight">@drawable/theme_dark_b_rtm_defeat</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="theme_light_b_rtm_victory" parent="@style/theme_light_b_head">
+        <item name="android:textSize">@dimen/b_count_victory</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/b_victory_size</item>
+        <item name="android:drawableRight">@drawable/theme_dark_b_rtm_victory</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+    <style name="theme_light_b_set_invitation" parent="@style/theme_light_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/theme_light_b_set_invitation</item>
+    </style>
+    <style name="theme_light_b_settings" parent="@style/theme_light_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_settings</item>
+    </style>
+    <style name="theme_light_b_single_player" parent="@style/theme_light_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_single_player</item>
+    </style>
+    <style name="theme_light_b_speed_challenge" parent="@style/theme_light_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_time</item>
+    </style>
+    <style name="theme_light_b_to_the_bitter_end" parent="@style/theme_light_b_drawable_ad">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_gt_single</item>
+    </style>
+    <style name="theme_light_b_training" parent="@style/theme_light_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_training</item>
+    </style>
+    <style name="theme_light_b_training_one_player" parent="@style/theme_light_alert_dialog_b">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_single_player</item>
+    </style>
+    <style name="theme_light_b_training_two_players" parent="@style/theme_light_alert_dialog_b">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_two_players</item>
+    </style>
+    <style name="theme_light_b_two_players" parent="@style/theme_light_b_drawable">
+        <item name="android:drawableLeft">@drawable/ic_th_light_b_two_players</item>
+    </style>
+    <style name="theme_light_bg_level">
+        <item name="android:background">@drawable/bg_th_light_b_level</item>
+        <item name="android:layout_width">@dimen/ll_bg_level_size</item>
+        <item name="android:layout_height">@dimen/ll_bg_level_size</item>
+    </style>
+    <style name="theme_light_cb" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/theme_light_cb_button</item>
+    </style>
+    <style name="theme_light_cb_all" parent="@style/theme_light_cb">
+        <item name="android:button">@drawable/theme_light_cb_button_all</item>
+    </style>
+    <style name="theme_light_et" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/theme_light_b_text</item>
+        <item name="android:background">@drawable/dr_th_light_et</item>
+    </style>
+    <style name="theme_light_ib_arrow_back" parent="@style/theme_light_b_arrow">
+        <item name="android:src">@drawable/ic_th_light_b_back</item>
+    </style>
+    <style name="theme_light_ib_arrow_back_activity" parent="@style/theme_light_ib">
+        <item name="android:background">@drawable/dr_th_light_b_back</item>
+        <item name="android:padding">@dimen/ib_arrow_back_padding</item>
+        <item name="android:src">@drawable/ic_th_dark_b_back</item>
+    </style>
+    <style name="theme_light_ib_arrow_next" parent="@style/theme_light_b_arrow">
+        <item name="android:src">@drawable/ic_th_dark_b_next</item>
+    </style>
+    <style name="theme_light_ib_arrow_retry" parent="@style/theme_light_b_arrow">
+        <item name="android:src">@drawable/ic_th_light_b_retry</item>
+    </style>
+    <style name="theme_light_ib_numpad_change" parent="@style/theme_light_ib">
+        <item name="android:background">@drawable/dr_th_light_b_back</item>
+        <item name="android:padding">15.0dip</item>
+    </style>
+    <style name="theme_light_ib_numpad_change_block" parent="@style/theme_light_ib_numpad_change">
+        <item name="android:src">@drawable/ic_th_light_iw_numpad_change_block</item>
+    </style>
+    <style name="theme_light_ib_numpad_change_bool" parent="@style/theme_light_ib_numpad_change">
+        <item name="android:src">@drawable/ic_th_light_iw_numpad_change_bool</item>
+    </style>
+    <style name="theme_light_ib_numpad_change_numpad" parent="@style/theme_light_ib_numpad_change">
+        <item name="android:src">@drawable/ic_th_light_iw_numpad_change_numpad</item>
+    </style>
+    <style name="theme_light_ib_point">
+        <item name="android:src">@drawable/theme_dark_point</item>
+    </style>
+    <style name="theme_light_ib_today_reload" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/ic_th_dark_b_retry</item>
+    </style>
+    <style name="theme_light_ib_youtube" parent="@style/theme_light_ib">
+        <item name="android:src">@drawable/theme_light_ib_youtube</item>
+    </style>
+    <style name="theme_light_ib_youtube_head" parent="@style/th_light_ib_head">
+        <item name="android:src">@drawable/theme_dark_ib_youtube</item>
+    </style>
+    <style name="theme_light_iv_rate_star">
+        <item name="android:src">@drawable/ic_th_dark_b_star_3</item>
+    </style>
+    <style name="theme_light_ll_solution">
+        <item name="android:background">@drawable/theme_light_b_rate_on</item>
+    </style>
+    <style name="theme_light_pb" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/theme_dark_pb_time</item>
+    </style>
+    <style name="theme_light_pb_multiplayer" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/theme_light_pb_time_multiplayer</item>
+    </style>
+    <style name="theme_light_tv" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/theme_light_b_text</item>
+    </style>
+    <style name="theme_light_tv_head" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/theme_light_head_tv_text</item>
+    </style>
+    <style name="theme_player_dark_dark" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="theme_activity_game_ll_head">@style/theme_dark_activity_game_ll_head</item>
+        <item name="theme_activity_game_ll_head_shadow">@style/theme_dark_activity_game_ll_head_shadow</item>
+        <item name="theme_player_1_ad_win_b">@style/theme_dark_alert_dialog_b</item>
+        <item name="theme_player_1_ad_win_tv_win">@style/theme_dark_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_player_1_b_backspace">@style/theme_dark_activity_game_b_backspace</item>
+        <item name="theme_player_1_b_numbers">@style/theme_dark_b_bg_numpad</item>
+        <item name="theme_player_1_ll_expression">@style/theme_dark_activity_game_ll_expression</item>
+        <item name="theme_player_1_tv_expression">@style/theme_dark_activity_game_tv_level</item>
+        <item name="theme_player_1_tv_expressions_count">@style/theme_dark_activity_game_tv_expressions_count</item>
+        <item name="theme_player_1_tv_level">@style/theme_dark_activity_tricks_tv_trick</item>
+        <item name="theme_player_1_tv_trick_name">@style/theme_dark_activity_tricks_tv_trick</item>
+        <item name="theme_player_2_ad_win_b">@style/theme_dark_alert_dialog_b</item>
+        <item name="theme_player_2_ad_win_tv_win">@style/theme_dark_alert_dialog_timer_end_tv_score</item>
+        <item name="theme_player_2_b_backspace">@style/theme_dark_activity_game_b_backspace</item>
+        <item name="theme_player_2_b_numbers">@style/theme_dark_b_bg_numpad</item>
+        <item name="theme_player_2_ll_expression">@style/theme_dark_activity_game_ll_expression</item>
+        <item name="theme_player_2_tv_expression">@style/theme_dark_activity_game_tv_level</item>
+        <item name="theme_player_2_tv_expressions_count">@style/theme_dark_activity_game_tv_expressions_count</item>
+        <item name="theme_player_2_tv_level">@style/theme_dark_activity_tricks_tv_trick</item>
+        <item name="theme_player_2_tv_trick_name">@style/theme_dark_activity_tricks_tv_trick</item>
+        <item name="theme_player_pb_time">@style/theme_dark_pb_multiplayer</item>
+    </style>
+</resources>

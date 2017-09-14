@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:id="@id/ll_tv" android:layout_width="wrap_content" android:baselineAligned="false" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="?attr/theme_activity_game_ll_head_shadow">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+                <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:id="@id/textViewLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_tv_level" style="?theme_activity_game_tv_expressions_count" />
+                    <TextView android:id="@id/textViewExamples" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_tv_examples" style="?theme_activity_game_tv_expressions_count" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:id="@id/textViewScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cчет: 1000" style="?theme_activity_game_tv_score" />
+                </LinearLayout>
+                <ImageView android:id="@id/iv_star" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_dark_b_star_3" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageButton android:id="@id/ib_numbad_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="65.0dip" android:src="@drawable/ic_th_b_numpad_change" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?th_ib_graph_head" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:ellipsize="end" android:id="@id/textViewOperation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="1" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="?theme_activity_tricks_tv_trick" />
+            </LinearLayout>
+            <Button android:id="@id/a_game_b_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" style="?theme_activity_game_b_hint" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/linearLayout2" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+            <ProgressBar android:id="@id/progressBarTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="100" android:minHeight="0.0dip" style="?theme_activity_game_pb_time" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_pb" android:layout_below="@id/ll_tv" android:layout_alignParentLeft="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="?theme_activity_game_ll_expression">
+                <LinearLayout android:gravity="center" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                    <ImageButton android:id="@id/ib_tts_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_b_tts_start" android:layout_alignRight="@id/LinearLayout1" android:layout_alignParentBottom="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" android:layout_alignEnd="@id/LinearLayout1" style="?th_ib_graph_head" />
+                    <TextView android:id="@id/textViewEcuation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_tv_ecuation" style="?theme_activity_game_tv_expression" />
+                    <TextView android:id="@id/textViewSolution" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_tv_solution" android:maxLines="1" style="?theme_activity_game_tv_expression" />
+                </LinearLayout>
+                <ImageButton android:id="@id/ib_tts_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_b_tts_off" android:layout_alignRight="@id/LinearLayout1" android:layout_alignParentBottom="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" android:layout_alignEnd="@id/LinearLayout1" style="?th_ib_graph_head" />
+                <Button android:id="@id/b_money_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" style="?theme_b_money_total" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_numpad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/main_b_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/main_b_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_two" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/main_b_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_three" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/main_b_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_four" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/main_b_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_five" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/main_b_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_six" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/main_b_7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_seven" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/main_b_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_eight" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/main_b_9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_nine" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/main_b_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_zero" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <ImageButton android:id="@id/main_b_backspase" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_activity_game_b_backspace" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_blocks" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_block_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_block_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_block_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_block_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_bool" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_bool_solution" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+                <ScrollView android:id="@id/scrollView7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:requiresFadingEdge="vertical">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <TextView android:layout_gravity="center_vertical" android:id="@id/tvBoolSolution" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_tv_ecuation" style="?theme_alert_dialog_timer_end_tv_score_max" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/b_bool_false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_th_b_numpad_change_bool_false" android:layout_weight="1.0" style="?theme_b_arrow_up" />
+                <ImageButton android:id="@id/b_bool_true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_th_b_numpad_change_bool_true" android:layout_weight="1.0" style="?theme_b_arrow_up" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_game" />
+</LinearLayout>

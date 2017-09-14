@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/alert_dialog_numpad" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout5" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+            <TextView android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/option_numpad" style="?theme_activity_game_tv_level" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="250.0dip" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:id="@id/ll_numpad_1_123" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_a_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_a_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_two" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_a_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_three" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_a_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_four" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_a_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_five" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_a_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_six" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_numpad_1_789" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_a_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_seven" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_a_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_eight" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_a_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_nine" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_a_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_zero" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <ImageButton android:id="@id/imageButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_activity_game_b_backspace" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:layout_gravity="center" android:id="@id/alert_dialog_numpad_b_select_123" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_next" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/progressBarTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="100" android:minHeight="1.0dip" style="?theme_activity_game_pb_time" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="250.0dip" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:id="@id/ll_numpad_2_789" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_b_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_seven" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_b_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_eight" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_b_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_nine" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_b_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_four" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_b_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_five" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_b_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_six" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/ll_numpad_2_123" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_b_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_b_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_two" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <Button android:id="@id/b_b_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_three" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/b_b_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_b_zero" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    <ImageButton android:id="@id/imageButton2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_activity_game_b_backspace" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:id="@id/alert_dialog_numpad_b_select_789" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_next" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_numpad" />
+</LinearLayout>

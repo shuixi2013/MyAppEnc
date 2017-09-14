@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="20.0">
+                <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                <TextView android:id="@id/tv_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/activity_game_tv_level" style="?theme_activity_game_tv_level" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="80.0">
+                <ImageButton android:id="@id/ib_ex_up" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_arrow_up_head" />
+                <TextView android:id="@id/tv_ex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/10" style="?theme_activity_game_tv_trick_name" />
+                <ImageButton android:id="@id/ib_ex_down" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_arrow_down_head" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_12" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_13" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_14" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_15" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_16" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_17" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_18" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_19" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_20" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_21" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_22" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_23" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_24" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_25" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_26" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_27" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_28" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_29" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_30" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_31" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_32" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_33" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_34" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_35" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_36" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_37" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_38" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_39" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_41" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_42" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_43" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_44" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_45" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_46" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_47" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_48" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_49" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_50" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_51" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_52" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_53" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_54" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_55" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_56" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_57" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_58" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_59" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_60" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_61" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_62" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_63" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_64" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_65" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_66" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_67" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_68" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_69" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_70" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_71" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_72" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_73" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_74" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_75" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_76" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_77" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_78" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_79" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_80" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_81" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_82" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_83" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_84" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_85" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_86" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_87" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_88" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_89" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_90" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_91" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_92" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_93" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_94" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_95" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/b_level_96" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_97" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_98" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_99" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+                <Button android:id="@id/b_level_100" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_levels_b_level" android:layout_weight="1.0" android:onClick="onClick" style="?theme_b_bg_numpad" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_levels" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayoutAlertDialogTimerEnd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/alert_dialog_player_win_2_b_repeat" style="?theme_ib_arrow_retry" />
+        <ImageButton android:id="@id/alert_dialog_player_win_2_b_cancel" style="?theme_ib_arrow_back" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/alert_dialog_player_win_2_ll_win" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+        <TextView android:layout_gravity="center" android:id="@id/alert_dialog_player_win_2_tv_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alert_dialog_timer_end_tv_score" style="?theme_player_2_ad_win_tv_win" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/alert_dialog_player_win_1_tv_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/alert_dialog_timer_end_tv_score" style="?theme_player_1_ad_win_tv_win" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/alert_dialog_player_win_1_b_cancel" style="?theme_ib_arrow_back" />
+        <ImageButton android:id="@id/alert_dialog_player_win_1_b_repeat" style="?theme_ib_arrow_retry" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_ad_player_win" />
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/invitation_popup" android:visibility="gone" android:layout_width="fill_parent" style="@style/InvPopup">
+                <TextView android:id="@id/incoming_invitation_text" style="@style/InvPopupText" />
+                <Button android:id="@id/button_accept_popup_invitation" android:text="@string/accept_popup_invite" style="@style/InvPopupButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/screen_sign_in" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout10" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_head_1" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+                        <ImageButton android:id="@id/b_back_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                        <TextView android:id="@id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/b_rtm" style="?theme_activity_game_tv_level" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/a_main_ll_b_margins" android:layout_marginRight="@dimen/a_main_ll_b_margins">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_blurb" style="?theme_activity_tricks_tv_trick" />
+                    <com.google.android.gms.common.SignInButton android:id="@id/button_sign_in" style="@style/SignInButton" />
+                </LinearLayout>
+                <TextView android:visibility="gone" android:layout_width="wrap_content" style="@style/GameTitle" />
+                <Button android:id="@id/button_single_player" android:visibility="gone" android:text="@string/single_player" style="@style/MainScreenButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/screen_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout8" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+                        <ImageButton android:id="@id/b_back_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                        <TextView android:id="@id/textView7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/b_rtm" style="?theme_activity_game_tv_level" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:visibility="gone" style="@style/GameTitle" />
+                <Button android:id="@id/button_single_player_2" android:visibility="gone" android:text="@string/single_player" style="@style/MainScreenButton" />
+                <TextView android:visibility="gone" android:text="@string/single_player_explanation" style="@style/MainScreenButtonBlurb" />
+                <TextView android:visibility="gone" android:text="@string/quick_game_explanation" style="@style/MainScreenButtonBlurb" />
+                <TextView android:visibility="gone" android:text="@string/invite_players_explanation" style="@style/MainScreenButtonBlurb" />
+                <TextView android:visibility="gone" android:text="@string/see_invitations_explanation" style="@style/MainScreenButtonBlurb" />
+                <Button android:id="@id/button_sign_out" android:visibility="gone" android:text="@string/sign_out" style="@style/SignOutButton" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/a_main_ll_b_margins" android:layout_marginRight="@dimen/a_main_ll_b_margins">
+                    <Button android:id="@id/button_quick_game" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/b_rtm" style="?theme_b_multiplayer" />
+                    <Button android:id="@id/button_invite_players" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invite_players" style="?theme_b_set_invitation" />
+                    <Button android:id="@id/button_see_invitations" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/see_invitations" style="?theme_b_get_invitation" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/screen_wait" android:visibility="visible" android:layout_width="fill_parent" style="@style/LLScreen">
+                <LinearLayout android:gravity="center" android:layout_width="@dimen/ll_player_win_size" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/ll_head">
+                        <ImageView android:id="@id/iv_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_light_b_single_player" android:layout_weight="1.0" />
+                        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_participant" android:background="#ff012db0" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <TextView android:id="@id/tv_participant" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/alert_dialog_timer_end_tv_score_max" android:layout_weight="1.0" style="?theme_activity_game_tv_trick_name" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                                <Button android:id="@id/b_victory_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25" android:layout_weight="1.0" style="?theme_b_rtm_victory" />
+                                <Button android:id="@id/b_defeat_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25" android:layout_weight="1.0" style="?theme_b_rtm_defeat" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_wait" style="?theme_activity_tricks_tv_trick" />
+                    <ProgressBar android:id="@id/pb_wait" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/screen_game" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <Button android:id="@id/button_click_me" android:layout_marginBottom="20.0dip" android:text="@string/click_me" style="@style/GameButton" />
+                    <TextView android:id="@id/instructions" android:text="@string/instructions" style="@style/Instructions" />
+                    <TextView android:id="@id/my_score" style="@style/ScoreDisplay" />
+                    <TextView android:id="@id/countdown" style="@style/FigureLabel" />
+                    <LinearLayout android:layout_width="fill_parent" style="@style/ScoresBox">
+                        <TextView android:id="@id/score0" style="@style/ScoreText" />
+                        <TextView android:id="@id/score1" style="@style/ScoreText" />
+                        <TextView android:id="@id/score2" style="@style/ScoreText" />
+                        <TextView android:id="@id/score3" style="@style/ScoreText" />
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:id="@id/ll_tv" android:layout_width="wrap_content" android:baselineAligned="false" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="?attr/theme_activity_game_ll_head_shadow">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/ll_head_3" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+                            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="60.0">
+                                <ImageButton android:id="@id/b_back_3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                                <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <TextView android:id="@id/textViewLevel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_tv_level" style="?theme_activity_game_tv_expressions_count" />
+                                    <TextView android:id="@id/textViewExamples" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_game_tv_examples" style="?theme_activity_game_tv_expressions_count" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="40.0">
+                                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <ImageView android:id="@id/iv_flags" android:padding="4.0dip" android:layout_width="@dimen/b_flag_size" android:layout_height="fill_parent" android:src="@drawable/ic_th_light_b_retry" android:scaleType="fitEnd" android:layout_weight="1.0" android:layout_alignBottom="@id/textViewScore" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+                                    <TextView android:ellipsize="start" android:id="@id/textViewScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cчет: 99999" android:singleLine="true" android:layout_toRightOf="@id/iv_flags" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_toEndOf="@id/iv_flags" style="?theme_activity_game_tv_expressions_count" />
+                                    <TextView android:ellipsize="start" android:id="@id/tvPlayerSolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15+32=47" android:singleLine="true" android:layout_toRightOf="@id/iv_flags" android:layout_below="@id/textViewScore" android:marqueeRepeatLimit="marquee_forever" android:layout_toEndOf="@id/iv_flags" style="?theme_activity_game_tv_expressions_count" />
+                                </RelativeLayout>
+                                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                                    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                                        <Button android:id="@id/b_rtm_victory" android:layout_height="fill_parent" android:text="25" android:layout_weight="1.0" style="?theme_b_rtm_victory" />
+                                        <Button android:id="@id/b_rtm_defeat" android:layout_height="fill_parent" android:text="5" android:singleLine="false" android:layout_weight="1.0" style="?theme_b_rtm_defeat" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <TextView android:ellipsize="end" android:id="@id/textViewOperation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="14.0dip" android:text="@string/activity_game_tv_rule" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="?theme_activity_tricks_tv_trick" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <Button android:textSize="@dimen/theme_activity_main_b_rate" android:id="@id/a_game_b_hint" android:visibility="gone" android:layout_width="@dimen/theme_activity_game_b_hint" android:layout_height="wrap_content" android:text="1" android:layout_weight="1.0" style="?theme_activity_game_b_hint" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/linearLayout2" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+                        <ProgressBar android:id="@id/progressBarTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="100" android:minHeight="0.0dip" style="?theme_activity_game_pb_time" />
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_pb" android:layout_below="@id/ll_tv" android:layout_alignParentLeft="true" style="?theme_activity_game_ll_expression">
+                        <LinearLayout android:gravity="center" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                            <TextView android:id="@id/textViewEcuation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_tv_ecuation" style="?theme_activity_game_tv_expression" />
+                            <TextView android:id="@id/textViewSolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_tv_solution" android:maxLines="1" style="?theme_activity_game_tv_expression" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <Button android:id="@id/main_b_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_one" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                        <Button android:id="@id/main_b_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_two" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                        <Button android:id="@id/main_b_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_three" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <Button android:id="@id/main_b_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_four" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                        <Button android:id="@id/main_b_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_five" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                        <Button android:id="@id/main_b_6" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_six" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <Button android:id="@id/main_b_7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_seven" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                        <Button android:id="@id/main_b_8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_eight" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                        <Button android:id="@id/main_b_9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_nine" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <Button android:id="@id/main_b_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/activity_game_b_zero" android:layout_weight="1.0" style="?theme_b_bg_numpad" />
+                        <ImageButton android:id="@id/main_b_backspase" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_activity_game_b_backspace" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/screen_retry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transitionGroup="false">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout11" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_head_4" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+                        <ImageButton android:id="@id/b_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                        <TextView android:id="@id/tv_player_win" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/alert_dialog_timer_end_tv_score_max" style="?theme_activity_game_tv_level" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="@dimen/ll_player_win_size" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="20.0">
+                                <ImageView android:id="@id/iv_player_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_light_b_single_player" android:layout_weight="1.0" />
+                                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_participant_1" android:background="#ff012db0" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <TextView android:id="@id/tv_participant_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alert_dialog_timer_end_tv_score_max" android:layout_weight="1.0" style="?theme_activity_game_tv_trick_name" />
+                                    <Button android:id="@id/b_victory_player_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="?theme_b_rtm_victory" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="80.0">
+                                <TextView android:textColor="#ff002697" android:id="@id/tv_participant_1_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" style="                                     ?theme_activity_game_tv_trick_name" />
+                                <ProgressBar android:id="@id/pb_participant_1" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?android:attr/progressBarStyleSmall" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="20.0">
+                                <ImageView android:id="@id/iv_player_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_light_b_single_player" android:layout_weight="1.0" />
+                                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/ll_participant_2" android:background="#ff012db0" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                    <TextView android:id="@id/tv_participant_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/alert_dialog_timer_end_tv_score_max" android:layout_weight="1.0" style="?theme_activity_game_tv_trick_name" />
+                                    <Button android:id="@id/b_victory_player_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="?theme_b_rtm_victory" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="80.0">
+                                <TextView android:textColor="#ff002697" android:id="@id/tv_participant_2_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" style="?theme_activity_game_tv_trick_name" />
+                                <ProgressBar android:id="@id/pb_participant_2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?android:attr/progressBarStyleSmall" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/b_retry" style="?theme_ib_arrow_retry" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" app:adSize="SMART_BANNER" app:adUnitId="@string/admob_unit_id_activity_multiplayer_game" />
+    </LinearLayout>
+</FrameLayout>

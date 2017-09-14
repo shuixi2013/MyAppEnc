@@ -14,7 +14,7 @@ def fixxmlfile(xmlpath , stubname):
             appname = appnode.getAttribute("android:name")
             # set my application
             appnode.setAttribute("android:name",stubname)
-            appnode.setAttribute("nikoprotect","service")
+            #appnode.setAttribute("nikoprotect","service")
             metanode = DomTree.createElement("meta-data")
             metanode.setAttribute("android:name","targetapp")
             metanode.setAttribute("android:value",appname)

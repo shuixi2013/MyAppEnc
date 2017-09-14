@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                <TextView android:id="@id/tvGraph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="Chart" style="?theme_activity_game_tv_level" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="7.0">
+                <ImageButton android:id="@id/ib_graph_cubic_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/buttonTeamwise" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?th_ib_graph_head" />
+                <ImageButton android:id="@id/ib_graph_cubic_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_light_b_graph_cube" android:layout_alignBottom="@id/buttonTeamwise" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?th_ib_graph_head" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.jjoe64.graphview.GraphView android:id="@id/graph" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@id/section_label" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+        <com.github.mikephil.charting.charts.LineChart android:id="@id/chart1" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/seekBar1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <SeekBar android:id="@id/seekBar2" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_marginRight="5.0dip" android:max="200" android:layout_toLeftOf="@id/tvYMax" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <SeekBar android:id="@id/seekBar1" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="35.0dip" android:max="500" android:layout_toLeftOf="@id/tvXMax" android:layout_above="@id/seekBar2" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="right" android:id="@id/tvXMax" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text="500" android:layout_alignBottom="@id/seekBar1" android:layout_alignParentRight="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="right" android:id="@id/tvYMax" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text="500" android:layout_alignBottom="@id/seekBar2" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_graph" />
+</LinearLayout>

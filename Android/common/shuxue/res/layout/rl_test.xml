@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="#ffaf2121" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_flags" android:layout_width="@dimen/b_flag_size" android:layout_height="@dimen/b_flag_size" android:src="@drawable/ic_th_light_b_retry" android:scaleType="fitCenter" android:layout_weight="1.0" android:layout_alignBottom="@id/textViewScore" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+        <TextView android:ellipsize="start" android:id="@id/textViewScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cчет: 99999" android:singleLine="true" android:layout_toRightOf="@id/iv_flags" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:layout_toEndOf="@id/iv_flags" style="?theme_activity_game_tv_expressions_count" />
+        <TextView android:ellipsize="start" android:id="@id/tvPlayerSolution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15+32=47" android:singleLine="true" android:layout_toRightOf="@id/iv_flags" android:layout_below="@id/textViewScore" android:marqueeRepeatLimit="marquee_forever" android:layout_toEndOf="@id/iv_flags" style="?theme_activity_game_tv_expressions_count" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ff30aa3a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <Button android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Button" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ff43b6b6" android:padding="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New Button" style="?android:attr/buttonStyleSmall" />
+    </LinearLayout>
+</LinearLayout>

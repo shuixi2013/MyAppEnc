@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_android_wear_notification_needs_update_text">An application requires an update to the Android Wear app.</string>
+    <string name="common_android_wear_update_text">"This app won't run unless you update the Android Wear app."</string>
+    <string name="common_android_wear_update_title">Update Android Wear</string>
+    <string name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string name="common_google_play_services_enable_text">"This app won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by %1$s</string>
+    <string name="common_google_play_services_install_button">Get Google Play services</string>
+    <string name="common_google_play_services_install_text_phone">"This app won't run without Google Play services, which are missing from your phone."</string>
+    <string name="common_google_play_services_install_text_tablet">"This app won't run without Google Play services, which are missing from your tablet."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"This app won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="activity_game_time_tv_score">Time:</string>
+    <string name="activity_game_tv_examples">Ex: %s</string>
+    <string name="activity_game_tv_level">Level: %s</string>
+    <string name="activity_game_tv_score">Score:</string>
+    <string name="activity_game_tv_solution">Solution:</string>
+    <string name="activity_main_b_Exit">Exit</string>
+    <string name="activity_main_b_Rate">Please rate!</string>
+    <string name="activity_main_b_Settings">Settings</string>
+    <string name="activity_main_b_Start">Single game</string>
+    <string name="activity_main_b_Teamwise">Joint game</string>
+    <string name="activity_main_b_Training">Training mode</string>
+    <string name="activity_main_b_by_heart">By heart</string>
+    <string name="activity_main_b_one_player">One player</string>
+    <string name="activity_main_b_support">Email support</string>
+    <string name="activity_main_b_two_players">Two players</string>
+    <string name="activity_main_tv_days_streak">&lt;i>&lt;b>%s&lt;/b> &lt;small>&lt;small>day(s) streak&lt;/small>&lt;/small>&lt;/i></string>
+    <string name="activity_main_tv_ex_per_day_today">&lt;i>&lt;b>%s&lt;/b> &lt;small>&lt;small>today&lt;/small>&lt;/small>&lt;/i></string>
+    <string name="activity_main_tv_ex_per_day_total_solved">&lt;i>&lt;b>%s&lt;/b> &lt;small>&lt;small>total&lt;/small>&lt;/small>&lt;/i></string>
+    <string name="ad_rate_b_later">Later</string>
+    <string name="ad_rate_tv_rate">Thank you for using my app, it would mean a lot to us if you took a minute to give us 5 stars in the google play.</string>
+    <string name="alert_dialog_game_b_minute">Minute challenge</string>
+    <string name="alert_dialog_game_b_not_time">No time limit</string>
+    <string name="alert_dialog_game_b_single">To the bitter end</string>
+    <string name="alert_dialog_game_b_time">Speed challenge</string>
+    <string name="alert_dialog_game_tv_select_game">Select game</string>
+    <string name="alert_dialog_level_complete_b_cancel">↩</string>
+    <string name="alert_dialog_level_complete_b_next">→</string>
+    <string name="alert_dialog_level_complete_b_repeat">⟳</string>
+    <string name="alert_dialog_level_complete_tv_score">"Score: "</string>
+    <string name="alert_dialog_numpad_b_select">Select</string>
+    <string name="alert_dialog_player_score">You scored:</string>
+    <string name="alert_dialog_player_score_total">Total score:</string>
+    <string name="alert_dialog_player_tv_lose">You lose!</string>
+    <string name="alert_dialog_player_tv_win">You win!</string>
+    <string name="alert_dialog_rule_b_cancel">↩</string>
+    <string name="alert_dialog_rule_b_ok">→</string>
+    <string name="alert_dialog_rule_b_translate">Translate</string>
+    <string name="alert_dialog_timer_end_b_cancel">↩</string>
+    <string name="alert_dialog_timer_end_b_repeat">⟳</string>
+    <string name="alert_dialog_timer_end_tv_score">"Score: "</string>
+    <string name="alert_dialog_timer_end_tv_score_max">"High score: "</string>
+    <string name="alert_dialog_timer_end_tv_solution">"Solution: "</string>
+    <string name="alert_dialog_timer_end_tv_time_max">"Best result: "</string>
+    <string name="app_name">Math Tricks</string>
+    <string name="b_rtm">Multiplayer</string>
+    <string name="group_addition_name">Addition</string>
+    <string name="group_division_name">Division</string>
+    <string name="group_multiplication_name">Multiplication</string>
+    <string name="group_percent_name">Percentage</string>
+    <string name="group_power_name">Exponentiation</string>
+    <string name="group_root_name">nth root</string>
+    <string name="group_square_name">Squaring</string>
+    <string name="group_subtraction_name">Subtraction</string>
+    <string name="invite_players">Invite friends</string>
+    <string name="option_alarm">Notification</string>
+    <string name="option_language">Language</string>
+    <string name="option_music">Music</string>
+    <string name="option_numpad">Numpad</string>
+    <string name="option_share">Share</string>
+    <string name="option_sound">Sound</string>
+    <string name="option_theme">Theme</string>
+    <string name="option_vibration">Vibration</string>
+    <string name="player_alert_dialog_tv_steps_name">"Math problems
+(steps to win)!"</string>
+    <string name="quick_game">Quick game</string>
+    <string name="see_invitations">See invitations</string>
+    <string name="trick_05_percent_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>0.5&lt;/font>% → &lt;font color=#7875fd>600&lt;/font> = 3&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 100: &lt;br>&lt;b>&lt;font color=#7875fd>600&lt;/font> / 100 = &lt;font color=#008800>6&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#008800>6&lt;/font> / 2 = 3</string>
+    <string name="trick_05_percent_text">0.5%</string>
+    <string name="trick_150_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>150&lt;/font>% → &lt;font color=#888800>60&lt;/font> = 90&lt;/b> &lt;br>&lt;b>&lt;font color=#c27171>150&lt;/font>% = &lt;font color=#7875fd>100&lt;/font>% + &lt;font color=#008800>50&lt;/font>%&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#7875fd>100&lt;/font>% → &lt;font color=#888800>60&lt;/font> = &lt;font color=#924bd7>60&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;b>&lt;font color=#008800>50&lt;/font>% = &lt;font color=#7875fd>100&lt;/font>% / &lt;font color=#aa7700>2&lt;/font>&lt;/b> &lt;br> Divide the number by 2: &lt;br>&lt;b>&lt;font color=#924bd7>60&lt;/font> / &lt;font color=#aa7700>2&lt;/font> = &lt;font color=#008888>30&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#924bd7>60&lt;/font> + &lt;font color=#008888>30&lt;/font> = 90&lt;/b></string>
+    <string name="trick_150_percent_text">150%</string>
+    <string name="trick_15_percent_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>15&lt;/font>% → &lt;font color=#7875fd>60&lt;/font> = 9&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#7875fd>60&lt;/font> / 10 = &lt;font color=#008800>6&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#008800>6&lt;/font> / 2 = &lt;font color=#888800>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>6&lt;/font> + &lt;font color=#888800>3&lt;/font> = 9&lt;/b></string>
+    <string name="trick_15_percent_text">15%</string>
+    <string name="trick_200_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>200&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 128&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>200&lt;/font>% = 100% × &lt;font color=#008800>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> × &lt;font color=#008800>2&lt;/font> = 128&lt;/b></string>
+    <string name="trick_200_percent_text">200%</string>
+    <string name="trick_20_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>20&lt;/font>% → &lt;font color=#7875fd>255&lt;/font> = 51&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>20&lt;/font>% = 100% / &lt;font color=#008800>5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;b>&lt;font color=#7875fd>255&lt;/font> / &lt;font color=#008800>5&lt;/font> = 51&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - &lt;b>&lt;font color=#008800>5&lt;/font> = &lt;font color=#aa7700>10&lt;/font> / &lt;font color=#924bd7>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#7875fd>255&lt;/font> / &lt;font color=#aa7700>10&lt;/font> = &lt;font color=#888800>25.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#888800>25.5&lt;/font> × &lt;font color=#924bd7>2&lt;/font> = 51&lt;/b> &lt;br> &lt;br> &lt;b>&lt;u>-2-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>2&lt;/font>0% → &lt;font color=#7875fd>255&lt;/font> = 51&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>10% → &lt;font color=#7875fd>255&lt;/font> = &lt;font color=#7875fd>255&lt;/font> / 10 = &lt;font color=#888800>25.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#888800>25.5&lt;/font> × &lt;font color=#c27171>2&lt;/font> = 51&lt;/b></string>
+    <string name="trick_20_percent_text">20%</string>
+    <string name="trick_250_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>250&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 160&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>250&lt;/font>% = 100% / &lt;font color=#008800>4&lt;/font> × &lt;font color=#924bd7>10&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> / &lt;font color=#008800>4&lt;/font> = &lt;font color=#aa7700>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#aa7700>16&lt;/font> × &lt;font color=#924bd7>10&lt;/font> = 160&lt;/b></string>
+    <string name="trick_250_percent_text">250%</string>
+    <string name="trick_25_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 16&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>25&lt;/font>% = 100% / &lt;font color=#008800>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> / &lt;font color=#008800>4&lt;/font> = 16&lt;/b></string>
+    <string name="trick_25_percent_text">25%</string>
+    <string name="trick_2_percent_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>2&lt;/font>% → &lt;font color=#7875fd>50&lt;/font> = 1&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 100: &lt;br>&lt;b>&lt;font color=#7875fd>50&lt;/font> / 100 = &lt;font color=#008800>0.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#008800>0.5&lt;/font> × 2 = 1</string>
+    <string name="trick_2_percent_text">2%</string>
+    <string name="trick_300_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>300&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 192&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>300&lt;/font>% = 100% × &lt;font color=#008800>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 3: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> × &lt;font color=#008800>2&lt;/font> = 128&lt;/b></string>
+    <string name="trick_300_percent_text">300%</string>
+    <string name="trick_3_root_text">&lt;sup>&lt;small>3&lt;/small>&lt;/sup>&lt;b>√a&lt;/b></string>
+    <string name="trick_40_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>40&lt;/font>% → &lt;font color=#7875fd>255&lt;/font> = 102&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>40&lt;/font>% = (100% / &lt;font color=#008800>10&lt;/font>) × &lt;font color=#aa7700>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#7875fd>255&lt;/font> / &lt;font color=#008800>10&lt;/font> = &lt;font color=#924bd7>25.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 4: &lt;br>&lt;b>&lt;font color=#924bd7>25.5&lt;/font> × &lt;font color=#aa7700>4&lt;/font> = 102&lt;/b></string>
+    <string name="trick_4_percent_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>4&lt;/font>% → &lt;font color=#7875fd>50&lt;/font> = 2&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 100: &lt;br>&lt;b>&lt;font color=#7875fd>50&lt;/font> / 100 = &lt;font color=#008800>0.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 4: &lt;br>&lt;b>&lt;font color=#008800>0.5&lt;/font> × 4 = 2</string>
+    <string name="trick_4_percent_text">4%</string>
+    <string name="trick_4_root_text">&lt;sup>&lt;small>4&lt;/small>&lt;/sup>&lt;b>√a&lt;/b></string>
+    <string name="trick_500_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>500&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 320&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>500&lt;/font>% = 100% × &lt;font color=#008800>5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 5: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> × &lt;font color=#008800>5&lt;/font> = 128&lt;/b></string>
+    <string name="trick_500_percent_text">500%</string>
+    <string name="trick_50_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>50&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 32&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>50&lt;/font>% = 100% / &lt;font color=#008800>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> / &lt;font color=#008800>2&lt;/font> = 32&lt;/b></string>
+    <string name="trick_50_percent_text">50%</string>
+    <string name="trick_5_percent_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>5&lt;/font>% → &lt;font color=#7875fd>60&lt;/font> = 3&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#7875fd>60&lt;/font> / 10 = &lt;font color=#008800>6&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#008800>6&lt;/font> / 2 = 3</string>
+    <string name="trick_5_percent_text">5%</string>
+    <string name="trick_5_root_text">&lt;sup>&lt;small>5&lt;/small>&lt;/sup>&lt;b>√a&lt;/b></string>
+    <string name="trick_6_root_text">&lt;sup>&lt;small>6&lt;/small>&lt;/sup>&lt;b>√a&lt;/b></string>
+    <string name="trick_750_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>750&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 480&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>750&lt;/font>% = ((100% / &lt;font color=#008800>4&lt;/font>) × &lt;font color=#aa7700>3&lt;/font>) × &lt;font color=#008888>10&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> / &lt;font color=#008800>4&lt;/font> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 3: &lt;br>&lt;b>&lt;font color=#924bd7>16&lt;/font> × &lt;font color=#aa7700>3&lt;/font> = &lt;font color=#888800>48&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#888800>48&lt;/font> × &lt;font color=#008888>10&lt;/font> = 480&lt;/b></string>
+    <string name="trick_75_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>75&lt;/font>% → &lt;font color=#7875fd>64&lt;/font> = 48&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>75&lt;/font>% = (100% / &lt;font color=#008800>4&lt;/font>) × &lt;font color=#aa7700>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#7875fd>64&lt;/font> / &lt;font color=#008800>4&lt;/font> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 3: &lt;br>&lt;b>&lt;font color=#924bd7>16&lt;/font> × &lt;font color=#aa7700>3&lt;/font> = 48&lt;/b></string>
+    <string name="trick_9_root_text">&lt;sup>&lt;small>9&lt;/small>&lt;/sup>&lt;b>√a&lt;/b></string>
+    <string name="trick_adding_numbers_close_to_hundreds_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>159&lt;/font> + &lt;font color=#7875fd>192&lt;/font> = 351&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Round the number to the nearest hundreds digit: &lt;br>&lt;b>&lt;font color=#7875fd>192&lt;/font> + &lt;font color=#008800>8&lt;/font> = &lt;font color=#aa7700>200&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Add the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> to the other number: &lt;br>&lt;b>&lt;font color=#aa7700>200&lt;/font> + &lt;font color=#c27171>159&lt;/font> = &lt;font color=#924bd7>359&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add or subtract the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by the number you rounded off: &lt;br>&lt;b>&lt;font color=#924bd7>359&lt;/font> - &lt;font color=#008800>8&lt;/font> = 351&lt;/b></string>
+    <string name="trick_adding_numbers_close_to_hundreds_text">Adding numbers close to hundreds</string>
+    <string name="trick_addition_text">Addition</string>
+    <string name="trick_dividing_by_025_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>20&lt;/font> / 0.25 = 80&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 4: &lt;br>&lt;b>&lt;font color=#c27171>20&lt;/font> × 4 = 80&lt;/b></string>
+    <string name="trick_dividing_by_025_text">Divide by 0.25</string>
+    <string name="trick_dividing_by_02_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> / 0.2 = 90&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> / 2 = &lt;font color=#7875fd>9&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#7875fd>9&lt;/font> × 10 = 90&lt;/b></string>
+    <string name="trick_dividing_by_02_text">Divide by 0.2</string>
+    <string name="trick_dividing_by_05_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> / 0.5 = 36&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> × 2 = 36&lt;/b></string>
+    <string name="trick_dividing_by_05_text">Divide by 0.5</string>
+    <string name="trick_dividing_by_15_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>315&lt;/font> / &lt;font color=#7875fd>15&lt;/font> = 21&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#7875fd>15&lt;/font> = &lt;font color=#008800>10&lt;/font> × &lt;font color=#888800>3&lt;/font> / &lt;font color=#b265cf>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>315&lt;/font> / &lt;font color=#008800>10&lt;/font> = &lt;font color=#aa7700>31.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 3: &lt;br>&lt;b>&lt;font color=#aa7700>31.5&lt;/font> / &lt;font color=#888800>3&lt;/font> = &lt;font color=#8c6745>10.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#8c6745>10.5&lt;/font> × &lt;font color=#b265cf>2&lt;/font> = 21&lt;/b></string>
+    <string name="trick_dividing_by_15_text">Divide by 15</string>
+    <string name="trick_dividing_by_20_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>1260&lt;/font> / 20 = 63&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>1260&lt;/font> / 10 = &lt;font color=#7875fd>126&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>126&lt;/font> / 2 = 63&lt;/b></string>
+    <string name="trick_dividing_by_20_text">Divide by 20</string>
+    <string name="trick_dividing_by_25_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>1250&lt;/font> / 25 = 50&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 100: &lt;br>&lt;b>&lt;font color=#c27171>1250&lt;/font> / 100 = &lt;font color=#7875fd>12.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 4: &lt;br>&lt;b>&lt;font color=#7875fd>12.5&lt;/font> × 4 = 50&lt;/b></string>
+    <string name="trick_dividing_by_25_text">Divide by 25</string>
+    <string name="trick_dividing_by_2_text">Divide by 2</string>
+    <string name="trick_dividing_by_3_text">Divide by 3</string>
+    <string name="trick_dividing_by_40_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>1280&lt;/font> / 40 = 32&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>1280&lt;/font> / 10 = &lt;font color=#7875fd>128&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 4: &lt;br>&lt;b>&lt;font color=#7875fd>128&lt;/font> / 4 = 32&lt;/b></string>
+    <string name="trick_dividing_by_40_text">Divide by 40</string>
+    <string name="trick_dividing_by_4_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>64&lt;/font> / 4 = 16&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>64&lt;/font> / 2 = &lt;font color=#7875fd>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>32&lt;/font> / 2 = 16&lt;/b></string>
+    <string name="trick_dividing_by_4_text">Divide by 4</string>
+    <string name="trick_dividing_by_50_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>1250&lt;/font> / 50 = 25&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 100: &lt;br>&lt;b>&lt;font color=#c27171>1250&lt;/font> / 100 = &lt;font color=#7875fd>12.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>12.5&lt;/font> × 2 = 25&lt;/b></string>
+    <string name="trick_dividing_by_50_text">Divide by 50</string>
+    <string name="trick_dividing_by_5_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>1235&lt;/font> / 5 = 247&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>1235&lt;/font> / 10 = &lt;font color=#7875fd>123.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>123.5&lt;/font> × 2 = 247&lt;/b></string>
+    <string name="trick_dividing_by_5_text">Divide by 5</string>
+    <string name="trick_dividing_by_6_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>126&lt;/font> / &lt;font color=#7875fd>6&lt;/font> = 21&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#7875fd>6&lt;/font> = &lt;font color=#008800>3&lt;/font> × &lt;font color=#888800>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>126&lt;/font> / &lt;font color=#888800>2&lt;/font> = &lt;font color=#aa7700>63&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 3: &lt;br>&lt;b>&lt;font color=#aa7700>63&lt;/font> / &lt;font color=#008800>3&lt;/font> = 21</string>
+    <string name="trick_dividing_by_6_text">Divide by 6</string>
+    <string name="trick_dividing_by_7_text">Divide by 7</string>
+    <string name="trick_dividing_by_8_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>128&lt;/font> / &lt;font color=#7875fd>8&lt;/font> = 16&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#7875fd>8&lt;/font> = &lt;font color=#008800>2&lt;/font> × &lt;font color=#888800>2&lt;/font> × &lt;font color=#924bd7>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>128&lt;/font> / &lt;font color=#008800>2&lt;/font> = &lt;font color=#aa7700>64&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#aa7700>64&lt;/font> / &lt;font color=#888800>2&lt;/font> = &lt;font color=#008888>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#008888>32&lt;/font> / &lt;font color=#924bd7>2&lt;/font> = 16</string>
+    <string name="trick_dividing_by_8_text">Divide by 8</string>
+    <string name="trick_dividing_by_9_text">Divide by 9</string>
+    <string name="trick_division_text">Division</string>
+    <string name="trick_multiplication_text">Multiplication table</string>
+    <string name="trick_multiply_by_025_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>20&lt;/font> × 0.25 = 5&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#c27171>20&lt;/font> / 4 = 5&lt;/b></string>
+    <string name="trick_multiply_by_025_text">Multiply by 0.25</string>
+    <string name="trick_multiply_by_02_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>125&lt;/font> × 0.2 = 25&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>125&lt;/font> / 10 = &lt;font color=#7875fd>12.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>12.5&lt;/font> × 2 = 25&lt;/b></string>
+    <string name="trick_multiply_by_02_text">Multiply by 0.2</string>
+    <string name="trick_multiply_by_05_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> × 0.5 = 9&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> / 2 = 9&lt;/b></string>
+    <string name="trick_multiply_by_05_text">Multiply by 0.5</string>
+    <string name="trick_multiply_by_11_2digit_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>3&lt;/font>&lt;font color=#7875fd>5&lt;/font> × 11 = 385&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Add both digits of the two digit number: &lt;br>&lt;b>&lt;font color=#c27171>3&lt;/font> + &lt;font color=#7875fd>5&lt;/font> = &lt;font color=#008800>8&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Place the result in between both digits: &lt;br>&lt;b>&lt;font color=#c27171>3&lt;/font>_&lt;font color=#008800>8&lt;/font>_&lt;font color=#7875fd>5&lt;/font> = 385&lt;/b> &lt;br> &lt;br> &lt;br>&lt;b>&lt;u>-2-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>7&lt;/font>&lt;font color=#7875fd>8&lt;/font> × 11 = 858&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Add both digits of the two digit number: &lt;br>&lt;b>&lt;font color=#c27171>7&lt;/font> + &lt;font color=#7875fd>8&lt;/font> = &lt;font color=#924bd7>1&lt;/font>&lt;font color=#aa7700>5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Carry the 1 when the result is greater than 9: &lt;br>&lt;b>&lt;font color=#c27171>7&lt;/font> + &lt;font color=#924bd7>1&lt;/font> = &lt;font color=#888800>8&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Place the result in between both digits: &lt;br>&lt;b>&lt;font color=#888800>8&lt;/font>_&lt;font color=#aa7700>5&lt;/font>_&lt;font color=#7875fd>8&lt;/font> = 858&lt;/b></string>
+    <string name="trick_multiply_by_11_2digit_text">Multiply two digit number by 11</string>
+    <string name="trick_multiply_by_125_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> × 125 = 3125&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 8: &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> / 8 = &lt;font color=#7875fd>3.125&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 1000: &lt;br>&lt;b>&lt;font color=#7875fd>3.125&lt;/font> × 1000 = 3125&lt;/b></string>
+    <string name="trick_multiply_by_125_text">Multiply by 125</string>
+    <string name="trick_multiply_by_12_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>12&lt;/font> = 192&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>12&lt;/font> = &lt;font color=#7875fd>10&lt;/font> + &lt;font color=#008800>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#7875fd>10&lt;/font> = &lt;font color=#aa7700>160&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#008800>2&lt;/font> = &lt;font color=#924bd7>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>160&lt;/font> + &lt;font color=#924bd7>32&lt;/font> = 192&lt;/b></string>
+    <string name="trick_multiply_by_12_text">Multiply by 12</string>
+    <string name="trick_multiply_by_13_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>13&lt;/font> = 208&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>13&lt;/font> = &lt;font color=#7875fd>10&lt;/font> + &lt;font color=#008800>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#7875fd>10&lt;/font> = &lt;font color=#aa7700>160&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 3: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#008800>3&lt;/font> = &lt;font color=#924bd7>48&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>160&lt;/font> + &lt;font color=#924bd7>48&lt;/font> = 208&lt;/b></string>
+    <string name="trick_multiply_by_13_text">Multiply by 13</string>
+    <string name="trick_multiply_by_14_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>14&lt;/font> = 224&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>14&lt;/font> = &lt;font color=#7875fd>10&lt;/font> + &lt;font color=#008800>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#7875fd>10&lt;/font> = &lt;font color=#aa7700>160&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 4: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#008800>4&lt;/font> = &lt;font color=#924bd7>64&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>160&lt;/font> + &lt;font color=#924bd7>64&lt;/font> = 224&lt;/b></string>
+    <string name="trick_multiply_by_14_text">Multiply by 14</string>
+    <string name="trick_multiply_by_15_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>36&lt;/font> × 15 = 540&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>36&lt;/font> × 10 = &lt;font color=#7875fd>360&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>360&lt;/font> / 2 = &lt;font color=#008800>180&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>360&lt;/font> + &lt;font color=#008800>180&lt;/font> = 540&lt;/b></string>
+    <string name="trick_multiply_by_15_text">Multiply by 15</string>
+    <string name="trick_multiply_by_16_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#7875fd>16&lt;/font> = 224&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#7875fd>16&lt;/font> = &lt;font color=#888800>10&lt;/font> + &lt;font color=#008800>5&lt;/font> + &lt;font color=#b265cf>1&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#888800>10&lt;/font> = &lt;font color=#aa7700>140&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 5: &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#008800>5&lt;/font> = &lt;font color=#8c6745>70&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number by 1: &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#b265cf>1&lt;/font> = &lt;font color=#c27171>14&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>, &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>140&lt;/font> + &lt;font color=#8c6745>70&lt;/font> + &lt;font color=#c27171>14&lt;/font> = 224&lt;/b></string>
+    <string name="trick_multiply_by_16_text">Multiply by 16</string>
+    <string name="trick_multiply_by_17_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#7875fd>17&lt;/font> = 238&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#7875fd>17&lt;/font> = &lt;font color=#888800>10&lt;/font> + &lt;font color=#008800>5&lt;/font> + &lt;font color=#b265cf>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#888800>10&lt;/font> = &lt;font color=#aa7700>140&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 5: &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#008800>5&lt;/font> = &lt;font color=#8c6745>70&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>14&lt;/font> × &lt;font color=#b265cf>2&lt;/font> = &lt;font color=#008888>28&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>, &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>140&lt;/font> + &lt;font color=#8c6745>70&lt;/font> + &lt;font color=#008888>28&lt;/font> = 238&lt;/b></string>
+    <string name="trick_multiply_by_17_text">Multiply by 17</string>
+    <string name="trick_multiply_by_18_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>18&lt;/font> = 288&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>18&lt;/font> = &lt;font color=#7875fd>20&lt;/font> - &lt;font color=#aa7700>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 20: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#7875fd>20&lt;/font> = &lt;font color=#008888>320&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#aa7700>2&lt;/font> = &lt;font color=#924bd7>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Subtract &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>320&lt;/font> - &lt;font color=#924bd7>32&lt;/font> = 288&lt;/b></string>
+    <string name="trick_multiply_by_18_text">Multiply by 18</string>
+    <string name="trick_multiply_by_19_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>19&lt;/font> = 304&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>19&lt;/font> = &lt;font color=#7875fd>20&lt;/font> - &lt;font color=#aa7700>1&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 20: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#7875fd>20&lt;/font> = &lt;font color=#008888>320&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 1: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#aa7700>1&lt;/font> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Subtract &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>320&lt;/font> - &lt;font color=#924bd7>16&lt;/font> = 304&lt;/b></string>
+    <string name="trick_multiply_by_19_text">Multiply by 19</string>
+    <string name="trick_multiply_by_20_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>36&lt;/font> × 20 = 720&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>36&lt;/font> × 2 = &lt;font color=#7875fd>72&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#7875fd>72&lt;/font> × 10 = 720&lt;/b></string>
+    <string name="trick_multiply_by_20_text">Multiply by 20</string>
+    <string name="trick_multiply_by_250_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> × 250 = 6250&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> / 4 = &lt;font color=#7875fd>6.25&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 1000: &lt;br>&lt;b>&lt;font color=#7875fd>6.25&lt;/font> × 1000 = 6250&lt;/b></string>
+    <string name="trick_multiply_by_250_text">Multiply by 250</string>
+    <string name="trick_multiply_by_25_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> × 25 = 450&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> / 4 = &lt;font color=#7875fd>4.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 100: &lt;br>&lt;b>&lt;font color=#7875fd>4.5&lt;/font> × 100 = 450&lt;/b></string>
+    <string name="trick_multiply_by_25_text">Multiply by 25</string>
+    <string name="trick_multiply_by_2_text">Multiply by 2</string>
+    <string name="trick_multiply_by_3_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>32&lt;/font> × &lt;font color=#888800>3&lt;/font> = 96&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>3&lt;/font> = &lt;font color=#7875fd>2&lt;/font> + &lt;font color=#008800>1&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>32&lt;/font> × &lt;font color=#7875fd>2&lt;/font> = &lt;font color=#aa7700>64&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 1: &lt;br>&lt;b>&lt;font color=#c27171>32&lt;/font> × &lt;font color=#008800>1&lt;/font> = &lt;font color=#924bd7>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>64&lt;/font> + &lt;font color=#924bd7>32&lt;/font> = 96&lt;/b></string>
+    <string name="trick_multiply_by_3_text">Multiply by 3</string>
+    <string name="trick_multiply_by_4_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>58&lt;/font> × 4 = 232&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>58&lt;/font> × 2 = &lt;font color=#7875fd>116&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>116&lt;/font> × 2 = 232&lt;/b></string>
+    <string name="trick_multiply_by_4_text">Multiply by 4</string>
+    <string name="trick_multiply_by_500_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> × 500 = 12500&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> / 2 = &lt;font color=#7875fd>12.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 1000: &lt;br>&lt;b>&lt;font color=#7875fd>12.5&lt;/font> × 1000 = 12500&lt;/b></string>
+    <string name="trick_multiply_by_500_text">Multiply by 500</string>
+    <string name="trick_multiply_by_50_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> × 50 = 900&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>18&lt;/font> / 2 = &lt;font color=#7875fd>9&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 100: &lt;br>&lt;b>&lt;font color=#7875fd>9&lt;/font> × 100 = 900&lt;/b></string>
+    <string name="trick_multiply_by_50_text">Multiply by 50</string>
+    <string name="trick_multiply_by_5_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>1234&lt;/font> × 5 = 6170&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>1234&lt;/font> / 2 = &lt;font color=#7875fd>617&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#7875fd>617&lt;/font> × 10 = 6170&lt;/b></string>
+    <string name="trick_multiply_by_5_text">Multiply by 5</string>
+    <string name="trick_multiply_by_6_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>6&lt;/font> = 96&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>6&lt;/font> = 5 + 1 = &lt;font color=#7875fd>10&lt;/font> / &lt;font color=#aa7700>2&lt;/font> + &lt;font color=#008800>1&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> / &lt;font color=#aa7700>2&lt;/font> = &lt;font color=#924bd7>8&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#924bd7>8&lt;/font> × &lt;font color=#7875fd>10&lt;/font> = &lt;font color=#0088888>80&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number by 1: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#008800>1&lt;/font> = &lt;font color=#c27171>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>80&lt;/font> + &lt;font color=#c27171>16&lt;/font> = 96&lt;/b></string>
+    <string name="trick_multiply_by_6_text">Multiply by 6</string>
+    <string name="trick_multiply_by_750_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> × 750 = 18750&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> / 4 = &lt;font color=#7875fd>6.25&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 3: &lt;br>&lt;b>&lt;font color=#7875fd>6.25&lt;/font> × 3 = &lt;font color=#aa7700>18.75&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 1000: &lt;br>&lt;b>&lt;font color=#aa7700>18.75&lt;/font> × 1000 = 18750&lt;/b></string>
+    <string name="trick_multiply_by_750_text">Multiply by 750</string>
+    <string name="trick_multiply_by_75_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>68&lt;/font> × 75 = 5100&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 4: &lt;br>&lt;b>&lt;font color=#c27171>68&lt;/font> / 4 = &lt;font color=#7875fd>17&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 3: &lt;br>&lt;b>&lt;font color=#7875fd>17&lt;/font> × 3 = &lt;font color=#aa7700>51&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 100: &lt;br>&lt;b>&lt;font color=#aa7700>51&lt;/font> × 100 = 5100&lt;/b></string>
+    <string name="trick_multiply_by_75_text">Multiply by 75</string>
+    <string name="trick_multiply_by_7_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>7&lt;/font> = 112&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>7&lt;/font> = 5 + 2 = &lt;font color=#7875fd>10&lt;/font> / &lt;font color=#aa7700>2&lt;/font> + &lt;font color=#008800>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Divide the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> / &lt;font color=#aa7700>2&lt;/font> = &lt;font color=#924bd7>8&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#924bd7>8&lt;/font> × &lt;font color=#7875fd>10&lt;/font> = &lt;font color=#0088888>80&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#008800>2&lt;/font> = &lt;font color=#8c6745>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>80&lt;/font> + &lt;font color=#8c6745>32&lt;/font> = 112&lt;/b></string>
+    <string name="trick_multiply_by_7_text">Multiply by 7</string>
+    <string name="trick_multiply_by_8_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#888800>8&lt;/font> = 128&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#888800>8&lt;/font> = &lt;font color=#7875fd>10&lt;/font> - &lt;font color=#aa7700>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#7875fd>10&lt;/font> = &lt;font color=#008888>160&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number by 2: &lt;br>&lt;b>&lt;font color=#c27171>16&lt;/font> × &lt;font color=#aa7700>2&lt;/font> = &lt;font color=#924bd7>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Subtract &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>160&lt;/font> - &lt;font color=#924bd7>32&lt;/font> = 128&lt;/b></string>
+    <string name="trick_multiply_by_8_text">Multiply by 8</string>
+    <string name="trick_multiply_by_999_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> × 999 = 24975&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 1000: &lt;br>&lt;b>&lt;font color=#c27171>25&lt;/font> × 1000 = &lt;font color=#7875fd>25000&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Subtract the original number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>25000&lt;/font> - &lt;font color=#c27171>25&lt;/font> = 24975&lt;/b></string>
+    <string name="trick_multiply_by_999_text">Multiply by 999</string>
+    <string name="trick_multiply_by_99_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>15&lt;/font> × 99 = 1485&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 100: &lt;br>&lt;b>&lt;font color=#c27171>15&lt;/font> × 100 = &lt;font color=#7875fd>1500&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Subtract the original number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>1500&lt;/font> - &lt;font color=#c27171>15&lt;/font> = 1485&lt;/b></string>
+    <string name="trick_multiply_by_99_text">Multiply by 99</string>
+    <string name="trick_multiply_by_9_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>56&lt;/font> × 9 = 504&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the number by 10: &lt;br>&lt;b>&lt;font color=#c27171>56&lt;/font> × 10 = &lt;font color=#7875fd>560&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Subtract the original number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>560&lt;/font> - &lt;font color=#c27171>56&lt;/font> = 504&lt;/b></string>
+    <string name="trick_multiply_by_9_text">Multiply by 9</string>
+    <string name="trick_multiply_numbers_between_11_and_19_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>1&lt;font color=#c27171>4&lt;/font> × &lt;font color=#7875fd>1&lt;/font>&lt;font color=#008800>8&lt;/font> = 252&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Add the larger number to the rightmost digit of the other number: &lt;br>&lt;b>&lt;font color=#7875fd>1&lt;/font>&lt;font color=#008800>8&lt;/font> + &lt;font color=#c27171>4&lt;/font> = &lt;font color=#924bd7>22&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Put a 0 at the end of the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#924bd7>22&lt;/font> × 10 = &lt;font color=#888800>220&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Multiply the rightmost digits of both original numbers: &lt;br>&lt;b>&lt;font color=#008800>8&lt;/font> x &lt;font color=#c27171>4&lt;/font> = &lt;font color=#aa7700>32&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#888800>220&lt;/font> + &lt;font color=#aa7700>32&lt;/font> = 252&lt;/b></string>
+    <string name="trick_multiply_numbers_between_11_and_19_text">Multiply numbers between 11 and 19</string>
+    <string name="trick_multiply_two_digit_numbers_editing_in_1_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>5&lt;/font>1 × &lt;font color=#7875fd>3&lt;/font>1 = 1581&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the leftmost digits: &lt;br>&lt;b>&lt;font color=#c27171>5&lt;/font> × &lt;font color=#7875fd>3&lt;/font> = &lt;font color=#008800>15&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Add the leftmost digits: &lt;br>&lt;b>&lt;font color=#c27171>5&lt;/font> + &lt;font color=#7875fd>3&lt;/font> = &lt;font color=#888800>8&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Place the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> next to the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>15&lt;/font>_&lt;font color=#888800>8&lt;/font> = 158&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Place 1 next to the result from &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>15&lt;/font>_&lt;font color=#888800>8&lt;/font>_1 = 1581&lt;/b></string>
+    <string name="trick_multiply_two_digit_numbers_editing_in_1_text">Multiply two digit numbers ending in 1</string>
+    <string name="trick_multiply_two_digit_numbers_having_same_tens_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>2&lt;/font>&lt;font color=#7875fd>3&lt;/font> × &lt;font color=#c27171>2&lt;/font>&lt;font color=#008800>7&lt;/font> = 621&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the first digit by the first digit plus one: &lt;br>&lt;b>&lt;font color=#c27171>2&lt;/font> × (&lt;font color=#c27171>2&lt;/font> + 1) = &lt;font color=#924bd7>6&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the rightmost digits (if the result is a single digit put a 0 in front of it): &lt;br>&lt;b>&lt;font color=#7875fd>3&lt;/font> × &lt;font color=#008800>7&lt;/font> = &lt;font color=#888800>21&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Place the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> next to the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#924bd7>6&lt;/font>_&lt;font color=#888800>21&lt;/font> = 621&lt;/b></string>
+    <string name="trick_multiply_two_digit_numbers_having_same_tens_text">"Multiply two digit numbers having same tens digit and ones digits' sum is 10"</string>
+    <string name="trick_percent_2_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>6&lt;/font>% → 350 = 21&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;font color=#c27171>6&lt;/font>% of 100, is &lt;b>&lt;font color=#c27171>6&lt;/font>&lt;/b> (&lt;font color=#c27171>6&lt;/font> for each hundred, of only 1 hundred) &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;font color=#c27171>6&lt;/font>% of 300, is &lt;b>&lt;font color=#924bd7>18&lt;/font>&lt;/b> (multiply the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by &lt;font color=#7875fd>3&lt;/font>) &lt;br> &lt;br>&lt;i>[100 × &lt;font color=#7875fd>3&lt;/font> = 300] → [&lt;font color=#c27171>6&lt;/font> × &lt;font color=#7875fd>3&lt;/font> = &lt;font color=#924bd7>18&lt;/font>]&lt;/i> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - &lt;font color=#c27171>6&lt;/font>% of 50, is &lt;b>&lt;font color=#aa7700>3&lt;/font>&lt;/b> (divide the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by &lt;font color=#888800>2&lt;/font>) &lt;br> &lt;br>&lt;i>[100 / &lt;font color=#888800>2&lt;/font> = 50] → [&lt;font color=#c27171>6&lt;/font> / &lt;font color=#888800>2&lt;/font> = &lt;font color=#aa7700>3&lt;/font>]&lt;/i> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#924bd7>18&lt;/font> + &lt;font color=#aa7700>3&lt;/font> = 21&lt;/b></string>
+    <string name="trick_percent_2_text">Calculate a Tip -2-</string>
+    <string name="trick_percent_rule_text" formatted="false">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>15% → &lt;font color=#c27171>300&lt;/font> = 45&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Calculate 10% (divide the number by 10): &lt;br>&lt;b>&lt;font color=#c27171>300&lt;/font> / 10 = &lt;font color=#7875fd>30&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Calculate 5% (divide the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2): &lt;br>&lt;b>&lt;font color=#7875fd>30&lt;/font> / 2 = &lt;font color=#008800>15&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>30&lt;/font> + &lt;font color=#008800>15&lt;/font> = 45&lt;/b></string>
+    <string name="trick_percent_text">Calculate a Tip -1-</string>
+    <string name="trick_power_2_between_1000_and_9999_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>2&lt;/small>&lt;/sup>&lt;br>&lt;small>&lt;i>a = 1000 ~ 9999&lt;/i>&lt;/small></string>
+    <string name="trick_power_2_between_100_and_999_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>2&lt;/small>&lt;/sup>&lt;br>&lt;small>&lt;i>a = 100 ~ 999&lt;/i>&lt;/small></string>
+    <string name="trick_power_2_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>2&lt;/small>&lt;/sup>&lt;br>&lt;small>&lt;i>a = 10 ~ 99&lt;/i>&lt;/small></string>
+    <string name="trick_power_3_between_100_and_999_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>3&lt;/small>&lt;/sup>&lt;br>&lt;small>&lt;i>a = 100 ~ 999&lt;/i>&lt;/small></string>
+    <string name="trick_power_3_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>3&lt;/small>&lt;/sup>&lt;br>&lt;small>&lt;i>a = 10 ~ 99&lt;/i>&lt;/small></string>
+    <string name="trick_power_4_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>4&lt;/small>&lt;/sup></string>
+    <string name="trick_power_6_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>6&lt;/small>&lt;/sup></string>
+    <string name="trick_power_9_text">&lt;b>a&lt;/b>&lt;sup>&lt;small>9&lt;/small>&lt;/sup></string>
+    <string name="trick_power_of_two_text">&lt;b>2&lt;/b>&lt;small>&lt;sup>a&lt;/sup>&lt;/small></string>
+    <string name="trick_square_number_between_100_and_109_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>10&lt;/font>&lt;font color=#7875fd>3&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 10609&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Add the number to the ones digit: &lt;br>&lt;b>&lt;font color=#c27171>10&lt;/font>&lt;font color=#7875fd>3&lt;/font> + &lt;font color=#7875fd>3&lt;/font> = &lt;font color=#888800>106&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Square the ones digit number (if the result is a single digit put a 0 in front of it): &lt;br>&lt;b>&lt;font color=#7875fd>3&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 0&lt;font color=#008800>9&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Place the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> next to the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#888800>106&lt;/font>_0&lt;font color=#008800>9&lt;/font> = 10609&lt;/b></string>
+    <string name="trick_square_number_between_100_and_109_text">Square numbers between 100 and 109</string>
+    <string name="trick_square_number_between_10_and_19_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>1&lt;/font>&lt;font color=#7875fd>4&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 196&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Add the number to the ones digit: &lt;br>&lt;b>&lt;font color=#c27171>1&lt;/font>&lt;font color=#7875fd>4&lt;/font> + &lt;font color=#7875fd>4&lt;/font> = &lt;font color=#008800>18&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Multiply the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#008800>18&lt;/font> × 10 = &lt;font color=#888800>180&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the ones digit number: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#888800>180&lt;/font> + &lt;font color=#924bd7>16&lt;/font> = 196&lt;/b></string>
+    <string name="trick_square_number_between_10_and_19_text">Square numbers between 10 and 19</string>
+    <string name="trick_square_number_between_11_and_99_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>97&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 9409&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Subtract the number from 100: &lt;br>&lt;b>100 - &lt;font color=#c27171>97&lt;/font> = &lt;font color=#7875fd>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Subtract the number (from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>) from original number: &lt;br>&lt;b>&lt;font color=#c27171>97&lt;/font> - &lt;font color=#7875fd>3&lt;/font> = &lt;font color=#008800>94&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> (if the result is a single digit put a 0 in front of it): &lt;br>&lt;b>&lt;font color=#7875fd>3&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#924bd7>09&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Place the result from &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> next to the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>94&lt;/font>_&lt;font color=#924bd7>09&lt;/font> = 9409&lt;/b></string>
+    <string name="trick_square_number_between_11_and_99_text">Square numbers between 90 and 99</string>
+    <string name="trick_square_number_between_20_and_29_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>23&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 529&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>23&lt;/font> = 20 + 3 => &lt;font color=#008888>20&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>23&lt;/font> = 20 + 3 => &lt;font color=#7875fd>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>20&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#008800>400&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Multiply the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 40: &lt;br>&lt;b>&lt;font color=#7875fd>3&lt;/font> × 40 = &lt;font color=#888800>120&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>3&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#924bd7>9&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> and&lt;font color=#666666>&lt;b> Step 4&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>400&lt;/font> + &lt;font color=#888800>120&lt;/font> = &lt;font color=#aa7700>520&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 7&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>520&lt;/font> + &lt;font color=#924bd7>9&lt;/font> = 529&lt;/b></string>
+    <string name="trick_square_number_between_20_and_29_text">Square numbers between 20 and 29</string>
+    <string name="trick_square_number_between_30_and_39_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>34&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 1156&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>34&lt;/font> = 30 + 4 => &lt;font color=#008888>30&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>34&lt;/font> = 30 + 4 => &lt;font color=#7875fd>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>30&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#008800>900&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Multiply the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 60: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font> × 60 = &lt;font color=#888800>240&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>900&lt;/font> + &lt;font color=#888800>240&lt;/font> = &lt;font color=#aa7700>1140&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 7&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>1140&lt;/font> + &lt;font color=#924bd7>16&lt;/font> = 1156&lt;/b></string>
+    <string name="trick_square_number_between_30_and_39_text">Square numbers between 30 and 39</string>
+    <string name="trick_square_number_between_40_and_49_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>48&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 2304&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Subtract the number from 50: &lt;br>&lt;b>50 - &lt;font color=#c27171>48&lt;/font> = &lt;font color=#7875fd>2&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Subtract the result (from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>) from 25: &lt;br>&lt;b>25 - &lt;font color=#7875fd>2&lt;/font> = &lt;font color=#888800>23&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> (if the result is a single digit put a 0 in front of it): &lt;br>&lt;b>&lt;font color=#7875fd>2&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 0&lt;font color=#008800>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Place the result from &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> next to the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#888800>23&lt;/font>_0&lt;font color=#008800>4&lt;/font> = 2304&lt;/b></string>
+    <string name="trick_square_number_between_40_and_49_text">Square numbers between 40 and 49</string>
+    <string name="trick_square_number_between_50_and_59_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>5&lt;font color=#c27171>3&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 2809&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Add 25 to the ones digit: &lt;br>&lt;b>25 + &lt;font color=#c27171>3&lt;/font> = &lt;font color=#7875fd>28&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Square the ones digit number (if the result is a single digit put a 0 in front of it): &lt;br>&lt;b>&lt;font color=#c27171>3&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 0&lt;font color=#888800>9&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Place the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> next to the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>28&lt;/font>_0&lt;font color=#888800>9&lt;/font> = 2809&lt;/b></string>
+    <string name="trick_square_number_between_50_and_59_text">Square numbers between 50 and 59</string>
+    <string name="trick_square_number_between_60_and_69_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>64&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 4096&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>64&lt;/font> = 60 + 4 => &lt;font color=#008888>60&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>64&lt;/font> = 60 + 4 => &lt;font color=#7875fd>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>60&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#008800>3600&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Multiply the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 120: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font> × 120 = &lt;font color=#888800>480&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>3600&lt;/font> + &lt;font color=#888800>480&lt;/font> = &lt;font color=#aa7700>4080&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 7&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>4080&lt;/font> + &lt;font color=#924bd7>16&lt;/font> = 4096&lt;/b></string>
+    <string name="trick_square_number_between_60_and_69_text">Square numbers between 60 and 69</string>
+    <string name="trick_square_number_between_70_and_79_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>74&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 5476&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>74&lt;/font> = 70 + 4 => &lt;font color=#008888>70&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>74&lt;/font> = 70 + 4 => &lt;font color=#7875fd>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>70&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#008800>4900&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Multiply the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 140: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font> × 140 = &lt;font color=#888800>560&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>4900&lt;/font> + &lt;font color=#888800>560&lt;/font> = &lt;font color=#aa7700>5460&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 7&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>5460&lt;/font> + &lt;font color=#924bd7>16&lt;/font> = 5476&lt;/b></string>
+    <string name="trick_square_number_between_70_and_79_text">Square numbers between 70 and 79</string>
+    <string name="trick_square_number_between_80_and_89_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>84&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 7056&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>84&lt;/font> = 80 + 4 => &lt;font color=#008888>80&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>84&lt;/font> = 80 + 4 => &lt;font color=#7875fd>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008888>80&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#008800>6400&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Multiply the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by 160: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font> × 160 = &lt;font color=#888800>640&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> - Square the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>4&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#924bd7>16&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>6400&lt;/font> + &lt;font color=#888800>640&lt;/font> = &lt;font color=#aa7700>7040&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 7&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>7040&lt;/font> + &lt;font color=#924bd7>16&lt;/font> = 7056&lt;/b></string>
+    <string name="trick_square_number_between_80_and_89_text">Square numbers between 80 and 89</string>
+    <string name="trick_square_numbers_editing_in_05_text">Square numbers ending in 05</string>
+    <string name="trick_square_numbers_editing_in_125_text">Square numbers ending in 125</string>
+    <string name="trick_square_numbers_editing_in_15_text">Square numbers ending in 15</string>
+    <string name="trick_square_numbers_editing_in_25_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>325&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 105625&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - &lt;b>&lt;font color=#c27171>325&lt;/font> = &lt;font color=#7875fd>3&lt;/font>_25 => &lt;font color=#7875fd>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Square the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>3&lt;/font>&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = &lt;font color=#008800>9&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Divide the number from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> by 2: &lt;br>&lt;b>&lt;font color=#7875fd>3&lt;/font> / 2 = &lt;font color=#888800>1.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 4&lt;/b>&lt;/font> - Add &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> and &lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#008800>9&lt;/font> + &lt;font color=#888800>1.5&lt;/font> = &lt;font color=#924bd7>10.5&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font> - Multiply the number from&lt;font color=#666666>&lt;b> Step 4&lt;/b>&lt;/font> by 10: &lt;br>&lt;b>&lt;font color=#924bd7>10.5&lt;/font> × 10 = &lt;font color=#aa7700>105&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 6&lt;/b>&lt;/font> - Write the number 625 next to the result from &lt;font color=#666666>&lt;b>Step 5&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#aa7700>105&lt;/font>_625 = 105625&lt;/b></string>
+    <string name="trick_square_numbers_editing_in_25_text">Square numbers ending in 25</string>
+    <string name="trick_square_numbers_editing_in_5_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>3&lt;/font>5&lt;small>&lt;sup>2&lt;/sup>&lt;/small> = 1225&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Multiply the first digit by the first digit plus one: &lt;br>&lt;b>&lt;font color=#c27171>3&lt;/font> × (&lt;font color=#c27171>3&lt;/font> + 1) = &lt;font color=#7875fd>12&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Write the number 25 next to the result from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>: &lt;br>&lt;b>&lt;font color=#7875fd>12&lt;/font>_25 = 1225&lt;/b></string>
+    <string name="trick_square_numbers_editing_in_5_text">Square numbers ending in 5</string>
+    <string name="trick_square_numbers_editing_in_75_text">Square numbers ending in 75</string>
+    <string name="trick_square_numbers_editing_in_95_text">Square numbers ending in 95</string>
+    <string name="trick_square_root_text">&lt;sup>&lt;small>2&lt;/small>&lt;/sup>&lt;b>√a&lt;/b></string>
+    <string name="trick_subtracting_from_1000_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>1000 - &lt;font color=#c27171>5&lt;/font>&lt;font color=#7875fd>6&lt;/font>&lt;font color=#888800>7&lt;/font> = &lt;font color=#008800>4&lt;/font>&lt;font color=#924bd7>3&lt;/font>&lt;font color=#aa7700>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Subtract &lt;font color=#c27171>5&lt;/font> from 9: &lt;b>&lt;font color=#008800>4&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Subtract &lt;font color=#7875fd>6&lt;/font> from 9: &lt;b>&lt;font color=#924bd7>3&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Subtract &lt;font color=#888800>7&lt;/font> from 10: &lt;b>&lt;font color=#aa7700>3&lt;/font>&lt;/b></string>
+    <string name="trick_subtracting_from_1000_text">Subtracting from 1000</string>
+    <string name="trick_subtracting_numbers_close_to_hundreds_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>&lt;font color=#c27171>259&lt;/font> - &lt;font color=#7875fd>192&lt;/font> = 67&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font> - Round the number to the nearest hundreds digit: &lt;br>&lt;b>&lt;font color=#7875fd>192&lt;/font> + &lt;font color=#008800>8&lt;/font> = &lt;font color=#aa7700>200&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> - Subtract the result (from &lt;font color=#666666>&lt;b>Step 1&lt;/b>&lt;/font>) from other number: &lt;br>&lt;b>&lt;font color=#c27171>259&lt;/font> - &lt;font color=#aa7700>200&lt;/font> = &lt;font color=#924bd7>59&lt;/font>&lt;/b> &lt;br> &lt;br>&lt;font color=#666666>&lt;b>Step 3&lt;/b>&lt;/font> - Add or subtract the result from &lt;font color=#666666>&lt;b>Step 2&lt;/b>&lt;/font> by the number you rounded off: &lt;br>&lt;b>&lt;font color=#924bd7>59&lt;/font> + &lt;font color=#008800>8&lt;/font> = 67&lt;/b></string>
+    <string name="trick_subtracting_numbers_close_to_hundreds_text">Subtracting numbers close to hundreds</string>
+    <string name="trick_subtraction_text">Subtraction</string>
+    <string name="trick_tough_multiplication_rule_text">&lt;b>&lt;u>-1-&lt;/u>&lt;/b> &lt;br> &lt;br>&lt;b>32 × 125&lt;/b> is the same as: &lt;br>&lt;b>16 × 250&lt;/b> is the same as: &lt;br>&lt;b>8 × 500&lt;/b> is the same as: &lt;br>&lt;b>4 × 1000 = 4000&lt;/b></string>
+    <string name="trick_tough_multiplication_text">Tough multiplication</string>
+    <string name="trick_tv_new">new</string>
+    <string name="no_internet_connection">No internet connection...</string>
+    <string name="tts_google_not_found">You need to install Google Text-to-speech</string>
+    <string name="tts_percent" formatted="false">%s, of %s</string>
+    <string name="tts_power_n" formatted="false">%s, to the power of %s</string>
+    <string name="tts_root_2">Square root, of %s</string>
+    <string name="tts_root_3">Cube root, of %s</string>
+    <string name="tts_root_n" formatted="false">%sth root, of %s</string>
+    <string name="accept_popup_invite">Accept!</string>
+    <string name="game_blurb">To play this game with friends, you must sign in with Google.</string>
+    <string name="inv_popup_text">Incoming invitation!</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signing_in">Signing in with Google</string>
+    <string name="signing_out">Signing out</string>
+    <string name="error">Error</string>
+    <string name="trick_square_root_rule_text">-1</string>
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <string name="alert_dialog_rule_iv_content_description">Rule</string>
+    <string name="click_me">Click me!</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="game_problem">An error occurred while starting the game. Please try again.</string>
+    <string name="game_title">Real Time Multiplayer</string>
+    <string name="instructions">Click the button as fast as you can!</string>
+    <string name="invite_players_explanation">Invite friends to play a game.</string>
+    <string name="is_inviting_you">is challenging you to a game!</string>
+    <string name="quick_game_explanation">Challenge a random opponent.</string>
+    <string name="see_invitations_explanation">See who is inviting you right now.</string>
+    <string name="signin_other_error">There was an issue with sign in. Please try again later.</string>
+    <string name="single_player">Single Player</string>
+    <string name="single_player_explanation">Get some practice!</string>
+    <string name="your_score">Your score:</string>
+    <string name="activity_game_tv_ecuation">1*1=</string>
+    <string name="accept">Accept</string>
+    <string name="activity_game_b_backspase">Backspace</string>
+    <string name="activity_game_b_clear">Clear</string>
+    <string name="activity_game_b_eight">8</string>
+    <string name="activity_game_b_five">5</string>
+    <string name="activity_game_b_four">4</string>
+    <string name="activity_game_b_nine">9</string>
+    <string name="activity_game_b_one">1</string>
+    <string name="activity_game_b_seven">7</string>
+    <string name="activity_game_b_six">6</string>
+    <string name="activity_game_b_three">3</string>
+    <string name="activity_game_b_two">2</string>
+    <string name="activity_game_b_zero">0</string>
+    <string name="activity_game_tv_rule">Current trikc name1</string>
+    <string name="activity_levels_b_level">1</string>
+    <string name="activity_main_b_Language">Language</string>
+    <string name="activity_main_b_Theme">Theme</string>
+    <string name="activity_main_b_numpad">Numpad</string>
+    <string name="activity_main_cb_sound">Sound</string>
+    <string name="activity_main_cb_vibrator">Vibration</string>
+    <string name="activity_trick_tv_trick_text">Text</string>
+    <string name="admob_unit_id_activity_by_heart">ca-app-pub-4469463872184379/9114430449</string>
+    <string name="admob_unit_id_activity_by_heart_example">ca-app-pub-4469463872184379/1110788040</string>
+    <string name="admob_unit_id_activity_by_heart_levels">ca-app-pub-4469463872184379/1591163640</string>
+    <string name="admob_unit_id_activity_color_picker">ca-app-pub-4469463872184379/4014292448</string>
+    <string name="admob_unit_id_activity_game">ca-app-pub-4469463872184379/6150299644</string>
+    <string name="admob_unit_id_activity_game_land">ca-app-pub-4469463872184379/9103766041</string>
+    <string name="admob_unit_id_activity_game_type">ca-app-pub-4469463872184379/6284520843</string>
+    <string name="admob_unit_id_activity_game_type_training">ca-app-pub-4469463872184379/4668186849</string>
+    <string name="admob_unit_id_activity_graph">ca-app-pub-4469463872184379/4868841242</string>
+    <string name="admob_unit_id_activity_hint">ca-app-pub-4469463872184379/7378168441</string>
+    <string name="admob_unit_id_activity_language">ca-app-pub-4469463872184379/7967050449</string>
+    <string name="admob_unit_id_activity_levels">ca-app-pub-4469463872184379/4544630042</string>
+    <string name="admob_unit_id_activity_main">ca-app-pub-4469463872184379/7498096446</string>
+    <string name="admob_unit_id_activity_multiplayer_game">ca-app-pub-4469463872184379/4939185249</string>
+    <string name="admob_unit_id_activity_music">ca-app-pub-4469463872184379/7899135245</string>
+    <string name="admob_unit_id_activity_numpad">ca-app-pub-4469463872184379/9443783644</string>
+    <string name="admob_unit_id_activity_options">ca-app-pub-4469463872184379/2790840840</string>
+    <string name="admob_unit_id_activity_player_steps">ca-app-pub-4469463872184379/6144920048</string>
+    <string name="admob_unit_id_activity_rule">ca-app-pub-4469463872184379/6214128841</string>
+    <string name="admob_unit_id_activity_theme">ca-app-pub-4469463872184379/9796390448</string>
+    <string name="admob_unit_id_activity_tricks">ca-app-pub-4469463872184379/2879753646</string>
+    <string name="admob_unit_id_ad_level_complete">ca-app-pub-4469463872184379/8294147648</string>
+    <string name="admob_unit_id_ad_player_win">ca-app-pub-4469463872184379/3863948041</string>
+    <string name="admob_unit_id_ad_timer_end">ca-app-pub-4469463872184379/9910481640</string>
+    <string name="admob_unit_id_in_activity_hint">ca-app-pub-4469463872184379/9656016847</string>
+    <string name="admob_unit_id_in_activity_multiplayer_game">ca-app-pub-4469463872184379/6415918449</string>
+    <string name="admob_unit_id_in_activity_rule">ca-app-pub-4469463872184379/2897060048</string>
+    <string name="alert_dialog_level_complete_iv_content_description">Stars</string>
+    <string name="alert_dialog_rule_youtube">YouTube</string>
+    <string name="alert_dialog_theme_b_dark">Dark</string>
+    <string name="alert_dialog_theme_b_light">Light</string>
+    <string name="app_id">162088319865</string>
+    <string name="app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="button_label">OK</string>
+    <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
+    <string name="create_calendar_title">Create calendar event</string>
+    <string name="date_name">19.01.2017</string>
+    <string name="db_version">212</string>
+    <string name="decline">Decline</string>
+    <string name="event_money">CgkI-fbd6dsEEAIQDA</string>
+    <string name="gamehelper_app_misconfigured">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="gamehelper_license_failed">License check failed.</string>
+    <string name="gamehelper_sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="gamehelper_unknown_error">Unknown error.</string>
+    <string name="group_addition_sign">+</string>
+    <string name="group_division_sign">/</string>
+    <string name="group_multiplication_sign">×</string>
+    <string name="group_percents_sign">%</string>
+    <string name="group_powers_sign">&lt;small>&lt;small>&lt;small>a&lt;/small>&lt;/small>&lt;/small>&lt;small>&lt;small>&lt;small>&lt;small>&lt;sup>x&lt;/sup>&lt;/small>&lt;/small>&lt;/small>&lt;/small></string>
+    <string name="group_roots_sign">√</string>
+    <string name="group_square_sign">&lt;small>&lt;small>&lt;small>a&lt;/small>&lt;/small>&lt;/small>&lt;small>&lt;small>&lt;small>&lt;small>&lt;sup>2&lt;/sup>&lt;/small>&lt;/small>&lt;/small>&lt;/small></string>
+    <string name="group_subtraction_sign">-</string>
+    <string name="intent_by_heart_selected_level">intent_by_heart_selected_level</string>
+    <string name="intent_by_heart_selected_number">intent_by_heart_selected_number</string>
+    <string name="intent_graph_id">intent_graph_id</string>
+    <string name="intent_selected_trick_id">selectedTrickID</string>
+    <string name="intent_selected_trick_level">selectedTrickRule</string>
+    <string name="intent_selected_trick_rule">selectedTrickRule</string>
+    <string name="language_arabic">العربية (Arabic)</string>
+    <string name="language_arabic_translator">Mona Abd Elhady</string>
+    <string name="language_belarusian">Беларуська (Belarusian)</string>
+    <string name="language_belarusian_translator" />
+    <string name="language_bengali">বাংলা (Bengali)</string>
+    <string name="language_bengali_translator">MD Abubakar Siddik Arman</string>
+    <string name="language_chinese_CN">中文(简体) (Simplified Chinese)</string>
+    <string name="language_chinese_CN_translator">YU mingjian</string>
+    <string name="language_chinese_TW">正體中文 (Traditional Chinese)</string>
+    <string name="language_chinese_TW_translator">Dennis (Durianboy)</string>
+    <string name="language_default">System language</string>
+    <string name="language_default_translator" />
+    <string name="language_dutch">Nederlands (Dutch)</string>
+    <string name="language_dutch_translator">Mike Morits</string>
+    <string name="language_english">English</string>
+    <string name="language_english_translator" />
+    <string name="language_french">Français (French)</string>
+    <string name="language_french_translator" />
+    <string name="language_georgian">ქართული (Georgian)</string>
+    <string name="language_georgian_translator">Zaza Chugoshvili</string>
+    <string name="language_german">Deutsch (German)</string>
+    <string name="language_german_translator">Josef Krauthausen</string>
+    <string name="language_hebrew">עברית (Hebrew)</string>
+    <string name="language_hebrew_translator">Tomedes Smart Human Translations</string>
+    <string name="language_hindi">हिंदी (Hindi)</string>
+    <string name="language_hindi_translator" />
+    <string name="language_hungarian">Magyar (Hungarian)</string>
+    <string name="language_hungarian_translator">Csordás Martin</string>
+    <string name="language_indonesian">Bahasa Indonesia (Indonesian)</string>
+    <string name="language_indonesian_translator">Trusted Translations</string>
+    <string name="language_italian">Italiano (Italian)</string>
+    <string name="language_italian_translator">Burcovschi Grigore</string>
+    <string name="language_japanese">日本語 (Japanese)</string>
+    <string name="language_japanese_translator">Trusted Translations</string>
+    <string name="language_korean">한국어 (Korean)</string>
+    <string name="language_korean_translator">박보석 (Park Bosuk)</string>
+    <string name="language_odia">ଓଡ଼ିଆ (Odia)</string>
+    <string name="language_odia_translator" />
+    <string name="language_persian">فارسی (Persian)</string>
+    <string name="language_persian_translator">Kaveh Rash Seyyedabady, &lt;br>Jamal Salehzadeh Yekshaveh</string>
+    <string name="language_polish">Polski (Polish)</string>
+    <string name="language_polish_translator">Jarek Mazur</string>
+    <string name="language_portuguese">Português (Portuguese)</string>
+    <string name="language_portuguese_translator" />
+    <string name="language_romanian">Română (Romanian)</string>
+    <string name="language_romanian_translator">Antoni Ghenadie</string>
+    <string name="language_russian">Русский (Russian)</string>
+    <string name="language_russian_translator">Antoni Galina</string>
+    <string name="language_spanish">Español (Spanish)</string>
+    <string name="language_spanish_translator" />
+    <string name="language_thai">ภาษาไทย (Thai)</string>
+    <string name="language_thai_translator">Trusted Translations</string>
+    <string name="language_turkish">Türkçe (Turkish)</string>
+    <string name="language_turkish_translator">Trusted Translations</string>
+    <string name="language_ukrainian">Українська (Ukrainian)</string>
+    <string name="language_ukrainian_translator" />
+    <string name="language_vietnamese">Tiếng Việt (Vietnamese)</string>
+    <string name="language_vietnamese_translator">Tomedes Smart Human Translations</string>
+    <string name="lb_by_heart">CgkI-fbd6dsEEAIQCw</string>
+    <string name="lb_days_streak">CgkI-fbd6dsEEAIQGw</string>
+    <string name="lb_joint_game">CgkI-fbd6dsEEAIQFg</string>
+    <string name="lb_max_level">CgkI-fbd6dsEEAIQJw</string>
+    <string name="lb_minute_challenge">CgkI-fbd6dsEEAIQIg</string>
+    <string name="lb_no_time_limit">CgkI-fbd6dsEEAIQKQ</string>
+    <string name="lb_speed_challenge">CgkI-fbd6dsEEAIQIw</string>
+    <string name="lb_to_the_bitter_end_id">CgkI-fbd6dsEEAIQEQ</string>
+    <string name="lb_total_solved">CgkI-fbd6dsEEAIQKA</string>
+    <string name="lb_tricks">CgkI-fbd6dsEEAIQHQ</string>
+    <string name="license_failed">License check failed.</string>
+    <string name="myLog">myLog</string>
+    <string name="package_tts_google">com.google.android.tts</string>
+    <string name="pref_name">Pick a color</string>
+    <string name="pref_summary">DialogPreference with Color Picker.</string>
+    <string name="preference_ads_terms">preference_ads_terms</string>
+    <string name="preference_alarm_hour">preference_alarm_hour</string>
+    <string name="preference_alarm_minute">preference_alarm_minute</string>
+    <string name="preference_can_sound">preference_can_sound</string>
+    <string name="preference_can_vibrator">preference_can_vibrator</string>
+    <string name="preference_cb_notification">preference_cb_notification</string>
+    <string name="preference_color_picke_bg">preference_color_picke_bg</string>
+    <string name="preference_color_picke_text">preference_color_picke_text</string>
+    <string name="preference_current_country">preference_current_country</string>
+    <string name="preference_current_language">preference_current_language</string>
+    <string name="preference_current_theme">preference_current_theme_new</string>
+    <string name="preference_current_theme_name">preference_current_theme_name</string>
+    <string name="preference_days_streak">preference_days_streak</string>
+    <string name="preference_ex_count">preference_ex_count</string>
+    <string name="preference_ex_per_day_today">preference_ex_per_day_today_new</string>
+    <string name="preference_ex_per_day_total">preference_ex_per_day_total</string>
+    <string name="preference_ex_per_day_total_solved">preference_ex_per_day_total_solved</string>
+    <string name="preference_game_type_level">preference_game_type_level</string>
+    <string name="preference_game_type_level_max">preference_game_type_level_max</string>
+    <string name="preference_graph_cube">preference_graph_cube</string>
+    <string name="preference_head_color_change">preference_head_color_change</string>
+    <string name="preference_head_color_from">preference_head_color_from</string>
+    <string name="preference_head_color_main">preference_head_color_main</string>
+    <string name="preference_head_color_to">preference_head_color_to</string>
+    <string name="preference_in_ads_hint">preference_in_hint</string>
+    <string name="preference_in_ads_time">preference_in</string>
+    <string name="preference_inc_day_streak_date">preference_inc_day_streak_date</string>
+    <string name="preference_money">preference_tricks_count</string>
+    <string name="preference_my_color">preference_my_color_new</string>
+    <string name="preference_numpad">preference_numpad</string>
+    <string name="preference_numpad_change">preference_numpad_change</string>
+    <string name="preference_numpad_order">preference_numpad_order</string>
+    <string name="preference_orientation">preference_orientation</string>
+    <string name="preference_rate">preference_rate</string>
+    <string name="preference_reset_theme">preference_reset_theme</string>
+    <string name="preference_rtm_count_defeat">preference_rtm_count_defeat</string>
+    <string name="preference_rtm_count_victory">preference_rtm_count_victory</string>
+    <string name="preference_score_max">preference_score_max</string>
+    <string name="preference_score_max_minute">preference_score_max_minute</string>
+    <string name="preference_score_max_selection">preference_score_max_selection</string>
+    <string name="preference_score_max_selection_minute">preference_score_max_selection_minute</string>
+    <string name="preference_score_max_selection_time">preference_score_max_selection_time</string>
+    <string name="preference_score_max_time">preference_score_max_time</string>
+    <string name="preference_score_max_timewise">preference_score_max_timewise</string>
+    <string name="preference_set_day_streak_date">preference_set_day_streak_date</string>
+    <string name="preference_steps_count">preference_steps_count</string>
+    <string name="preference_tts">preference_tts</string>
+    <string name="preference_volume">preference_volume</string>
+    <string name="sign_arrow_arround_left">⟲</string>
+    <string name="sign_arrow_arround_right">⟳</string>
+    <string name="sign_arrow_back">↩</string>
+    <string name="sign_arrow_left">←</string>
+    <string name="sign_arrow_right">→</string>
+    <string name="sign_check">✓</string>
+    <string name="sign_division">÷</string>
+    <string name="sign_fraction">/</string>
+    <string name="sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="sign_infinity">∞</string>
+    <string name="sign_minus">−</string>
+    <string name="sign_multiplication">×</string>
+    <string name="sign_plus">+</string>
+    <string name="sign_square_root">√</string>
+    <string name="store_picture_message">Allow Ad to store image in Picture gallery?</string>
+    <string name="store_picture_title">Save image</string>
+    <string name="theme_dark_cl_Black">ffffff</string>
+    <string name="theme_dark_cl_Blue">1565C0</string>
+    <string name="theme_dark_cl_Brown">773500</string>
+    <string name="theme_dark_cl_Cyan">00838F</string>
+    <string name="theme_dark_cl_Green">2E7D32</string>
+    <string name="theme_dark_cl_GreenLight">089B00</string>
+    <string name="theme_dark_cl_GreenYellow">aed300</string>
+    <string name="theme_dark_cl_Mangeta">924bd7</string>
+    <string name="theme_dark_cl_Orange">9e6202</string>
+    <string name="theme_dark_cl_Red">992424</string>
+    <string name="theme_dark_cl_Violet">6A1B9A</string>
+    <string name="theme_dark_cl_White">000000</string>
+    <string name="theme_dark_cl_Yellow">797100</string>
+    <string name="theme_dark_cl_main_head">0d47a1</string>
+    <string name="theme_light_cl_Black">ffffff</string>
+    <string name="theme_light_cl_Blue">1565C0</string>
+    <string name="theme_light_cl_Brown">773500</string>
+    <string name="theme_light_cl_Cyan">00838F</string>
+    <string name="theme_light_cl_Green">2E7D32</string>
+    <string name="theme_light_cl_GreenLight">089B00</string>
+    <string name="theme_light_cl_GreenYellow">aed300</string>
+    <string name="theme_light_cl_Mangeta">924bd7</string>
+    <string name="theme_light_cl_Orange">9e6202</string>
+    <string name="theme_light_cl_Red">992424</string>
+    <string name="theme_light_cl_Violet">6A1B9A</string>
+    <string name="theme_light_cl_White">000000</string>
+    <string name="theme_light_cl_Yellow">797100</string>
+    <string name="theme_light_cl_main_head">0d47a1</string>
+    <string name="trick_05_percent_order">8.03</string>
+    <string name="trick_05_percent_rule">trick_05_percent_rule</string>
+    <string name="trick_05_percent_rule_video">-1</string>
+    <string name="trick_150_percent_order">8.13</string>
+    <string name="trick_150_percent_rule">trick_150_percent_rule</string>
+    <string name="trick_150_percent_rule_video">-1</string>
+    <string name="trick_15_percent_order">8.07</string>
+    <string name="trick_15_percent_rule">trick_15_percent_rule</string>
+    <string name="trick_15_percent_rule_video">-1</string>
+    <string name="trick_200_percent_order">8.14</string>
+    <string name="trick_200_percent_rule">trick_200_percent_rule</string>
+    <string name="trick_200_percent_rule_video">-1</string>
+    <string name="trick_20_percent_order">8.08</string>
+    <string name="trick_20_percent_rule">trick_20_percent_rule</string>
+    <string name="trick_20_percent_rule_video">-1</string>
+    <string name="trick_250_percent_order">8.15</string>
+    <string name="trick_250_percent_rule">trick_250_percent_rule</string>
+    <string name="trick_250_percent_rule_video">-1</string>
+    <string name="trick_25_percent_order">8.09</string>
+    <string name="trick_25_percent_rule">trick_25_percent_rule</string>
+    <string name="trick_25_percent_rule_video">-1</string>
+    <string name="trick_2_percent_order">8.04</string>
+    <string name="trick_2_percent_rule">trick_2_percent_rule</string>
+    <string name="trick_2_percent_rule_video">-1</string>
+    <string name="trick_300_percent_order">8.16</string>
+    <string name="trick_300_percent_rule">trick_300_percent_rule</string>
+    <string name="trick_300_percent_rule_video">-1</string>
+    <string name="trick_3_root_order">7.02</string>
+    <string name="trick_3_root_rule">trick_3_root_rule</string>
+    <string name="trick_3_root_rule_text">-1</string>
+    <string name="trick_3_root_rule_video">-1</string>
+    <string name="trick_40_percent_order">8.10</string>
+    <string name="trick_40_percent_rule">trick_40_percent_rule</string>
+    <string name="trick_40_percent_rule_video">-1</string>
+    <string name="trick_40_percent_text">40%</string>
+    <string name="trick_4_percent_order">8.05</string>
+    <string name="trick_4_percent_rule">trick_4_percent_rule</string>
+    <string name="trick_4_percent_rule_video">-1</string>
+    <string name="trick_4_root_order">7.03</string>
+    <string name="trick_4_root_rule">trick_4_root_rule</string>
+    <string name="trick_4_root_rule_text">-1</string>
+    <string name="trick_4_root_rule_video">-1</string>
+    <string name="trick_500_percent_order">8.17</string>
+    <string name="trick_500_percent_rule">trick_500_percent_rule</string>
+    <string name="trick_500_percent_rule_video">-1</string>
+    <string name="trick_50_percent_order">8.11</string>
+    <string name="trick_50_percent_rule">trick_50_percent_rule</string>
+    <string name="trick_50_percent_rule_video">-1</string>
+    <string name="trick_5_percent_order">8.06</string>
+    <string name="trick_5_percent_rule">trick_5_percent_rule</string>
+    <string name="trick_5_percent_rule_video">-1</string>
+    <string name="trick_5_root_order">7.04</string>
+    <string name="trick_5_root_rule">trick_5_root_rule</string>
+    <string name="trick_5_root_rule_text">-1</string>
+    <string name="trick_5_root_rule_video">-1</string>
+    <string name="trick_6_root_order">7.05</string>
+    <string name="trick_6_root_rule">trick_6_root_rule</string>
+    <string name="trick_6_root_rule_text">-1</string>
+    <string name="trick_6_root_rule_video">-1</string>
+    <string name="trick_750_percent_order">8.18</string>
+    <string name="trick_750_percent_rule">trick_750_percent_rule</string>
+    <string name="trick_750_percent_rule_video">-1</string>
+    <string name="trick_750_percent_text">750%</string>
+    <string name="trick_75_percent_order">8.12</string>
+    <string name="trick_75_percent_rule">trick_75_percent_rule</string>
+    <string name="trick_75_percent_rule_video">-1</string>
+    <string name="trick_75_percent_text">75%</string>
+    <string name="trick_9_root_order">7.06</string>
+    <string name="trick_9_root_rule">trick_9_root_rule</string>
+    <string name="trick_9_root_rule_text">-1</string>
+    <string name="trick_9_root_rule_video">-1</string>
+    <string name="trick_adding_numbers_close_to_hundreds_order">1.02</string>
+    <string name="trick_adding_numbers_close_to_hundreds_rule">trick_adding_numbers_close_to_hundreds_rule</string>
+    <string name="trick_adding_numbers_close_to_hundreds_rule_video">-1</string>
+    <string name="trick_addition_order">1.01</string>
+    <string name="trick_addition_rule">trick_addition_rule</string>
+    <string name="trick_addition_rule_text">-1</string>
+    <string name="trick_addition_rule_video">-1</string>
+    <string name="trick_dividing_by_025_order">4.03</string>
+    <string name="trick_dividing_by_025_rule">trick_dividing_by_025_rule</string>
+    <string name="trick_dividing_by_025_rule_video">-1</string>
+    <string name="trick_dividing_by_02_order">4.02</string>
+    <string name="trick_dividing_by_02_rule">trick_dividing_by_02_rule</string>
+    <string name="trick_dividing_by_02_rule_video">-1</string>
+    <string name="trick_dividing_by_05_order">4.04</string>
+    <string name="trick_dividing_by_05_rule">trick_dividing_by_05_rule</string>
+    <string name="trick_dividing_by_05_rule_video">-1</string>
+    <string name="trick_dividing_by_15_order">4.13</string>
+    <string name="trick_dividing_by_15_rule">trick_dividing_by_15_rule</string>
+    <string name="trick_dividing_by_15_rule_video">-1</string>
+    <string name="trick_dividing_by_20_order">4.14</string>
+    <string name="trick_dividing_by_20_rule">trick_dividing_by_20_rule</string>
+    <string name="trick_dividing_by_20_rule_video">-1</string>
+    <string name="trick_dividing_by_25_order">4.15</string>
+    <string name="trick_dividing_by_25_rule">trick_dividing_by_25_rule</string>
+    <string name="trick_dividing_by_25_rule_video">-1</string>
+    <string name="trick_dividing_by_2_order">4.05</string>
+    <string name="trick_dividing_by_2_rule">trick_dividing_by_2_rule</string>
+    <string name="trick_dividing_by_2_rule_text">-1</string>
+    <string name="trick_dividing_by_2_rule_video">-1</string>
+    <string name="trick_dividing_by_3_order">4.06</string>
+    <string name="trick_dividing_by_3_rule">trick_dividing_by_3_rule</string>
+    <string name="trick_dividing_by_3_rule_text">-1</string>
+    <string name="trick_dividing_by_3_rule_video">-1</string>
+    <string name="trick_dividing_by_40_order">4.16</string>
+    <string name="trick_dividing_by_40_rule">trick_dividing_by_40_rule</string>
+    <string name="trick_dividing_by_40_rule_video">-1</string>
+    <string name="trick_dividing_by_4_order">4.07</string>
+    <string name="trick_dividing_by_4_rule">trick_dividing_by_4_rule</string>
+    <string name="trick_dividing_by_4_rule_video">-1</string>
+    <string name="trick_dividing_by_50_order">4.17</string>
+    <string name="trick_dividing_by_50_rule">trick_dividing_by_50_rule</string>
+    <string name="trick_dividing_by_50_rule_video">-1</string>
+    <string name="trick_dividing_by_5_order">4.08</string>
+    <string name="trick_dividing_by_5_rule">trick_dividing_by_5_rule</string>
+    <string name="trick_dividing_by_5_rule_video">ICkMnYAFhFs</string>
+    <string name="trick_dividing_by_6_order">4.09</string>
+    <string name="trick_dividing_by_6_rule">trick_dividing_by_6_rule</string>
+    <string name="trick_dividing_by_6_rule_video">-1</string>
+    <string name="trick_dividing_by_7_order">4.10</string>
+    <string name="trick_dividing_by_7_rule">trick_dividing_by_7_rule</string>
+    <string name="trick_dividing_by_7_rule_text">-1</string>
+    <string name="trick_dividing_by_7_rule_video">-1</string>
+    <string name="trick_dividing_by_8_order">4.11</string>
+    <string name="trick_dividing_by_8_rule">trick_dividing_by_8_rule</string>
+    <string name="trick_dividing_by_8_rule_video">-1</string>
+    <string name="trick_dividing_by_9_order">4.12</string>
+    <string name="trick_dividing_by_9_rule">trick_dividing_by_9_rule</string>
+    <string name="trick_dividing_by_9_rule_text">-1</string>
+    <string name="trick_dividing_by_9_rule_video">-1</string>
+    <string name="trick_division_order">4.01</string>
+    <string name="trick_division_rule">trick_division_rule</string>
+    <string name="trick_division_rule_text">-1</string>
+    <string name="trick_division_rule_video">-1</string>
+    <string name="trick_money">200</string>
+    <string name="trick_multiplication_order">3.01</string>
+    <string name="trick_multiplication_rule">trick_multiplication_rule</string>
+    <string name="trick_multiplication_rule_text">-1</string>
+    <string name="trick_multiplication_rule_video">-1</string>
+    <string name="trick_multiply_by_025_order">3.07</string>
+    <string name="trick_multiply_by_025_rule">trick_multiply_by_025_rule</string>
+    <string name="trick_multiply_by_025_rule_video">-1</string>
+    <string name="trick_multiply_by_02_order">3.06</string>
+    <string name="trick_multiply_by_02_rule">trick_multiply_by_02_rule</string>
+    <string name="trick_multiply_by_02_rule_video">-1</string>
+    <string name="trick_multiply_by_05_order">3.08</string>
+    <string name="trick_multiply_by_05_rule">trick_multiply_by_05_rule</string>
+    <string name="trick_multiply_by_05_rule_video">-1</string>
+    <string name="trick_multiply_by_11_2digit_order">3.02</string>
+    <string name="trick_multiply_by_11_2digit_rule">trick_multiply_by_11_2digit_rule</string>
+    <string name="trick_multiply_by_11_2digit_rule_video">JoCwHrD0vDI</string>
+    <string name="trick_multiply_by_125_order">3.30</string>
+    <string name="trick_multiply_by_125_rule">trick_multiply_by_125_rule</string>
+    <string name="trick_multiply_by_125_rule_video">-1</string>
+    <string name="trick_multiply_by_12_order">3.17</string>
+    <string name="trick_multiply_by_12_rule">trick_multiply_by_12_rule</string>
+    <string name="trick_multiply_by_12_rule_video">-1</string>
+    <string name="trick_multiply_by_13_order">3.18</string>
+    <string name="trick_multiply_by_13_rule">trick_multiply_by_13_rule</string>
+    <string name="trick_multiply_by_13_rule_video">-1</string>
+    <string name="trick_multiply_by_14_order">3.19</string>
+    <string name="trick_multiply_by_14_rule">trick_multiply_by_14_rule</string>
+    <string name="trick_multiply_by_14_rule_video">-1</string>
+    <string name="trick_multiply_by_15_order">3.20</string>
+    <string name="trick_multiply_by_15_rule">trick_multiply_by_15_rule</string>
+    <string name="trick_multiply_by_15_rule_video">-1</string>
+    <string name="trick_multiply_by_16_order">3.21</string>
+    <string name="trick_multiply_by_16_rule">trick_multiply_by_16_rule</string>
+    <string name="trick_multiply_by_16_rule_video">-1</string>
+    <string name="trick_multiply_by_17_order">3.22</string>
+    <string name="trick_multiply_by_17_rule">trick_multiply_by_17_rule</string>
+    <string name="trick_multiply_by_17_rule_video">-1</string>
+    <string name="trick_multiply_by_18_order">3.23</string>
+    <string name="trick_multiply_by_18_rule">trick_multiply_by_18_rule</string>
+    <string name="trick_multiply_by_18_rule_video">-1</string>
+    <string name="trick_multiply_by_19_order">3.24</string>
+    <string name="trick_multiply_by_19_rule">trick_multiply_by_19_rule</string>
+    <string name="trick_multiply_by_19_rule_video">-1</string>
+    <string name="trick_multiply_by_20_order">3.25</string>
+    <string name="trick_multiply_by_20_rule">trick_multiply_by_20_rule</string>
+    <string name="trick_multiply_by_20_rule_video">-1</string>
+    <string name="trick_multiply_by_250_order">3.31</string>
+    <string name="trick_multiply_by_250_rule">trick_multiply_by_250_rule</string>
+    <string name="trick_multiply_by_250_rule_video">-1</string>
+    <string name="trick_multiply_by_25_order">3.26</string>
+    <string name="trick_multiply_by_25_rule">trick_multiply_by_25_rule</string>
+    <string name="trick_multiply_by_25_rule_video">-1</string>
+    <string name="trick_multiply_by_2_order">3.09</string>
+    <string name="trick_multiply_by_2_rule">trick_multiply_by_2_rule</string>
+    <string name="trick_multiply_by_2_rule_text">-1</string>
+    <string name="trick_multiply_by_2_rule_video">-1</string>
+    <string name="trick_multiply_by_3_order">3.10</string>
+    <string name="trick_multiply_by_3_rule">trick_multiply_by_3_rule</string>
+    <string name="trick_multiply_by_3_rule_video">-1</string>
+    <string name="trick_multiply_by_4_order">3.11</string>
+    <string name="trick_multiply_by_4_rule">trick_multiply_by_4_rule</string>
+    <string name="trick_multiply_by_4_rule_video">6HghpTHu3UY</string>
+    <string name="trick_multiply_by_500_order">3.32</string>
+    <string name="trick_multiply_by_500_rule">trick_multiply_by_500_rule</string>
+    <string name="trick_multiply_by_500_rule_video">-1</string>
+    <string name="trick_multiply_by_50_order">3.27</string>
+    <string name="trick_multiply_by_50_rule">trick_multiply_by_50_rule</string>
+    <string name="trick_multiply_by_50_rule_video">-1</string>
+    <string name="trick_multiply_by_5_order">3.12</string>
+    <string name="trick_multiply_by_5_rule">trick_multiply_by_5_rule</string>
+    <string name="trick_multiply_by_5_rule_video">uWHhIcccU1A</string>
+    <string name="trick_multiply_by_6_order">3.13</string>
+    <string name="trick_multiply_by_6_rule">trick_multiply_by_6_rule</string>
+    <string name="trick_multiply_by_6_rule_video">-1</string>
+    <string name="trick_multiply_by_750_order">3.33</string>
+    <string name="trick_multiply_by_750_rule">trick_multiply_by_750_rule</string>
+    <string name="trick_multiply_by_750_rule_video">-1</string>
+    <string name="trick_multiply_by_75_order">3.28</string>
+    <string name="trick_multiply_by_75_rule">trick_multiply_by_75_rule</string>
+    <string name="trick_multiply_by_75_rule_video">-1</string>
+    <string name="trick_multiply_by_7_order">3.14</string>
+    <string name="trick_multiply_by_7_rule">trick_multiply_by_7_rule</string>
+    <string name="trick_multiply_by_7_rule_video">-1</string>
+    <string name="trick_multiply_by_8_order">3.15</string>
+    <string name="trick_multiply_by_8_rule">trick_multiply_by_8_rule</string>
+    <string name="trick_multiply_by_8_rule_video">-1</string>
+    <string name="trick_multiply_by_999_order">3.34</string>
+    <string name="trick_multiply_by_999_rule">trick_multiply_by_999_rule</string>
+    <string name="trick_multiply_by_999_rule_video">-1</string>
+    <string name="trick_multiply_by_99_order">3.29</string>
+    <string name="trick_multiply_by_99_rule">trick_multiply_by_99_rule</string>
+    <string name="trick_multiply_by_99_rule_video">-1</string>
+    <string name="trick_multiply_by_9_order">3.16</string>
+    <string name="trick_multiply_by_9_rule">trick_multiply_by_9_rule</string>
+    <string name="trick_multiply_by_9_rule_video">bWDJwrKQCdo</string>
+    <string name="trick_multiply_numbers_between_11_and_19_order">3.05</string>
+    <string name="trick_multiply_numbers_between_11_and_19_rule">trick_multiply_numbers_between_11_and_19_rule</string>
+    <string name="trick_multiply_numbers_between_11_and_19_rule_video">eJk9snFnkjI</string>
+    <string name="trick_multiply_two_digit_numbers_editing_in_1_order">3.04</string>
+    <string name="trick_multiply_two_digit_numbers_editing_in_1_rule">trick_multiply_two_digit_numbers_editing_in_1_rule</string>
+    <string name="trick_multiply_two_digit_numbers_editing_in_1_rule_video">EGAEeq6zq9c</string>
+    <string name="trick_multiply_two_digit_numbers_having_same_tens_order">3.03</string>
+    <string name="trick_multiply_two_digit_numbers_having_same_tens_rule">trick_multiply_two_digit_numbers_having_same_tens_rule</string>
+    <string name="trick_multiply_two_digit_numbers_having_same_tens_rule_video">fdtFKSaoUW8</string>
+    <string name="trick_percent_2_order">8.02</string>
+    <string name="trick_percent_2_rule">trick_percent_2_rule</string>
+    <string name="trick_percent_2_rule_video">i-ORCIcchJ8</string>
+    <string name="trick_percent_order">8.01</string>
+    <string name="trick_percent_rule">trick_percent_rule</string>
+    <string name="trick_percent_rule_video">WsiYUBc2-Co</string>
+    <string name="trick_power_2_between_1000_and_9999_order">6.04</string>
+    <string name="trick_power_2_between_1000_and_9999_rule">trick_power_2_between_1000_and_9999_rule</string>
+    <string name="trick_power_2_between_1000_and_9999_rule_text">-1</string>
+    <string name="trick_power_2_between_1000_and_9999_rule_video">-1</string>
+    <string name="trick_power_2_between_100_and_999_order">6.03</string>
+    <string name="trick_power_2_between_100_and_999_rule">trick_power_2_between_100_and_999_rule</string>
+    <string name="trick_power_2_between_100_and_999_rule_text">-1</string>
+    <string name="trick_power_2_between_100_and_999_rule_video">-1</string>
+    <string name="trick_power_2_order">6.02</string>
+    <string name="trick_power_2_rule">trick_power_2_rule</string>
+    <string name="trick_power_2_rule_text">-1</string>
+    <string name="trick_power_2_rule_video">-1</string>
+    <string name="trick_power_3_between_100_and_999_order">6.06</string>
+    <string name="trick_power_3_between_100_and_999_rule">trick_power_3_between_100_and_999_rule</string>
+    <string name="trick_power_3_between_100_and_999_rule_text">-1</string>
+    <string name="trick_power_3_between_100_and_999_rule_video">-1</string>
+    <string name="trick_power_3_order">6.05</string>
+    <string name="trick_power_3_rule">trick_power_3_rule</string>
+    <string name="trick_power_3_rule_text">-1</string>
+    <string name="trick_power_3_rule_video">-1</string>
+    <string name="trick_power_4_order">6.07</string>
+    <string name="trick_power_4_rule">trick_power_4_rule</string>
+    <string name="trick_power_4_rule_text">-1</string>
+    <string name="trick_power_4_rule_video">-1</string>
+    <string name="trick_power_6_order">6.08</string>
+    <string name="trick_power_6_rule">trick_power_6_rule</string>
+    <string name="trick_power_6_rule_text">-1</string>
+    <string name="trick_power_6_rule_video">-1</string>
+    <string name="trick_power_9_order">6.09</string>
+    <string name="trick_power_9_rule">trick_power_9_rule</string>
+    <string name="trick_power_9_rule_text">-1</string>
+    <string name="trick_power_9_rule_video">-1</string>
+    <string name="trick_power_of_two_order">6.01</string>
+    <string name="trick_power_of_two_rule">trick_power_of_two_rule</string>
+    <string name="trick_power_of_two_rule_text">-1</string>
+    <string name="trick_power_of_two_rule_video">-1</string>
+    <string name="trick_square_number_between_100_and_109_order">5.17</string>
+    <string name="trick_square_number_between_100_and_109_rule">trick_square_number_between_100_and_109_rule</string>
+    <string name="trick_square_number_between_100_and_109_rule_video">AhOcbTRO8i8</string>
+    <string name="trick_square_number_between_10_and_19_order">5.08</string>
+    <string name="trick_square_number_between_10_and_19_rule">trick_square_number_between_10_and_19_rule</string>
+    <string name="trick_square_number_between_10_and_19_rule_video">-1</string>
+    <string name="trick_square_number_between_11_and_99_order">5.16</string>
+    <string name="trick_square_number_between_11_and_99_rule">trick_square_number_between_11_and_99_rule</string>
+    <string name="trick_square_number_between_11_and_99_rule_video">ozM7nIXV5Rc</string>
+    <string name="trick_square_number_between_20_and_29_order">5.09</string>
+    <string name="trick_square_number_between_20_and_29_rule">trick_square_number_between_20_and_29_rule</string>
+    <string name="trick_square_number_between_20_and_29_rule_video">-1</string>
+    <string name="trick_square_number_between_30_and_39_order">5.10</string>
+    <string name="trick_square_number_between_30_and_39_rule">trick_square_number_between_30_and_39_rule</string>
+    <string name="trick_square_number_between_30_and_39_rule_video">-1</string>
+    <string name="trick_square_number_between_40_and_49_order">5.11</string>
+    <string name="trick_square_number_between_40_and_49_rule">trick_square_number_between_40_and_49_rule</string>
+    <string name="trick_square_number_between_40_and_49_rule_video">zaG3lhy0Ec4</string>
+    <string name="trick_square_number_between_50_and_59_order">5.12</string>
+    <string name="trick_square_number_between_50_and_59_rule">trick_square_number_between_50_and_59_rule</string>
+    <string name="trick_square_number_between_50_and_59_rule_video">rNFovaE2PPM</string>
+    <string name="trick_square_number_between_60_and_69_order">5.13</string>
+    <string name="trick_square_number_between_60_and_69_rule">trick_square_number_between_60_and_69_rule</string>
+    <string name="trick_square_number_between_60_and_69_rule_video">-1</string>
+    <string name="trick_square_number_between_70_and_79_order">5.14</string>
+    <string name="trick_square_number_between_70_and_79_rule">trick_square_number_between_70_and_79_rule</string>
+    <string name="trick_square_number_between_70_and_79_rule_video">-1</string>
+    <string name="trick_square_number_between_80_and_89_order">5.15</string>
+    <string name="trick_square_number_between_80_and_89_rule">trick_square_number_between_80_and_89_rule</string>
+    <string name="trick_square_number_between_80_and_89_rule_video">-1</string>
+    <string name="trick_square_numbers_editing_in_05_order">5.02</string>
+    <string name="trick_square_numbers_editing_in_05_rule">trick_square_numbers_editing_in_05_rule</string>
+    <string name="trick_square_numbers_editing_in_05_rule_text">-1</string>
+    <string name="trick_square_numbers_editing_in_05_rule_video">-1</string>
+    <string name="trick_square_numbers_editing_in_125_order">5.07</string>
+    <string name="trick_square_numbers_editing_in_125_rule">trick_square_numbers_editing_in_125_rule</string>
+    <string name="trick_square_numbers_editing_in_125_rule_text">-1</string>
+    <string name="trick_square_numbers_editing_in_125_rule_video">-1</string>
+    <string name="trick_square_numbers_editing_in_15_order">5.03</string>
+    <string name="trick_square_numbers_editing_in_15_rule">trick_square_numbers_editing_in_15_rule</string>
+    <string name="trick_square_numbers_editing_in_15_rule_text">-1</string>
+    <string name="trick_square_numbers_editing_in_15_rule_video">-1</string>
+    <string name="trick_square_numbers_editing_in_25_order">5.04</string>
+    <string name="trick_square_numbers_editing_in_25_rule">trick_square_numbers_editing_in_25_rule</string>
+    <string name="trick_square_numbers_editing_in_25_rule_video">-1</string>
+    <string name="trick_square_numbers_editing_in_5_order">5.01</string>
+    <string name="trick_square_numbers_editing_in_5_rule">trick_square_numbers_editing_in_5_rule</string>
+    <string name="trick_square_numbers_editing_in_5_rule_video">drHen-0Mf1M</string>
+    <string name="trick_square_numbers_editing_in_75_order">5.05</string>
+    <string name="trick_square_numbers_editing_in_75_rule">trick_square_numbers_editing_in_75_rule</string>
+    <string name="trick_square_numbers_editing_in_75_rule_text">-1</string>
+    <string name="trick_square_numbers_editing_in_75_rule_video">-1</string>
+    <string name="trick_square_numbers_editing_in_95_order">5.06</string>
+    <string name="trick_square_numbers_editing_in_95_rule">trick_square_numbers_editing_in_95_rule</string>
+    <string name="trick_square_numbers_editing_in_95_rule_text">-1</string>
+    <string name="trick_square_numbers_editing_in_95_rule_video">-1</string>
+    <string name="trick_square_root_order">7.01</string>
+    <string name="trick_square_root_rule">trick_square_root_rule</string>
+    <string name="trick_square_root_rule_video">4ktgUo7QAN4</string>
+    <string name="trick_subtracting_from_1000_order">2.03</string>
+    <string name="trick_subtracting_from_1000_rule">trick_subtracting_from_1000_rule</string>
+    <string name="trick_subtracting_from_1000_rule_video">6sOqkYqn5j8</string>
+    <string name="trick_subtracting_numbers_close_to_hundreds_order">2.02</string>
+    <string name="trick_subtracting_numbers_close_to_hundreds_rule">trick_subtracting_numbers_close_to_hundreds_rule</string>
+    <string name="trick_subtracting_numbers_close_to_hundreds_rule_video">-1</string>
+    <string name="trick_subtraction_order">2.01</string>
+    <string name="trick_subtraction_rule">trick_subtraction_rule</string>
+    <string name="trick_subtraction_rule_text">-1</string>
+    <string name="trick_subtraction_rule_video">-1</string>
+    <string name="trick_tough_multiplication_order">3.35</string>
+    <string name="trick_tough_multiplication_rule">trick_tough_multiplication_rule</string>
+    <string name="trick_tough_multiplication_rule_video">N28r0usI294</string>
+    <string name="unknown_error">Unknown error.</string>
+    <string name="version_name">v2.12</string>
+</resources>

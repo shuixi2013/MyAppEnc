@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="th_ib_graph_head" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="th_ib_leaderboard_head" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="th_ib_shop" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_background" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_b_backspace" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_b_hint" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_b_hint_solution" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_b_numbers" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_ll_expression" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_ll_expression_elv_group" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_ll_expression_lvl" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_ll_expression_tv" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_ll_head" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_ll_head_shadow" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_pb_time" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_tv_expression" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_tv_expressions_count" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_tv_level" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_tv_score" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_game_tv_trick_name" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_levels_b_levels" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_main_b_leaderboard" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_main_b_music" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_main_b_rate" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_main_b_support" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_music_b_add" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_music_b_delete" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_music_b_volume_down_fast" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_music_b_volume_down_slow" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_music_b_volume_normal" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_music_b_volume_off" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_tricks_cb" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_tricks_cb_all" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_tricks_elv_tricks" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_tricks_lv_tricks" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_activity_tricks_tv_trick" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_alert_dialog_b" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_alert_dialog_l" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_alert_dialog_level_complete_tv_score" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_alert_dialog_timer_end_tv_score" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_alert_dialog_timer_end_tv_score_max" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_alert_dialog_timer_end_tv_solution" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_arrow_down" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_arrow_down_head" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_arrow_up" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_arrow_up_head" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_back" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_bg_numpad" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_by_heart" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_get_invitation" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_graph" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_minute_challenge" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_money_buy" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_money_total" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_multiplayer" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_non_time" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_rtm_defeat" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_rtm_victory" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_set_invitation" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_settings" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_single_player" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_speed_challenge" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_to_the_bitter_end" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_training" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_training_one_player" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_training_two_players" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_b_two_players" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_et" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_arrow_back" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_arrow_back_activity" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_arrow_next" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_arrow_retry" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_numpad_change_block" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_numpad_change_bool" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_numpad_change_numpad" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_point" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_today_reload" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ib_youtube_head" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_iv_rate_star" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_ll_solution" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_ad_win_b" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_ad_win_tv_win" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_b_backspace" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_b_numbers" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_ll_expression" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_tv_expression" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_tv_expressions_count" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_tv_level" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_1_tv_trick_name" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_ad_win_b" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_ad_win_tv_win" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_b_backspace" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_b_numbers" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_ll_expression" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_tv_expression" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_tv_expressions_count" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_tv_level" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_2_tv_trick_name" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="theme_player_pb_time" format="reference|string|integer|boolean|color|float|dimension|fraction" />
+    <attr name="adSize" format="string" />
+    <attr name="adSizes" format="string" />
+    <attr name="adUnitId" format="string" />
+    <attr name="imageAspectRatioAdjust">
+        <enum name="adjust_height" value="2" />
+        <enum name="adjust_width" value="1" />
+        <enum name="none" value="0" />
+    </attr>
+    <attr name="imageAspectRatio" format="float" />
+    <attr name="circleCrop" format="boolean" />
+    <attr name="mapType">
+        <enum name="none" value="0" />
+        <enum name="hybrid" value="4" />
+        <enum name="normal" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="cameraBearing" format="float" />
+    <attr name="cameraTargetLat" format="float" />
+    <attr name="cameraTargetLng" format="float" />
+    <attr name="cameraTilt" format="float" />
+    <attr name="cameraZoom" format="float" />
+    <attr name="liteMode" format="boolean" />
+    <attr name="uiCompass" format="boolean" />
+    <attr name="uiRotateGestures" format="boolean" />
+    <attr name="uiScrollGestures" format="boolean" />
+    <attr name="uiTiltGestures" format="boolean" />
+    <attr name="uiZoomControls" format="boolean" />
+    <attr name="uiZoomGestures" format="boolean" />
+    <attr name="useViewLifecycle" format="boolean" />
+    <attr name="zOrderOnTop" format="boolean" />
+    <attr name="uiMapToolbar" format="boolean" />
+    <attr name="appTheme">
+        <enum name="holo_dark" value="0" />
+        <enum name="holo_light" value="1" />
+    </attr>
+    <attr name="environment">
+        <enum name="production" value="1" />
+        <enum name="sandbox" value="0" />
+        <enum name="strict_sandbox" value="2" />
+    </attr>
+    <attr name="fragmentStyle" format="reference" />
+    <attr name="fragmentMode">
+        <enum name="buyButton" value="1" />
+        <enum name="selectionDetails" value="2" />
+    </attr>
+    <attr name="buyButtonHeight" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonWidth" format="dimension">
+        <enum name="match_parent" value="-1" />
+        <enum name="wrap_content" value="-2" />
+    </attr>
+    <attr name="buyButtonText">
+        <enum name="book_now" value="3" />
+        <enum name="buy_now" value="2" />
+        <enum name="buy_with_google" value="1" />
+        <enum name="donate_with_google" value="4" />
+    </attr>
+    <attr name="buyButtonAppearance">
+        <enum name="classic" value="1" />
+        <enum name="grayscale" value="2" />
+        <enum name="monochrome" value="3" />
+    </attr>
+    <attr name="maskedWalletDetailsTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsHeaderTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsButtonTextAppearance" format="reference" />
+    <attr name="maskedWalletDetailsButtonBackground" format="reference|color" />
+    <attr name="maskedWalletDetailsLogoTextColor" format="color" />
+    <attr name="maskedWalletDetailsLogoImageType">
+        <enum name="classic" value="1" />
+        <enum name="monochrome" value="2" />
+    </attr>
+</resources>

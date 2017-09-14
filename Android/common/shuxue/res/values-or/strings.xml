@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_main_b_Exit">Exit</string>
+    <string name="activity_main_b_Rate">Please rate!</string>
+    <string name="activity_main_b_Settings">ଓଡ଼ିଆ</string>
+    <string name="activity_main_b_Start">ଓଡ଼ିଆ</string>
+    <string name="activity_main_b_Teamwise">ଓଡ଼ିଆ</string>
+    <string name="activity_main_b_Training">Training mode</string>
+    <string name="activity_main_b_by_heart">By ଓଡ଼ିଆ</string>
+    <string name="activity_main_b_one_player">ଓଡ଼ିଆ player</string>
+    <string name="activity_main_b_two_players">Two players</string>
+    <string name="activity_main_tv_days_streak">&lt;i>&lt;b>%s&lt;/b> &lt;small>&lt;small>ଓଡ଼ିଆ&lt;/small>&lt;/small>&lt;/i></string>
+    <string name="activity_main_tv_ex_per_day_today">&lt;i>&lt;b>%s&lt;/b> &lt;small>&lt;small>today&lt;/small>&lt;/small>&lt;/i></string>
+    <string name="activity_main_tv_ex_per_day_total_solved">&lt;i>&lt;b>%s&lt;/b> &lt;small>&lt;small>total&lt;/small>&lt;/small>&lt;/i></string>
+</resources>

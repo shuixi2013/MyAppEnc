@@ -27,6 +27,7 @@ jobject newObject(JNIEnv *env , char * class_name);
 
 
 
+int getsoaddr();
 
 
 

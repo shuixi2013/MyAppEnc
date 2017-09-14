@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?theme_activity_game_ll_expression_elv_group">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_th_light_group_addition" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+            <TextView android:textSize="@dimen/theme_activity_tricks_tv_group" android:id="@id/tvTrickText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_trick_tv_trick_text" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?theme_activity_tricks_tv_trick" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

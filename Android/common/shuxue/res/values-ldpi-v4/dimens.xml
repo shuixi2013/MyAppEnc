@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alert_dialog_theme_b_width">200.0dip</dimen>
+    <dimen name="cb_paddingRight">10.0dip</dimen>
+    <dimen name="player_b">13.0dip</dimen>
+    <dimen name="player_tv_expression">18.0dip</dimen>
+    <dimen name="player_tv_level">13.0dip</dimen>
+    <dimen name="player_tv_trick_name">13.0dip</dimen>
+    <dimen name="theme_activity_game_b_hint">60.0dip</dimen>
+    <dimen name="theme_activity_game_b_text">16.0dip</dimen>
+    <dimen name="theme_activity_game_tv_expression">30.0dip</dimen>
+    <dimen name="theme_activity_game_tv_expressions_count">11.0dip</dimen>
+    <dimen name="theme_activity_game_tv_level">19.0dip</dimen>
+    <dimen name="theme_activity_game_tv_score">19.0dip</dimen>
+    <dimen name="theme_activity_game_tv_trick_name">15.0dip</dimen>
+    <dimen name="theme_activity_levels_b_levels_text">17.0dip</dimen>
+    <dimen name="theme_activity_main_b_rate">12.0dip</dimen>
+    <dimen name="theme_activity_tricks_tv_group">21.0dip</dimen>
+    <dimen name="theme_activity_tricks_tv_trick">17.0dip</dimen>
+    <dimen name="theme_alert_dialog_b_text">18.0dip</dimen>
+    <dimen name="theme_alert_dialog_b_width">140.0dip</dimen>
+    <dimen name="theme_alert_dialog_l_padding">15.0dip</dimen>
+    <dimen name="theme_alert_dialog_level_complete_tv_score">25.0dip</dimen>
+    <dimen name="theme_alert_dialog_timer_end_tv_score">25.0dip</dimen>
+    <dimen name="theme_alert_dialog_timer_end_tv_score_max">20.0dip</dimen>
+    <dimen name="theme_alert_dialog_timer_end_tv_solution">20.0dip</dimen>
+    <dimen name="a_game_head_padding">15.0dip</dimen>
+    <dimen name="a_main_b_rate">125.0dip</dimen>
+    <dimen name="a_main_b_star_padding">20.0dip</dimen>
+    <dimen name="a_main_ll_b_margins">20.0dip</dimen>
+    <dimen name="a_main_ll_b_margins_land">0.0dip</dimen>
+</resources>

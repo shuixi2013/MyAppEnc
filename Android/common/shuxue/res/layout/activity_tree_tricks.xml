@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/LinearLayout1" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+            <ImageButton android:id="@id/a_tricks_ib_elv_collpase" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_arrow_up_head" />
+            <ImageButton android:id="@id/a_tricks_ib_elv_expand" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_arrow_down_head" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_main_b_Training" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="?theme_activity_game_tv_trick_name" />
+                <ImageButton android:id="@id/ib_lb_tricks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignBottom="@id/buttonTeamwise" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?th_ib_leaderboard_head" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center|right|top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cb_paddingRight">
+                <TextView android:id="@id/tv_lb_tricks" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/8300" style="?theme_activity_game_tv_trick_name" />
+                <CheckBox android:id="@id/a_tricks_cb_tricks" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_activity_tricks_cb_all" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ExpandableListView android:scrollbarStyle="insideOverlay" android:id="@id/elvTricks" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="?theme_activity_tricks_elv_tricks" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/bStart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/activity_main_b_one_player" android:layout_weight="1.0" android:onClick="buttonClick" style="?theme_b_training_one_player" />
+        <Button android:id="@id/bMultiplayer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/activity_main_b_two_players" android:layout_weight="1.0" android:onClick="buttonClick" style="?theme_b_training_two_players" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_tricks" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/alert_dialog_by_heart_ll" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/linearLayout13" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <LinearLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="35.0">
+                <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                <TextView android:gravity="center" android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_main_b_by_heart" style="?theme_activity_game_tv_level" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="65.0">
+                <ImageButton android:id="@id/ib_ex_up" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_arrow_up_head" />
+                <TextView android:id="@id/tv_ex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/10" style="?theme_activity_game_tv_trick_name" />
+                <ImageButton android:id="@id/ib_ex_down" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_b_arrow_down_head" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cb_paddingRight" android:layout_weight="10.0">
+                <ImageButton android:id="@id/ib_lb" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_main_b_leaderboard" />
+                <TextView android:id="@id/tv_score" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_main_b_Exit" style="?theme_activity_tricks_tv_trick" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/tv_interval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_main_b_by_heart" style="?theme_alert_dialog_level_complete_tv_score" />
+            <ImageView android:id="@id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_th_light_b_more" />
+            <ScrollView android:id="@id/scrollView5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:id="@id/alert_dialog_by_heart_tv_solution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Text" style="?theme_alert_dialog_level_complete_tv_score" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/alert_dialog_by_heart_b_ok" style="?theme_ib_arrow_next" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_by_heart_example" />
+</LinearLayout>

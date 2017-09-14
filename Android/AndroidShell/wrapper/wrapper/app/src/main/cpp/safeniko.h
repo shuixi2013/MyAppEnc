@@ -4,6 +4,9 @@
 
 #ifndef WRAPPER_SAFENIKO_H
 #define WRAPPER_SAFENIKO_H
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
 
 void __attribute__((constructor)) first(void);
 void __attribute__((constructor)) second(void);

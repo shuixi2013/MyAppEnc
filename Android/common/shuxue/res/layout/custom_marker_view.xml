@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0dip" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/tvContent" android:background="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="5.0dip" android:text="marker" android:singleLine="true" android:layout_centerHorizontal="true" style="?theme_activity_game_tv_expressions_count" />
+</RelativeLayout>

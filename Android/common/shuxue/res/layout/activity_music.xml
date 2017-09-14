@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_head" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/a_music_ib_volume_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_music_b_volume_off" />
+                    <ImageButton android:id="@id/a_music_ib_volume_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/a_music_ib_volume_off" android:layout_alignParentTop="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_music_b_volume_normal" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/a_music_ib_volume_down_slow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/a_music_ib_volume_normal" android:layout_alignBaseline="@id/a_music_ib_volume_normal" android:layout_alignParentTop="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_music_b_volume_down_slow" />
+                    <ImageButton android:id="@id/a_music_ib_volume_down_fast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/a_music_ib_volume_down_slow" android:layout_alignBaseline="@id/a_music_ib_volume_normal" android:layout_alignParentTop="true" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_music_b_volume_down_fast" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/option_music" style="?theme_activity_game_tv_level" />
+            <CheckBox android:id="@id/a_music_cb_music" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" style="?theme_activity_tricks_cb_all" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:scrollbarStyle="insideInset" android:id="@id/lv_Music" android:focusable="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="?theme_activity_tricks_lv_tricks" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/a_music_ib_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_music_b_add" />
+        <ImageButton android:id="@id/a_music_ib_delete" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="buttonClick" android:contentDescription="@string/alert_dialog_level_complete_iv_content_description" style="?theme_activity_music_b_delete" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_music" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutAlertDialogRule" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout4" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageButton android:id="@id/b_rule_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+                <ScrollView android:id="@id/sv_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0" android:requiresFadingEdge="vertical">
+                    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:id="@id/tv_trick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trick_name" style="?theme_activity_game_tv_trick_name" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+            <ImageButton android:id="@id/b_video" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_youtube_head" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/tv_rule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/activity_trick_tv_trick_text" android:layout_weight="1.0" style="?theme_activity_tricks_tv_trick" />
+                <ImageView android:layout_gravity="center|top" android:id="@id/iv_rule" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" android:layout_weight="1.0" android:contentDescription="@string/alert_dialog_rule_iv_content_description" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/b_rule_ok" style="?theme_ib_arrow_next" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_rule" />
+</LinearLayout>

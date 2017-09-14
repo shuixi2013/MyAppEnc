@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/player_alert_dialog_ll_steps" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout4" android:layout_width="fill_parent" style="?attr/theme_activity_game_ll_head_shadow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/theme_activity_game_ll_head">
+            <ImageButton android:id="@id/b_back" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_arrow_back_activity" />
+            <TextView android:id="@id/tv_steps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/a_main_ll_b_margins" android:text="@string/player_alert_dialog_tv_steps_name" style="?theme_activity_game_tv_trick_name" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView9" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_steps" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+                <ImageButton android:id="@id/ibUp" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="center" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_b_arrow_up" />
+                <LinearLayout android:orientation="vertical" android:layout_width="134.0dip" android:layout_height="wrap_content" style="?theme_activity_game_b_numbers">
+                    <TextView android:textSize="@dimen/theme_activity_tricks_tv_trick" android:layout_gravity="center" android:id="@id/player_alert_diaog_tv_steps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_game_b_zero" style="?theme_alert_dialog_timer_end_tv_score" />
+                </LinearLayout>
+                <ImageButton android:id="@id/ibDown" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="center" android:contentDescription="@string/alert_dialog_rule_iv_content_description" style="?theme_b_arrow_down" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="?theme_activity_game_ll_expression">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <CheckBox android:id="@id/cb_numpad_change_numpad" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_activity_tricks_cb" />
+                    <ImageButton android:id="@id/ib_numpad_change_numpad" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_numpad_change_numpad" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <CheckBox android:id="@id/cb_numpad_change_block" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_activity_tricks_cb" />
+                    <ImageButton android:id="@id/ib_numpad_change_block" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_numpad_change_block" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <CheckBox android:id="@id/cb_numpad_change_bool" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_activity_tricks_cb" />
+                    <ImageButton android:id="@id/ib_numpad_change_bool" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?theme_ib_numpad_change_bool" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/ib_multiplayer_plus" android:padding="13.0dip" android:src="@drawable/ic_th_b_multiplayer_plus" android:adjustViewBounds="false" style="?theme_ib_arrow_next" />
+        <ImageButton android:id="@id/ib_multiplayer_vs" android:padding="13.0dip" android:src="@drawable/ic_th_b_multiplayer_vs" style="?theme_ib_arrow_next" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ads_padding_top" ads:adSize="SMART_BANNER" ads:adUnitId="@string/admob_unit_id_activity_player_steps" />
+</LinearLayout>

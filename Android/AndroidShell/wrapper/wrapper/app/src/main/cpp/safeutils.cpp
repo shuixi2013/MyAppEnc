@@ -5,6 +5,14 @@
 #include "safeutils.h"
 
 
+
+
+int getsoaddr()
+{
+
+}
+
+
 jstring charToJstring(JNIEnv *env , char *str)
 {
     jstring encode = env->NewStringUTF(str);
