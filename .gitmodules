@@ -1,3 +1,6 @@
 [submodule "Android/VMProtect"]
 	path = Android/VMProtect
 	url = https://github.com/TinyNiko/VMProtect.git
+[submodule "Android/common/pyDexparser"]
+	path = Android/common/pyDexparser
+	url = https://github.com/nikosproject/pyDexparser.git
