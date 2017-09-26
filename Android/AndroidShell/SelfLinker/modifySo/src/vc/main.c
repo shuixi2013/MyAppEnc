@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../include/elf.h"
-#include "../include/utils.h"
-#include "../include/elf32.h"
-#include "../include/elf64.h"
+#include "../../include/elf.h"
+#include "../../include/utils.h"
+#include "../../include/elf32.h"
+#include "../../include/elf64.h"
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
@@ -26,24 +26,24 @@ int main(int argc, char **argv)
         return 0 ; 
     }
     
-    fr = fopen(argv[1] , "rb") ; 
-    if(fr == NULL)
+    frshell = fopen(argv[1] , "rb") ; 
+    if(frshell == NULL)
     {
         puts("file open error") ;
         goto error ;  
     }
 
-    flen = get_file_len(fr) ; 
-    printf("file len is %ld \n" , flen) ; 
-    buffer = (char *)malloc(flen+1) ;
+    flenshell = get_file_len(frshell) ; 
+    printf("file len is %ld \n" , flenshell) ; 
+    buffer = (char *)malloc(flenshell+1) ;
     if( buffer == NULL)
     {
         puts("malloc error") ; 
         goto error ; 
     }
 
-    size_t result = fread(buffer,1, flen , fr) ; 
-    if(result != flen)
+    size_t result = fread(buffer,1, flenshell , frshell) ; 
+    if(result != flenshell)
     {
         puts("error"); 
         goto error ;    
@@ -52,11 +52,11 @@ int main(int argc, char **argv)
     if(buffer[4] == 0x01)
     {
         puts("32");
-        isDealOk = dealelf32(buffer, flen,ERASE,argv[2]) ; 
+        isDealOk = dealelf32(buffer, flenshell,ERASE,argv[2]) ; 
     }else if (buffer[4] == 0x02)
     {
         puts("64");
-        isDealOk = dealelf64(buffer,flen,ERASE,argv[2]) ;
+        isDealOk = dealelf64(buffer,flenshell,ERASE,argv[2]) ;
     }else
     {
         puts(" this is error"); 
@@ -71,8 +71,8 @@ int main(int argc, char **argv)
     }
     
 error:
-    if(fr != NULL) 
-        fclose(fr) ; 
+    if(frshell != NULL) 
+        fclose(frshell) ; 
     if(buffer != NULL)
         free(buffer) ; 
     return 0 ; 

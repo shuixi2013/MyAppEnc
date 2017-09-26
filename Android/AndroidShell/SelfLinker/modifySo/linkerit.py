@@ -3,14 +3,20 @@ from optparse import OptionParser
 import struct 
 import sys 
 
+
+
+
 def getfiledata(path,flag='rb'):
     fd = open(path , flag)
     return fd.read() 
 
 def deal(shellpath , mainpath ,outpath):
     shelldata = getfiledata(shellpath)
+    print("[+]shell data size is "+str(len(shelldata)))
     maindata = getfiledata(mainpath)
+    print("[+]main data size is "+str(len(maindata)))
     fdOutput = open(outpath,'wb')
+    fdOutput.write(shelldata)
     fdOutput.close()
 
 

@@ -1,4 +1,4 @@
-#include "../include/elf32.h"
+#include "../../include/elf32.h"
 
 
 void get_elf32_header(char *buffer, Elf32_Ehdr **pehdr)

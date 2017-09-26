@@ -1,0 +1,3 @@
+/Users/n/code/jiagu/Android/AndroidShell/SelfLinker/modifySo/src/vc/CMakeFiles/rebuild_cache.dir
+/Users/n/code/jiagu/Android/AndroidShell/SelfLinker/modifySo/src/vc/CMakeFiles/edit_cache.dir
+/Users/n/code/jiagu/Android/AndroidShell/SelfLinker/modifySo/src/vc/CMakeFiles/hello.dir
