@@ -1,4 +1,4 @@
-#include "../include/elf64.h"
+#include "../../include/elf64.h"
 
 
 void get_elf64_header(char *buffer, Elf64_Ehdr **pehdr)

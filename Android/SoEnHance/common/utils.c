@@ -20,6 +20,15 @@ void encode(char *content ,int len)
     }
 }
 
+void decode(char *content ,int len){
+    unsigned int FLAG[5] = {0xA0, 0xA1, 0xA2, 0xA3, 0xA4};
+    int i;
+    for (i = 0; i < len; i++) {
+        content[i] ^= FLAG[i%5];
+        content[i] = ~content[i];
+    }
+}
+
 
 
 

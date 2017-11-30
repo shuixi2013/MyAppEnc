@@ -1,0 +1,8 @@
+//
+// Created by lu on 2017/9/30.
+//
+
+#ifndef LINKERWRAPPER_NATIVE_LIB_H
+#define LINKERWRAPPER_NATIVE_LIB_H
+
+#endif //LINKERWRAPPER_NATIVE_LIB_H

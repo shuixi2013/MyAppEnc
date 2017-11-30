@@ -44,15 +44,18 @@ bool dealelf32(char *buffer ,long flen, int fix,char *outname)
     if(sh_buffer == NULL) goto badend; 
     get_section_table(ehdr , sh_buffer , sh_len ,buffer);
     
-    puts("start encrypt so");
-    startencrypt(ehdr, phdr , buffer);
-    
+    if(fix != FIX){
+        puts("start encrypt so");
+        startencrypt(ehdr, phdr , buffer);
+    }
+
     if(fix == ERASE)
     {
         Eraser(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer);
     }
     else if(fix == FIX)
     {
+        puts("in fix");
         Fix(ehdr , phdr , ph_len , sh_buffer , sh_len,buffer) ;
     }
     
@@ -234,6 +237,31 @@ void startencrypt(Elf32_Ehdr *ehdr, Elf32_Phdr *phdr , char *buffer)
 void Fix(Elf32_Ehdr *ehdr , Elf32_Phdr *phdr , 
             int p_len , char *section ,int s_len,char *buffer)
 {
-    
+     const char mysection[] = ".mytext" ;
+
+    Elf32_Off  shoff  = ehdr->e_shoff ; 
+    Elf32_Half shnum  = ehdr->e_shnum ; 
+    Elf32_Half shstrtabx = ehdr->e_shstrndx ; 
+    Elf32_Shdr *sh_strtab = (Elf32_Shdr *)(buffer + ( shoff + shstrtabx * sizeof(Elf32_Shdr) )) ;
+    char *straddr = buffer + sh_strtab->sh_offset ;
+
+    int i ; 
+    for(i = 0 ; i < shnum ; i++)
+    {
+        Elf32_Shdr *shdr = (Elf32_Shdr *)(buffer + (shoff + i * sizeof(Elf32_Shdr) )) ;
+        Elf32_Word index = shdr->sh_name ; 
+        if(!strcmp(mysection , straddr+index))
+        {
+            puts("find mytext section");
+            Elf32_Off    off  = shdr->sh_offset ; 
+            Elf32_Xword  size = shdr->sh_size ;
+            char *data = (char *)malloc(size);
+            memset(data, 0, size);
+            memcpy(data ,buffer+off ,size) ;
+            decode(data, size);
+            memcpy(buffer+off, data, size );
+            free(data); 
+        }
+    } 
 
 }

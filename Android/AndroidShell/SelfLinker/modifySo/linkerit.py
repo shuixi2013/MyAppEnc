@@ -4,8 +4,6 @@ import struct
 import sys 
 
 
-
-
 def getfiledata(path,flag='rb'):
     fd = open(path , flag)
     return fd.read() 

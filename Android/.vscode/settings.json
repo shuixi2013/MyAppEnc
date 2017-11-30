@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "elf64.c": "cpp"
+        "elf64.c": "cpp",
+        "safeniko.cpp": "c"
     }
 }
